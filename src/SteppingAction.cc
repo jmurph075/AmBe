@@ -39,14 +39,16 @@ namespace AmBeStack
         }
 
         // 2. Check volume of the current step
-        // need to know if in the scoring volume
+        // need to know if particle in the scoring volume
         auto volume = step->GetPreStepPoint()->GetTouchableHandle()->GetVolume()->GetLogicalVolume();
         if (volume != fScoringVolume) return;
 
+        //!!!! IF OUTSIDE THE SCORING VOL. STOP AT THIS POINT !!!!
+
         // 3. Get the energy deposited in this step
-        G4double edep = step->GetTotalEnergyDeposit();
+        G4double edepStep = step->GetTotalEnergyDeposit();
         // pass this to fEventAction
-        fEventAction->AddEdep(edep);
+        fEventAction->AddEdep(edepStep);
 
         // 4. Get particle associated with each track
         auto track = step->GetTrack();
@@ -67,20 +69,10 @@ namespace AmBeStack
                 
                 // get nuclei
                 fEventAction->recoilNameMap[trackID] = particle->GetParticleName();
-                // get initial KE
-                fEventAction->recoilInitialKEMap[trackID] = step->GetPreStepPoint()->GetKineticEnergy();
             }
 
-            // if not the first step, 
-            // check if paricle going to leave volume or has stopped
-            auto postPoint = step->GetPostStepPoint();
-            auto postVolume = postPoint->GetTouchableHandle()->GetVolume;
-            auto postLogVolume = postVolume->GetLogicalVolume();
-            if (postLogVolume != fScoringVolume || track->GetTrackStatus == fStopAndKill)
-            {
-                // get final KE
-                fEventAction->recoilFinalKEMap[trackID] = postPoint->GetKineticEnergy();
-            }
+            // at each step afterwards, record the energy deposited 
+            fEventAction->recoilEdepMap[trackID] +=edepStep
         }
 
     }
