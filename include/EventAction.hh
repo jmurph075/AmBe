@@ -20,7 +20,7 @@ namespace AmBeStack
         public:
             // telling Geant we have something 
             // which follows the same rules as the 
-            // G4EventAction class
+            // G4UserEventAction class
             // the details of which will be in the
             // associated .cc file
             EventAction(RunAction* runAction);

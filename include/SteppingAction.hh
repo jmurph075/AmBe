@@ -21,7 +21,7 @@ namespace AmBeStack
         public:
             // telling Geant we have something 
             // which follows the same rules as the 
-            // G4SteppingAction class
+            // G4UserSteppingAction class
             // the details of which will be in the
             // associated .cc file
             SteppingAction(EventAction* eventAction);

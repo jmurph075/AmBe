@@ -46,7 +46,7 @@ namespace AmBeStack
     // returntype class::functionname(args)
     // called at start of each run of simulation
     // acts as a hard RESET
-    void RunAction::BeginOfRunAction(const G4Run*)
+    void RunAction::BeginOfRunAction(const G4Run* run)
     {
         // analysis manager instance
         G4AnalysisManager analysisManager = G4AnalysisManager::Instance();
@@ -60,7 +60,7 @@ namespace AmBeStack
     // actually define the EndOfRunAction function
     // returntype class::functionname(args)
     // called at end of each run of simulation
-    void RunAction::EndOfRunAction(const G4Run*)
+    void RunAction::EndOfRunAction(const G4Run* run)
     {
         // analysis manager instance
         G4AnalysisManager analysisManager = G4AnalysisManager::Instance();
