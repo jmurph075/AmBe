@@ -15,7 +15,7 @@ namespace AmBeStack
     EventAction::EventAction(RunAction* runAction)
         // : starts "member intialiser list"
         // zone which runs before the code inside {} 
-        : G4UserEventAction(), // - parent setup (from virtual geant class)
+        : G4UserEventAction(), // - parent setup (from geant class)
         // assign member variables (defined in .hh file)
         fRunAction(runAction), // - for current run action 
         fEdep(0.) // - for energy deposited in this event
