@@ -17,7 +17,7 @@ class G4Event;
 
 namespace AmBeStack
 {
-    class PrimaryGeneratorAction : public G4UserPrimaryGeneratorAction
+    class PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
     {
         public:
             // telling Geant we have something 

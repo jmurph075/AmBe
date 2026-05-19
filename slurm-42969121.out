@@ -97,14 +97,26 @@ Loaded Geant and CMake
 -- Found OpenGL: /rds/bear-apps/2022a/EL8-ice/software/libglvnd/1.4.0-GCCcore-11.3.0/lib/libOpenGL.so   
 -- Found Geant4: /rds/bear-apps/2022a/EL8-ice/software/Geant4/11.1.2-GCC-11.3.0/lib64/cmake/Geant4/Geant4Config.cmake (found version "11.1.2") 
 -- Configuring done
-CMake Error at CMakeLists.txt:13 (add_executable):
-  Cannot find source file:
-
-    AmBeSimulation.cc
-
-
-CMake Error at CMakeLists.txt:13 (add_executable):
-  No SOURCES given to target: AmBeSimulation
-
-
-CMake Generate step failed.  Build files cannot be regenerated correctly.
+-- Generating done
+-- Build files have been written to: /rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/build
+[ 12%] Building CXX object CMakeFiles/AmBeStack.dir/AmBeMain.cc.o
+[ 25%] Building CXX object CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.o
+/rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/src/ActionInitialization.cc: In member function ‘virtual void AmBeStack::ActionInitialization::BuildForMaster() const’:
+/rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/src/ActionInitialization.cc:26:27: error: ‘runAction’ does not name a type; did you mean ‘RunAction’?
+   26 |         SetUserAction(new runAction);
+      |                           ^~~~~~~~~
+      |                           RunAction
+/rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/src/ActionInitialization.cc: At global scope:
+/rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/src/ActionInitialization.cc:32:10: error: ‘Actioninitialization’ has not been declared
+   32 |     void Actioninitialization::Build() const
+      |          ^~~~~~~~~~~~~~~~~~~~
+/rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/src/ActionInitialization.cc:32:40: error: non-member function ‘void AmBeStack::Build()’ cannot have cv-qualifier
+   32 |     void Actioninitialization::Build() const
+      |                                        ^~~~~
+/rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/src/ActionInitialization.cc: In function ‘void AmBeStack::Build()’:
+/rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/src/ActionInitialization.cc:40:9: error: ‘SetUserAction’ was not declared in this scope
+   40 |         SetUserAction(new PrimaryGeneratorAction);
+      |         ^~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/AmBeStack.dir/build.make:90: CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/AmBeStack.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2

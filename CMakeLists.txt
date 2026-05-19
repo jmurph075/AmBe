@@ -10,16 +10,16 @@ file(GLOB sources ./src/*.cc)
 file(GLOB headers ./include/*.hh)
 
 # 4. Construct the executable from linking the sources and headers
-add_executable(AmBeStack AmBeSimulation.cc 
+add_executable(AmBeStack AmBeMain.cc 
     ${sources} 
     ${headers}
 )
 
 # 5. Tell compiler to use custom header files defined
-target_include_directories(AmBeSimulation PRIVATE include)
+target_include_directories(AmBeStack PRIVATE include)
 
 # 6. Link the simulation to the Geant libraries
-target_link_libraries(AmBeSimulation PRIVATE
+target_link_libraries(AmBeStack PRIVATE
     ${Geant4_LIBRARIES}
 )
 

@@ -19,13 +19,13 @@ namespace AmBeStack
         : G4UserRunAction() // - parent setup (from geant class)
         {
             // make an analysis manager instance
-            G4AnalysisManager analysisManager = G4AnalysisManager::Instance();
+            G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
 
             // make some choices for the file output
-            analysisManager->VerboseLevel(1);
+            analysisManager->SetVerboseLevel(1);
             // multi-threading safe merging
             // only works with ROOT file output apparently
-            analysisManager->SetNTupleMerging(true);
+            analysisManager->SetNtupleMerging(true);
             // does by default but will be explicit here
             analysisManager->SetDefaultFileType("root");
 
@@ -37,7 +37,7 @@ namespace AmBeStack
             analysisManager->CreateNtupleSColumn("RecoilName");
             analysisManager->CreateNtupleDColumn("RecoilEdep");
 
-            analysisManager->FinishNTuple(); // finish ntuple
+            analysisManager->FinishNtuple(); // finish ntuple
 
         }
 
@@ -49,7 +49,7 @@ namespace AmBeStack
     void RunAction::BeginOfRunAction(const G4Run* run)
     {
         // analysis manager instance
-        G4AnalysisManager analysisManager = G4AnalysisManager::Instance();
+        G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
 
         // open output file for the run
         G4String fileName = "AmBeStackOutput";
@@ -63,7 +63,7 @@ namespace AmBeStack
     void RunAction::EndOfRunAction(const G4Run* run)
     {
         // analysis manager instance
-        G4AnalysisManager analysisManager = G4AnalysisManager::Instance();
+        G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
 
         // save the rows from the memory into the file we've specified
         // at start of run

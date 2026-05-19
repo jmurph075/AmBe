@@ -8,7 +8,7 @@
 
 namespace AmBeStack
 {
-    class ActionInitialization : public G4UserActionInitialization
+    class ActionInitialization : public G4VUserActionInitialization
     {
         public:
             // telling Geant we have something 

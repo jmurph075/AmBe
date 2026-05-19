@@ -23,13 +23,13 @@ namespace AmBeStack
     {
         // the master thread will just manage global data 
         // which we'll access through RunAction (accumulates total stats)
-        SetUserAction(new runAction);
+        SetUserAction(new RunAction);
     }
 
     // 2. Build():
     // runs for each WORKER thread 
     // class::function
-    void Actioninitialization::Build() const
+    void ActionInitialization::Build() const
     {
         // the worker threads perform the physics 
         // as such they'll need access to all the different actions

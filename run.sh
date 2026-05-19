@@ -23,4 +23,4 @@ cmake ..
 make -j${SLURM_CPUS_PER_TASK:-1} # if unset gives the default of 1
 
 # see if get this far
-echo "Compiled successfully
+echo "Compiled successfully"

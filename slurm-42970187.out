@@ -1,0 +1,158 @@
+GCCcore/11.3.0
+zlib/1.2.12-GCCcore-11.3.0
+binutils/2.38-GCCcore-11.3.0
+GCC/11.3.0
+expat/2.4.8-GCCcore-11.3.0
+CLHEP/2.4.6.2-GCC-11.3.0
+OpenSSL/1.1
+cURL/7.83.0-GCCcore-11.3.0
+Xerces-C++/3.2.4-GCCcore-11.3.0
+double-conversion/3.2.0-GCCcore-11.3.0
+libffi/3.4.2-GCCcore-11.3.0
+XZ/5.2.5-GCCcore-11.3.0
+libxml2/2.9.13-GCCcore-11.3.0
+ncurses/6.3-GCCcore-11.3.0
+gettext/0.21-GCCcore-11.3.0
+libxml2/2.9.13-GCCcore-11.3.0
+bzip2/1.0.8-GCCcore-11.3.0
+PCRE/8.45-GCCcore-11.3.0
+util-linux/2.38-GCCcore-11.3.0
+GLib/2.72.1-GCCcore-11.3.0
+PCRE2/10.40-GCCcore-11.3.0
+libpng/1.6.37-GCCcore-11.3.0
+ICU/71.1-GCCcore-11.3.0
+Brotli/1.0.9-GCCcore-11.3.0
+freetype/2.12.1-GCCcore-11.3.0
+pixman/0.40.0-GCCcore-11.3.0
+fontconfig/2.14.0-GCCcore-11.3.0
+xorg-macros/1.19.3-GCCcore-11.3.0
+libpciaccess/0.16-GCCcore-11.3.0
+X11/20220504-GCCcore-11.3.0
+cairo/1.17.4-GCCcore-11.3.0
+freetype/2.12.1-GCCcore-11.3.0
+HarfBuzz/4.2.1-GCCcore-11.3.0
+graphite2/1.3.14-GCCcore-11.3.0
+X11/20220504-GCCcore-11.3.0
+fontconfig/2.14.0-GCCcore-11.3.0
+DBus/1.14.0-GCCcore-11.3.0
+libevent/2.1.12-GCCcore-11.3.0
+gzip/1.12-GCCcore-11.3.0
+lz4/1.9.3-GCCcore-11.3.0
+zstd/1.5.2-GCCcore-11.3.0
+libdrm/2.4.110-GCCcore-11.3.0
+libglvnd/1.4.0-GCCcore-11.3.0
+libunwind/1.6.2-GCCcore-11.3.0
+LLVM/12.0.1-GCCcore-11.3.0
+Mesa/22.0.3-GCCcore-11.3.0
+libGLU/9.0.2-GCCcore-11.3.0
+NASM/2.15.05-GCCcore-11.3.0
+libjpeg-turbo/2.1.3-GCCcore-11.3.0
+NSPR/4.34-GCCcore-11.3.0
+NSS/3.79-GCCcore-11.3.0
+snappy/1.1.9-GCCcore-11.3.0
+JasPer/2.0.33-GCCcore-11.3.0
+bzip2/1.0.8-GCCcore-11.3.0
+ICU/71.1-GCCcore-11.3.0
+nodejs/16.15.1-GCCcore-11.3.0
+Qt5/5.15.5-GCCcore-11.3.0
+Geant4-data/11.1
+Geant4/11.1.2-GCC-11.3.0
+Geant4-data/11.1
+libarchive/3.6.1-GCCcore-11.3.0
+CMake/3.24.3-GCCcore-11.3.0
+Loaded Geant and CMake
+-- The C compiler identification is GNU 11.3.0
+-- The CXX compiler identification is GNU 11.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /rds/bear-apps/2022a/EL8-ice/software/GCCcore/11.3.0/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /rds/bear-apps/2022a/EL8-ice/software/GCCcore/11.3.0/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found EXPAT: /rds/bear-apps/2022a/EL8-ice/software/expat/2.4.8-GCCcore-11.3.0/lib/libexpat.so (found suitable version "2.4.8", minimum required is "2.4.8") 
+-- Found ZLIB: /rds/bear-apps/2022a/EL8-ice/software/zlib/1.2.12-GCCcore-11.3.0/lib/libz.so (found suitable version "1.2.12", minimum required is "1.2.12") 
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - yes
+-- Found Threads: TRUE  
+-- Found XercesC: /rds/bear-apps/2022a/EL8-ice/software/Xerces-C++/3.2.4-GCCcore-11.3.0/lib/libxerces-c.so (found suitable version "3.2.4", minimum required is "3.2.4") 
+-- Found X11: /rds/bear-apps/2022a/EL8-ice/software/X11/20220504-GCCcore-11.3.0/include   
+-- Looking for XOpenDisplay in /rds/bear-apps/2022a/EL8-ice/software/X11/20220504-GCCcore-11.3.0/lib/libX11.so;/rds/bear-apps/2022a/EL8-ice/software/X11/20220504-GCCcore-11.3.0/lib/libXext.so
+-- Looking for XOpenDisplay in /rds/bear-apps/2022a/EL8-ice/software/X11/20220504-GCCcore-11.3.0/lib/libX11.so;/rds/bear-apps/2022a/EL8-ice/software/X11/20220504-GCCcore-11.3.0/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found OpenGL: /rds/bear-apps/2022a/EL8-ice/software/libglvnd/1.4.0-GCCcore-11.3.0/lib/libOpenGL.so   
+-- Found Geant4: /rds/bear-apps/2022a/EL8-ice/software/Geant4/11.1.2-GCC-11.3.0/lib64/cmake/Geant4/Geant4Config.cmake (found version "11.1.2") 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/build
+[ 12%] Building CXX object CMakeFiles/AmBeStack.dir/AmBeMain.cc.o
+[ 25%] Building CXX object CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.o
+[ 37%] Building CXX object CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.o
+[ 50%] Building CXX object CMakeFiles/AmBeStack.dir/src/EventAction.cc.o
+[ 62%] Building CXX object CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o
+[ 75%] Building CXX object CMakeFiles/AmBeStack.dir/src/RunAction.cc.o
+/rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/src/RunAction.cc: In constructor ‘AmBeStack::RunAction::RunAction()’:
+/rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/src/RunAction.cc:22:76: error: conversion from ‘G4GenericAnalysisManager*’ to non-scalar type ‘G4AnalysisManager’ {aka ‘G4GenericAnalysisManager’} requested
+   22 |             G4AnalysisManager analysisManager = G4AnalysisManager::Instance();
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/src/RunAction.cc:25:28: error: base operand of ‘->’ has non-pointer type ‘G4AnalysisManager’ {aka ‘G4GenericAnalysisManager’}
+   25 |             analysisManager->VerboseLevel(1);
+      |                            ^~
+/rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/src/RunAction.cc:28:28: error: base operand of ‘->’ has non-pointer type ‘G4AnalysisManager’ {aka ‘G4GenericAnalysisManager’}
+   28 |             analysisManager->SetNTupleMerging(true);
+      |                            ^~
+/rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/src/RunAction.cc:30:28: error: base operand of ‘->’ has non-pointer type ‘G4AnalysisManager’ {aka ‘G4GenericAnalysisManager’}
+   30 |             analysisManager->SetDefaultFileType("root");
+      |                            ^~
+/rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/src/RunAction.cc:33:28: error: base operand of ‘->’ has non-pointer type ‘G4AnalysisManager’ {aka ‘G4GenericAnalysisManager’}
+   33 |             analysisManager->CreateNtuple("AmBeStackData", "Energy deposition data");
+      |                            ^~
+/rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/src/RunAction.cc:35:28: error: base operand of ‘->’ has non-pointer type ‘G4AnalysisManager’ {aka ‘G4GenericAnalysisManager’}
+   35 |             analysisManager->CreateNtupleIColumn("EventID");
+      |                            ^~
+/rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/src/RunAction.cc:36:28: error: base operand of ‘->’ has non-pointer type ‘G4AnalysisManager’ {aka ‘G4GenericAnalysisManager’}
+   36 |             analysisManager->CreateNtupleDColumn("TotalEdep");
+      |                            ^~
+/rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/src/RunAction.cc:37:28: error: base operand of ‘->’ has non-pointer type ‘G4AnalysisManager’ {aka ‘G4GenericAnalysisManager’}
+   37 |             analysisManager->CreateNtupleSColumn("RecoilName");
+      |                            ^~
+/rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/src/RunAction.cc:38:28: error: base operand of ‘->’ has non-pointer type ‘G4AnalysisManager’ {aka ‘G4GenericAnalysisManager’}
+   38 |             analysisManager->CreateNtupleDColumn("RecoilEdep");
+      |                            ^~
+/rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/src/RunAction.cc:40:28: error: base operand of ‘->’ has non-pointer type ‘G4AnalysisManager’ {aka ‘G4GenericAnalysisManager’}
+   40 |             analysisManager->FinishNTuple(); // finish ntuple
+      |                            ^~
+/rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/src/RunAction.cc: In member function ‘virtual void AmBeStack::RunAction::BeginOfRunAction(const G4Run*)’:
+/rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/src/RunAction.cc:52:72: error: conversion from ‘G4GenericAnalysisManager*’ to non-scalar type ‘G4AnalysisManager’ {aka ‘G4GenericAnalysisManager’} requested
+   52 |         G4AnalysisManager analysisManager = G4AnalysisManager::Instance();
+      |                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/src/RunAction.cc:56:24: error: base operand of ‘->’ has non-pointer type ‘G4AnalysisManager’ {aka ‘G4GenericAnalysisManager’}
+   56 |         analysisManager->OpenFile(fileName);
+      |                        ^~
+/rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/src/RunAction.cc: In member function ‘virtual void AmBeStack::RunAction::EndOfRunAction(const G4Run*)’:
+/rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/src/RunAction.cc:66:72: error: conversion from ‘G4GenericAnalysisManager*’ to non-scalar type ‘G4AnalysisManager’ {aka ‘G4GenericAnalysisManager’} requested
+   66 |         G4AnalysisManager analysisManager = G4AnalysisManager::Instance();
+      |                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/src/RunAction.cc:70:24: error: base operand of ‘->’ has non-pointer type ‘G4AnalysisManager’ {aka ‘G4GenericAnalysisManager’}
+   70 |         analysisManager->Write();
+      |                        ^~
+/rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/src/RunAction.cc:73:24: error: base operand of ‘->’ has non-pointer type ‘G4AnalysisManager’ {aka ‘G4GenericAnalysisManager’}
+   73 |         analysisManager->CloseFile();
+      |                        ^~
+make[2]: *** [CMakeFiles/AmBeStack.dir/build.make:146: CMakeFiles/AmBeStack.dir/src/RunAction.cc.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/AmBeStack.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2

@@ -72,7 +72,7 @@ namespace AmBeStack
             }
 
             // at each step afterwards, record the energy deposited 
-            fEventAction->recoilEdepMap[trackID] +=edepStep
+            fEventAction->recoilEdepMap[trackID] += edepStep;
         }
 
     }

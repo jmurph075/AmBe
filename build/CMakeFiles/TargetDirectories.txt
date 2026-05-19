@@ -1,0 +1,3 @@
+/rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/build/CMakeFiles/AmBeStack.dir
+/rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/build/CMakeFiles/edit_cache.dir
+/rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/build/CMakeFiles/rebuild_cache.dir

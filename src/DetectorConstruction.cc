@@ -29,11 +29,12 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
      // NOTE: when things are defined with "new" they can be looked up in a different scope
      // based on their name
 
-     // Physical volume pointers must be declared within constructor scope
-     // (the one we're in now)
-     // so can be returned at end
+     // declare essential physical and logical volumes
+     // at top level so they can be accessed across each block
+     // for each component of the geometry below
      G4VPhysicalVolume* physWorld = nullptr;
-     // same with other physical volumes
+     G4LogicalVolume* logicWorld = nullptr;
+     G4LogicalVolume* logicRoom = nullptr;
 
      // Construct custom materials and add to global table (can then look up later)
      // in this case just the C6D6 for detector 
@@ -176,13 +177,15 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
           G4Material* air = nist -> FindOrBuildMaterial("G4_AIR");
 
           // make logical volume for world
-          auto logicWorld = new G4LogicalVolume(
+          // no auto here as already declared at top of function
+          logicWorld = new G4LogicalVolume(
                solidWorld,         // associated solid volume 
                air,                // material
                "World_logic"       // name
           );
 
           // now make physical volume for the world
+          // again no auto here as already declared at top of function
           physWorld = new G4PVPlacement(
                nullptr,            // no rotation
                G4ThreeVector(),    // at origin (0,0,0)
@@ -205,7 +208,8 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
           );
 
           // logical
-          auto logicRoom = new G4LogicalVolume(
+          // again no auto here as already declared at top of function
+          logicRoom = new G4LogicalVolume(
                solidRoom, // associated solid volume
                air, // material
                "Room_logic" // name

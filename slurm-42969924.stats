@@ -1,0 +1,28 @@
++--------------------------------------------------------------------------+
+| Job on the BlueBEAR cluster:
+| Starting at Tue May 19 17:23:43 2026 for jxm1605(902411)
+| Identity jobid 42969924 jobname run.sh
+| Running against project bishopjw-dli-neutron and in partition icelake-all
+| Requested cpu=56,mem=224G,node=1,billing=56 - 00:10:00 walltime
+| Allocated cpu=56,mem=224G,node=2,billing=56
+| Assigned to nodes bear-pg0105u26a,bear-pg0105u27a
+| Command /rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/run.sh
+| WorkDir /rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe
++--------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| Finished at Tue May 19 17:24:08 2026 for jxm1605(902411) on the BlueBEAR Cluster
+| Required (00:12.659 cputime, 816K memory used) - 00:00:25 walltime
+| JobState COMPLETING - Reason NonZeroExitCode
+| Exitcode 2:0
++--------------------------------------------------------------------------+
+Job efficiency stats from seff for Job ID: 42969924
+Cluster: paddington
+User/Group: jxm1605/users
+State: FAILED (exit code 2)
+Nodes: 2
+Cores per node: 28
+CPU Utilized: 00:00:13
+CPU Efficiency: 0.93% of 00:23:20 core-walltime
+Job Wall-clock time: 00:00:25
+Memory Utilized: 816.00 KB
+Memory Efficiency: 0.00% of 224.00 GB

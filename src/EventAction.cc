@@ -31,9 +31,6 @@ namespace AmBeStack
         fEdep = 0.; // reset total event energy back to 0
 
         // wipe the maps containing the information about the interaction
-        // of the neutron (event)
-        eventIDMap.clear(); // new event ID
-        totEventEdepMap.clear(); // new tot energy deposited from the event
         recoilNameMap.clear(); // new recoil name
         recoilEdepMap.clear(); // new energy deposited by this recoil from event
     }
@@ -61,12 +58,12 @@ namespace AmBeStack
         // still need to record data though as event still occurred
         if (recoilEdepMap.empty())
         {
-            analysisManager->FillNTupleIColumn(0, eventID); // column 0, unique event ID (integer)
-            analysisManager->FillNTupleDColumn(1, fEdep); // column 1, total event energy deposition
-            analysisManager->FillNTupleSColumn(2, "No_recoil"); // column 2, would've been recoil nuclei name
-            analysisManager->FillNTupleDColumn(3, 0.0); // column 3, recoil energy (none here)
+            analysisManager->FillNtupleIColumn(0, eventID); // column 0, unique event ID (integer)
+            analysisManager->FillNtupleDColumn(1, fEdep); // column 1, total event energy deposition
+            analysisManager->FillNtupleSColumn(2, "No_recoil"); // column 2, would've been recoil nuclei name
+            analysisManager->FillNtupleDColumn(3, 0.0); // column 3, recoil energy (none here)
             // move to new row
-            analysisManager->AddNTupleRow();
+            analysisManager->AddNtupleRow();
         }
         // otherwise, recoil nuclei must've been tracked
         else
@@ -86,13 +83,13 @@ namespace AmBeStack
                 // get corresponding recoilNameMap value
                 G4String recoilName = recoilNameMap[trackID];
                 // write to analysis manager
-                analysisManager->FillNTupleIColumn(0, eventID);
-                analysisManager->FillNTupleDColumn(1, fEdep);
-                analysisManager->FillNTupleSColumn(2, recoilName);
-                analysisManager->FillNTupleDColumn(3, recoilEdep);
+                analysisManager->FillNtupleIColumn(0, eventID);
+                analysisManager->FillNtupleDColumn(1, fEdep);
+                analysisManager->FillNtupleSColumn(2, recoilName);
+                analysisManager->FillNtupleDColumn(3, recoilEdep);
 
                 // move to new row for either new event or new recoil nuclei
-                analysisManager->AddNTupleRow();
+                analysisManager->AddNtupleRow();
             }
         }
     }

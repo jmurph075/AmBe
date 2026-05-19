@@ -8,6 +8,9 @@
 
 #include "globals.hh"
 
+// must include the G4LogicalVolume class
+class G4LogicalVolume;
+
 namespace AmBeStack
 {
 
@@ -34,7 +37,7 @@ namespace AmBeStack
             // define the member variables 
             EventAction* fEventAction = nullptr;
             G4LogicalVolume* fScoringVolume = nullptr;
-    }
+    };
 
 }
 
