@@ -24,16 +24,16 @@ namespace AmBeStack
 
             // make some choices for the file output
             analysisManager->SetVerboseLevel(1);
-            if (!G4Threading::IsWorkerThread())  // master only
-            {
-            analysisManager->SetNtupleMerging(true);
-            analysisManager->SetDefaultFileType("root");
-            }
+            //if (!G4Threading::IsWorkerThread())  // master only
+            //{
+            //analysisManager->SetNtupleMerging(true);
+            //analysisManager->SetDefaultFileType("root");
+            //}
             // multi-threading safe merging
             // only works with ROOT file output apparently
-            //analysisManager->SetNtupleMerging(true);
+            analysisManager->SetNtupleMerging(true);
             // does by default but will be explicit here
-            //analysisManager->SetDefaultFileType("root");
+            analysisManager->SetDefaultFileType("root");
 
             // make the Ntuple with the structure we need
             analysisManager->CreateNtuple("AmBeStackData", "Energy deposition data");
@@ -61,7 +61,7 @@ namespace AmBeStack
         G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
 
         // open output file for the run
-        G4String fileName = "AmBeStackOutput";
+        G4String fileName = "AmBeStackOutput.root";
         analysisManager->OpenFile(fileName);
     }
 

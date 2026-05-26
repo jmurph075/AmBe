@@ -1,7 +1,7 @@
 # Macro file to test the simulation works
 
 # specify number of threads
-/run/numberOfThreads 1
+#/run/numberOfThreads 1
 
 # Initialise geant kernel
 /run/initialize
