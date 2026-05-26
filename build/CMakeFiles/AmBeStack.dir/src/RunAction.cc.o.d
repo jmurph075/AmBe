@@ -358,4 +358,5 @@ CMakeFiles/AmBeStack.dir/src/RunAction.cc.o: \
  /rds/bear-apps/2022a/EL8-ice/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4VDigiCollection.hh \
  /rds/bear-apps/2022a/EL8-ice/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4TrajectoryContainer.hh \
  /rds/bear-apps/2022a/EL8-ice/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4VTrajectory.hh \
- /rds/bear-apps/2022a/EL8-ice/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4VUserEventInformation.hh
+ /rds/bear-apps/2022a/EL8-ice/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4VUserEventInformation.hh \
+ /rds/bear-apps/2022a/EL8-ice/software/Geant4/11.1.2-GCC-11.3.0/include/Geant4/G4Threading.hh

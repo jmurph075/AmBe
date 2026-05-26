@@ -28,6 +28,9 @@ namespace AmBeStack
     // acts as a hard RESET
     void EventAction::BeginOfEventAction(const G4Event* event)
     {
+                // !!!!!!!!!!!!! for debugging !!!!!!!!!!
+        G4cout << "Coming from BeginOfEventAction" << G4endl;
+
         fEdep = 0.; // reset total event energy back to 0
 
         // wipe the maps containing the information about the interaction

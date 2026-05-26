@@ -28,6 +28,9 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
      // Going to try and organise things with {} scopes
      // NOTE: when things are defined with "new" they can be looked up in a different scope
      // based on their name
+             // !!!!!!!!!!!!! for debugging !!!!!!!!!!
+        G4cout << "Coming from Construct" << G4endl;
+
 
      // declare essential physical and logical volumes
      // at top level so they can be accessed across each block
@@ -112,7 +115,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 
 
           // Make AmBe mixture for source itself
-          // first need Americium dioxide "element"
+          // first need Americium dioxide 
           // assume pure 241Am (same as in Filippo's paper)
           G4double a_Am241 = 241.0568 *g/mole;
           G4double a_O16 = 15.9949 *g/mole;
@@ -128,15 +131,33 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
                16, // nucleon number
                a_O16 // atomic mass
           );
-          G4Element* el_AmO2 = new G4Element(
-               "Americium Dioxide", // name
-               "AmO2", // symbol
+          // add these isotopes to an element for each
+          G4Element* el_Am = new G4Element(
+               "Americium", // name
+               "Am", // symbol
+               1 // no. of components
+          );
+          el_Am->AddIsotope(iso_Am, 1.0);
+          G4Element* el_O = new G4Element(
+               "Oxygen",
+               "O",
+               1
+          );
+          el_O->AddIsotope(iso_O, 1);
+          // can just define AmO2 mass density 
+          // with set value
+          // will be overwritten anyway to accomodate
+          // rhoAmBe below
+          G4double rho_AmO2 = 11.68 *g/cm3; 
+          G4Material* mat_AmO2 = new G4Material(
+               "Americium_Dioxide", // name
+               rho_AmO2, // mass density
                2 // number of components (isotopes)
           );
-          el_AmO2 -> AddIsotope(iso_Am, 1); // 1 atom of Am per molecule
-          el_AmO2 -> AddIsotope(iso_O, 2); // 2 atoms of O per molecule
-          // now define beryllium-9 element
-          G4Element* el_Be = nist -> FindOrBuildElement("G4_Be");
+          mat_AmO2 -> AddElement(el_Am, 1); // 1 atom of Am per molecule
+          mat_AmO2 -> AddElement(el_O, 2); // 2 atoms of O per molecule
+          // now define beryllium-9 material
+          G4Element* el_Be = nist -> FindOrBuildElement("Be");
           // define mass density of mixture 
           G4double rho_AmBe = 2.927 *g/cm3;
           G4Material* AmBe = new G4Material(
@@ -144,7 +165,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
                rho_AmBe, // mass density
                2 // number of components (elements)
           );
-          AmBe -> AddElement(el_AmO2, 10.97 *perCent); // fractional mass of AmO2 in mixture (from Filippo's paper)
+          AmBe -> AddMaterial(mat_AmO2, 10.97 *perCent); // fractional mass of AmO2 in mixture (from Filippo's paper)
           AmBe -> AddElement(el_Be, 89.03 *perCent); // fractional mass of Be in mixture
           // print to make sure correct
           G4cout << "mass density of AmBe :"
@@ -353,8 +374,8 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
           // will need to do subtraction with active volume above
           // solid
           // make outer cylinder
-          auto solidCaseOuter = new G4Tubs(
-               "Case_outer", // name
+          auto solidDetCaseOuter = new G4Tubs(
+               "Det_Case_outer", // name
                0., // inner radius
                0.5 * det_tot_diameter, // outer radius
                0.5 * det_tot_length, // half length
@@ -369,7 +390,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
           // the offset tells the SubtractionSolid function how much to shift the inner solid wrt the outer
           auto solidDetCase = new G4SubtractionSolid(
                "Det_Case_solid", // name
-               solidCaseOuter, // solid to subtract from
+               solidDetCaseOuter, // solid to subtract from
                solidDetActive, // solid to subtract
                0, // no rotation 
                G4ThreeVector(0,0, (0.5 * det_case_thickness)) // shift active volume forward by half the case thickness for subtraction
@@ -413,7 +434,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
           auto solidShield = new G4SubtractionSolid(
                "Shield_solid", // name
                solidShieldOuter, // solid to subtract from
-               solidCaseOuter, // solid to subtract (use case outer as want to shield whole detector including casing)
+               solidDetCaseOuter, // solid to subtract (use case outer as want to shield whole detector including casing)
                0, // no rotation
                G4ThreeVector(0,0, (0.5 * shield_thickness)) // shift casing volume forward by half the shield thickness for subtraction
                // (otherwise both solids centred at same point and shield wouldn't be flush with front of detector)
@@ -439,6 +460,10 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
                0, // copy number
                true // check overlaps
           );
+
+
+          // assign the scoring volume as the detector active region
+          fScoringVolume = logicDetActive;
 
      }
 

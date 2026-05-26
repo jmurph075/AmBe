@@ -109,12 +109,12 @@ int main(int argc, char** argv)
     // defined in the action files
     runManager->SetUserInitialization(new ActionInitialization());
 
+    // initialise runManager now that things are registered
+    runManager->Initialize();
+
     // use CheckHadronicData function to verify data
     // we've registered
     CheckHadronicData();
-
-    // initialise runManager now that things are registered
-    runManager->Initialize();
 
     // actually read and execute the instructions 
     // provided by the slurm script

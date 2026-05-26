@@ -1,0 +1,14 @@
+# Macro file to test the simulation works
+
+# Initialise geant kernel
+/run/initialise
+
+# specify output directory (overwrite this in the .sh script)
+/output/dir /rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/outputs/2026_05_19__17_57_31
+
+# neutron with set energy
+/gun/particle neutron
+/gun/energy 5 MeV
+
+# Fire specified number of neutrons from particleGun
+/run/beamOn 10

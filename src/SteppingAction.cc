@@ -26,6 +26,10 @@ namespace AmBeStack
     // called at each step in the simulation
     void SteppingAction::UserSteppingAction(const G4Step* step)
     {
+        // !!!!!!!!!!!!! for debugging !!!!!!!!!!
+        //G4cout << "Coming from SteppingAction" << G4endl;
+
+        
         // 1. Get scoring volume
         if (!fScoringVolume) // - if still nullptr (hasn't been found yet) 
         {
@@ -40,7 +44,11 @@ namespace AmBeStack
 
         // 2. Check volume of the current step
         // need to know if particle in the scoring volume
-        auto volume = step->GetPreStepPoint()->GetTouchableHandle()->GetVolume()->GetLogicalVolume();
+        auto touchable = step->GetPreStepPoint()->GetTouchableHandle();
+        // must check that this volume isn't returning null pointer
+        // happens if neutron ends up at world boundary
+        if (!touchable || !touchable->GetVolume()) return;
+        auto volume = touchable->GetVolume()->GetLogicalVolume();
         if (volume != fScoringVolume) return;
 
         //!!!! IF OUTSIDE THE SCORING VOL. STOP AT THIS POINT !!!!

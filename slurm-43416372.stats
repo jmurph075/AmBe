@@ -1,0 +1,27 @@
++--------------------------------------------------------------------------+
+| Job on the BlueBEAR cluster:
+| Starting at Tue May 26 13:24:16 2026 for jxm1605(902411)
+| Identity jobid 43416372 jobname run.sh
+| Running against project bishopjw-dli-neutron and in partition emerald-all
+| Requested cpu=1,mem=4G,node=1,billing=1 - 00:10:00 walltime
+| Allocated cpu=1,mem=4G,node=1,billing=1
+| Assigned to nodes bear-pg0201u09a
+| Command /rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe/run.sh
+| WorkDir /rds/projects/b/bishopjw-dli-neutron/John/Geant/AmBe
++--------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| Finished at Tue May 26 13:25:06 2026 for jxm1605(902411) on the BlueBEAR Cluster
+| Required (00:18.774 cputime, 161877K memory used) - 00:00:52 walltime
+| JobState COMPLETING - Reason NonZeroExitCode
+| Exitcode 139:0
++--------------------------------------------------------------------------+
+Job efficiency stats from seff for Job ID: 43416372
+Cluster: paddington
+User/Group: jxm1605/users
+State: FAILED (exit code 139)
+Cores: 1
+CPU Utilized: 00:00:19
+CPU Efficiency: 36.54% of 00:00:52 core-walltime
+Job Wall-clock time: 00:00:52
+Memory Utilized: 158.08 MB
+Memory Efficiency: 3.86% of 4.00 GB

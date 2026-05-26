@@ -21,6 +21,9 @@ namespace AmBeStack
     // class::function
     void ActionInitialization::BuildForMaster() const
     {
+                // !!!!!!!!!!!!! for debugging !!!!!!!!!!
+        G4cout << "Coming from BuildForMaster" << G4endl;
+
         // the master thread will just manage global data 
         // which we'll access through RunAction (accumulates total stats)
         SetUserAction(new RunAction);
@@ -35,6 +38,9 @@ namespace AmBeStack
         // as such they'll need access to all the different actions
         // in our simulation
         // (Primary->(Event->Stepping))->Run
+                // !!!!!!!!!!!!! for debugging !!!!!!!!!!
+        G4cout << "Coming from Build" << G4endl;
+
 
         // register primary generator action (for the neutron gun physics) 
         SetUserAction(new PrimaryGeneratorAction);
@@ -51,4 +57,4 @@ namespace AmBeStack
         SetUserAction(new SteppingAction(eventAction));
     }
 }
-
+                

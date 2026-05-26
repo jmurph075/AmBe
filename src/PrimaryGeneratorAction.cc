@@ -66,6 +66,9 @@ PrimaryGeneratorAction::~PrimaryGeneratorAction()
 // class::
 void PrimaryGeneratorAction::GeneratePrimaries(G4Event* event)
 {
+    // !!!!!!!!!!!!! for debugging !!!!!!!!!!
+    G4cout << "Coming from GeneratePrimaries" << G4endl;
+
     // for now, place them all at origin
     // will change this later so generated isotropically 
     // within AmBe source volume
