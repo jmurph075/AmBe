@@ -23,10 +23,11 @@ target_link_libraries(AmBeStack PRIVATE
     ${Geant4_LIBRARIES}
 )
 
-# 7. Copy over macro script to build directory
+# 7. Copy over macro scripts to build directory
 # since Geant needs these to be in current working directory
 set(AMBESTACK_SCRIPTS
     run.mac
+    vis.mac
 )
 
 # for each script in AMBESTACK_SCRIPTS (listed above)

@@ -9,6 +9,8 @@
 #include "G4RunManagerFactory.hh"
 #include "G4SteppingVerbose.hh" 
 #include "G4UImanager.hh"
+#include "G4UIExecutive.hh"
+#include "G4VisExecutive.hh"
 
 // physics list headers 
 #include "G4HadronicProcessStore.hh"
@@ -66,13 +68,30 @@ void PrintAvailablePhysLists()
 // argv[0] = "./AmBeStack" and argv[1] = "run.mac"
 int main(int argc, char** argv)
 {
-    // first ensure a macro file was supplied
-    // since on BB need a macro file to interface and instruct
-    // the simulation to run
-    if (argc < 2)
+
+    // first need to check what type of run - batch or interactive
+    // if macro file supplied, in batch
+    
+    // instantiate UIExecutive pointer 
+    G4UIExecutive* ui = nullptr;
+    // instantiate runmanager type variable
+    G4RunManagerType runManagerType = G4RunManagerType::Default;
+
+    if (argc == 1)
     {
-        G4cerr << "Error: No macro file provided" << G4endl;
-        return 1;
+        G4cout << "No macro file provided, attempting to start interactive session..." << G4endl;
+        // instantiate a UI executive to start the interactive session
+        ui = new G4UIExecutive(argc, argv);
+
+        // must force serial run mode for interactive session
+        // for some reason OpenGL won't work in multi-threaded
+        runManagerType = G4RunManagerType::Default;;
+    }
+    else
+    {
+        G4cout << "Macro file provided, running in batch mode..." << G4endl;
+        // otherwise in batch mode so can specify default runmanager type
+        runManagerType = G4RunManagerType::Default;
     }
 
     // print the available physics lists to the terminal
@@ -88,7 +107,9 @@ int main(int argc, char** argv)
     // components of the simulation
     // Geant then knows how set things up correctly
     // and loop over things globally (over all events)
-    auto runManager = G4RunManagerFactory::CreateRunManager(G4RunManagerType::Default);
+
+    // use type decided by run mode
+    auto runManager = G4RunManagerFactory::CreateRunManager(runManagerType);
 
     // 1. register the detector construction
     // do this through SetUserInitialization 
@@ -116,17 +137,34 @@ int main(int argc, char** argv)
     // we've registered
     CheckHadronicData();
 
-    // actually read and execute the instructions 
-    // provided by the slurm script
-    // i.e. read the macro file supplied
-    // need a UI manager instance
-    // allows us to issue commands to Geant4 using
-    // command line interface (supplied in macro)
+    // get a UIManager instance to issue commands to geant
+    // using command line interface i.e. the macro file
     auto UImanager = G4UImanager::GetUIpointer();
-    G4String command = "/control/execute ";
-    G4String fileName = argv[1]; // our macro
-    // apply the command
-    UImanager->ApplyCommand(command + fileName);
+
+    // if a macro file (running in batch mode) supplied, execute it
+    if (argc > 1)
+    {
+        // actually read and execute the instructions 
+        // provided by the slurm script
+        // i.e. read the macro file supplied
+        G4String command = "/control/execute ";
+        G4String fileName = argv[1]; // our macro
+        // apply the command
+        UImanager->ApplyCommand(command + fileName);
+    }
+    
+    // otherwise we are in interactive mode so start a UI session
+    else
+    {
+        G4cout << "No macro file provided, attemptiong to start interactive session..." << G4endl;
+        // start interactive session
+        // initialise visualisation and UI executive
+        G4VisManager* visManager = new G4VisExecutive(argc, argv);
+        visManager->Initialize();
+        UImanager->ApplyCommand("/control/execute vis.mac");
+        ui->SessionStart();
+
+    }
 
     // clean up
     // deletes things across the code to free up resources

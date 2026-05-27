@@ -6,6 +6,7 @@ CMakeFiles/AmBeStack.dir/AmBeMain.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe/
   /home/jxm1605/Documents/AmBe_stack/AmBe/include/DetectorConstruction.hh \
   /home/jxm1605/geant4/install/include/Geant4/CLHEP/Geometry/BasicVector3D.h \
   /home/jxm1605/geant4/install/include/Geant4/CLHEP/Geometry/Normal3D.h \
+  /home/jxm1605/geant4/install/include/Geant4/CLHEP/Geometry/Plane3D.h \
   /home/jxm1605/geant4/install/include/Geant4/CLHEP/Geometry/Point3D.h \
   /home/jxm1605/geant4/install/include/Geant4/CLHEP/Geometry/Transform3D.h \
   /home/jxm1605/geant4/install/include/Geant4/CLHEP/Geometry/Transform3D.icc \
@@ -85,6 +86,9 @@ CMakeFiles/AmBeStack.dir/AmBeMain.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe/
   /home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/RotationZ.icc \
   /home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/ThreeVector.h \
   /home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/ThreeVector.icc \
+  /home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/TwoVector.h \
+  /home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/TwoVector.icc \
+  /home/jxm1605/geant4/install/include/Geant4/G4ASCIITree.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4AffineTransform.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4AffineTransform.icc \
   /home/jxm1605/geant4/install/include/Geant4/G4Allocator.hh \
@@ -125,6 +129,8 @@ CMakeFiles/AmBeStack.dir/AmBeMain.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe/
   /home/jxm1605/geant4/install/include/Geant4/G4AntiXicPlus.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4AntiXicZero.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4ApplicationState.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4AttDef.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4AttValue.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4AutoLock.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4AuxiliaryNavServices.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4AuxiliaryNavServices.icc \
@@ -133,13 +139,21 @@ CMakeFiles/AmBeStack.dir/AmBeMain.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe/
   /home/jxm1605/geant4/install/include/Geant4/G4BMesonZero.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4BlockingList.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4BlockingList.icc \
+  /home/jxm1605/geant4/install/include/Geant4/G4Box.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Box.icc \
   /home/jxm1605/geant4/install/include/Geant4/G4BsMesonZero.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4CSGSolid.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4Cache.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4CacheDetails.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4ChargedGeantino.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4ChargedUnknownParticle.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4ClassificationOfNewTrack.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Color.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Colour.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Cons.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Cons.icc \
   /home/jxm1605/geant4/install/include/Geant4/G4CrossSectionDataStore.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4DAWNFILE.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4DCofThisEvent.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4DMesonMinus.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4DMesonPlus.hh \
@@ -148,6 +162,7 @@ CMakeFiles/AmBeStack.dir/AmBeMain.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe/
   /home/jxm1605/geant4/install/include/Geant4/G4DataVector.icc \
   /home/jxm1605/geant4/install/include/Geant4/G4DensityEffectCalculator.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4Deuteron.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4DigiFilterFactories.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4DsMesonMinus.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4DsMesonPlus.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4DynamicParticle.hh \
@@ -157,6 +172,8 @@ CMakeFiles/AmBeStack.dir/AmBeMain.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe/
   /home/jxm1605/geant4/install/include/Geant4/G4Element.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4ElementTable.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4ElementVector.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Ellipsoid.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Ellipsoid.icc \
   /home/jxm1605/geant4/install/include/Geant4/G4EnergyRangeManager.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4EnvironmentUtils.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4Eta.hh \
@@ -167,12 +184,16 @@ CMakeFiles/AmBeStack.dir/AmBeMain.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe/
   /home/jxm1605/geant4/install/include/Geant4/G4Exception.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4ExceptionSeverity.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4ForceCondition.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4GMocrenFile.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4GPILSelection.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4Gamma.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4Geantino.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4GenericIon.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4GeomConfig.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4GeomSplitter.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4GeomTypes.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4GlobalConfig.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4GraphicsSystemList.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4HCofThisEvent.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4HadFinalState.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4HadProjectile.hh \
@@ -184,6 +205,7 @@ CMakeFiles/AmBeStack.dir/AmBeMain.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe/
   /home/jxm1605/geant4/install/include/Geant4/G4HadronicProcessStore.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4HadronicProcessType.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4He3.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4HitFilterFactories.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4IEEE754.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4IonisParamElm.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4IonisParamMat.hh \
@@ -213,6 +235,8 @@ CMakeFiles/AmBeStack.dir/AmBeMain.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe/
   /home/jxm1605/geant4/install/include/Geant4/G4MaterialPropertiesTable.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4MaterialPropertyVector.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4MaterialTable.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4ModelingParameters.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4ModelingParameters.icc \
   /home/jxm1605/geant4/install/include/Geant4/G4MuonMinus.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4MuonPlus.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4NavigationHistory.hh \
@@ -230,15 +254,21 @@ CMakeFiles/AmBeStack.dir/AmBeMain.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe/
   /home/jxm1605/geant4/install/include/Geant4/G4NeutrinoTau.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4Neutron.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4NoProcess.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Normal3D.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4NormalNavigation.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4NormalNavigation.icc \
   /home/jxm1605/geant4/install/include/Geant4/G4Nucleus.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4NullModel.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4OmegaMinus.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4OmegabMinus.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4OmegacZero.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4OpticalPhoton.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Orb.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Orb.icc \
   /home/jxm1605/geant4/install/include/Geant4/G4OrderedTable.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4PDefManager.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Para.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Para.icc \
   /home/jxm1605/geant4/install/include/Geant4/G4ParameterisedNavigation.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4ParameterisedNavigation.icc \
   /home/jxm1605/geant4/install/include/Geant4/G4ParticleChange.hh \
@@ -251,6 +281,7 @@ CMakeFiles/AmBeStack.dir/AmBeMain.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe/
   /home/jxm1605/geant4/install/include/Geant4/G4ParticleTableIterator.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4ParticleTypes.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4PhysListFactory.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4PhysicalVolumeModel.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4PhysicsFreeVector.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4PhysicsListHelper.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4PhysicsListOrderingParameter.hh \
@@ -263,6 +294,17 @@ CMakeFiles/AmBeStack.dir/AmBeMain.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe/
   /home/jxm1605/geant4/install/include/Geant4/G4PionMinus.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4PionPlus.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4PionZero.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Plane3D.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Point3D.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Polycone.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Polycone.icc \
+  /home/jxm1605/geant4/install/include/Geant4/G4PolyconeHistorical.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4PolyconeSide.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Polyhedra.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Polyhedra.icc \
+  /home/jxm1605/geant4/install/include/Geant4/G4PolyhedraHistorical.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4PolyhedraSide.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Polyhedron.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4Positron.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4PrimaryParticle.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4PrimaryTransformer.hh \
@@ -275,7 +317,10 @@ CMakeFiles/AmBeStack.dir/AmBeMain.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe/
   /home/jxm1605/geant4/install/include/Geant4/G4ProductionCuts.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4ProductionCutsTable.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4Proton.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4PseudoScene.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4RNGHelper.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4RayTracer.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4RayTracerQt.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4ReactionProduct.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4ReactionProductVector.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4ReferenceCountedHandle.hh \
@@ -289,6 +334,11 @@ CMakeFiles/AmBeStack.dir/AmBeMain.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe/
   /home/jxm1605/geant4/install/include/Geant4/G4RunManagerFactory.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4RunManagerKernel.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4SandiaTable.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Scene.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Scene.icc \
+  /home/jxm1605/geant4/install/include/Geant4/G4SceneHandlerList.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4SceneList.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4SceneTreeItem.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4SigmaMinus.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4SigmaPlus.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4SigmaZero.hh \
@@ -305,6 +355,8 @@ CMakeFiles/AmBeStack.dir/AmBeMain.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe/
   /home/jxm1605/geant4/install/include/Geant4/G4SmartVoxelNode.icc \
   /home/jxm1605/geant4/install/include/Geant4/G4SmartVoxelProxy.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4SmartVoxelProxy.icc \
+  /home/jxm1605/geant4/install/include/Geant4/G4Sphere.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Sphere.icc \
   /home/jxm1605/geant4/install/include/Geant4/G4StackManager.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4StackedTrack.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4Step.hh \
@@ -319,17 +371,29 @@ CMakeFiles/AmBeStack.dir/AmBeMain.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe/
   /home/jxm1605/geant4/install/include/Geant4/G4String.icc \
   /home/jxm1605/geant4/install/include/Geant4/G4SubEvent.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4SubEventTrackStack.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4SurfBits.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4SurfBits.icc \
   /home/jxm1605/geant4/install/include/Geant4/G4SystemOfUnits.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4TBBTaskGroup.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4THitsCollection.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4THitsMap.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4TaskGroup.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4TaskManager.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4TaskRunManager.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4TauMinus.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4TauPlus.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4TessellatedSolid.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4ThreadLocalSingleton.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4ThreadPool.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4Threading.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4ThreeVector.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4ToolsSGOffscreen.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4ToolsSGQtGLES.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4ToolsSGQtZB.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4ToolsSGX11GLES.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4ToolsSGX11ZB.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Torus.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Torus.icc \
   /home/jxm1605/geant4/install/include/Geant4/G4TouchableHandle.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4TouchableHistory.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4TouchableHistory.icc \
@@ -340,26 +404,53 @@ CMakeFiles/AmBeStack.dir/AmBeMain.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe/
   /home/jxm1605/geant4/install/include/Geant4/G4TrackVector.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4TrackingManager.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4TrackingMessenger.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4TrajectoriesModel.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4TrajectoryContainer.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4TrajectoryFilterFactories.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4TrajectoryModelFactories.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4Transform3D.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Trap.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Trap.icc \
+  /home/jxm1605/geant4/install/include/Geant4/G4Trd.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Trd.icc \
   /home/jxm1605/geant4/install/include/Geant4/G4Triton.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Tubs.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Tubs.icc \
+  /home/jxm1605/geant4/install/include/Geant4/G4TwoVector.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4TypeKey.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4Types.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4UIExecutive.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4UIbatch.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4UIcommand.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4UIcommandStatus.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4UIdirectory.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4UImanager.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4UImessenger.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4UIparameter.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4UIsession.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4UnknownParticle.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4Upsilon.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4UserStackingAction.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4UserSteppingAction.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4UserTrackingAction.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VCSGface.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VCSGfaceted.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VCrossSectionDataSet.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VDigi.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VDigiCollection.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VDiscreteProcess.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VExternalNavigation.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VFacet.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VFilter.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VGraphicsScene.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VGraphicsSystem.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VHit.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VHitsCollection.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VMarker.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VMarker.icc \
+  /home/jxm1605/geant4/install/include/Geant4/G4VModel.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VModel.icc \
+  /home/jxm1605/geant4/install/include/Geant4/G4VModelFactory.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VModularPhysicsList.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VNavigation.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VPVParameterisation.hh \
@@ -369,12 +460,18 @@ CMakeFiles/AmBeStack.dir/AmBeMain.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe/
   /home/jxm1605/geant4/install/include/Geant4/G4VPhysicalVolume.icc \
   /home/jxm1605/geant4/install/include/Geant4/G4VPhysicsConstructor.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VProcess.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VRML2File.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VSceneHandler.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VSceneHandler.icc \
   /home/jxm1605/geant4/install/include/Geant4/G4VSolid.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VSolid.icc \
   /home/jxm1605/geant4/install/include/Geant4/G4VStateDependent.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VSteppingVerbose.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VTouchable.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VTrajectory.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VTrajectoryModel.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VTree.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VUIshell.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VUPLSplitter.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VUserActionInitialization.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VUserDetectorConstruction.hh \
@@ -382,16 +479,36 @@ CMakeFiles/AmBeStack.dir/AmBeMain.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe/
   /home/jxm1605/geant4/install/include/Geant4/G4VUserPhysicsList.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VUserTaskQueue.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VUserTrackInformation.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VViewer.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VViewer.icc \
+  /home/jxm1605/geant4/install/include/Geant4/G4VVisManager.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VVolumeMaterialScanner.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Vector3D.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4ViewParameters.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4ViewParameters.icc \
+  /home/jxm1605/geant4/install/include/Geant4/G4ViewerList.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VisAttributes.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VisAttributes.icc \
+  /home/jxm1605/geant4/install/include/Geant4/G4VisExecutive.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VisExecutive.icc \
+  /home/jxm1605/geant4/install/include/Geant4/G4VisExtent.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VisManager.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VisManager.icc \
+  /home/jxm1605/geant4/install/include/Geant4/G4Visible.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Visible.icc \
   /home/jxm1605/geant4/install/include/Geant4/G4VoxelNavigation.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VoxelNavigation.icc \
+  /home/jxm1605/geant4/install/include/Geant4/G4Voxelizer.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Voxelizer.icc \
   /home/jxm1605/geant4/install/include/Geant4/G4XiMinus.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4XiZero.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4XibMinus.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4XibZero.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4XicPlus.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4XicZero.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4coutDestination.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4ios.hh \
+  /home/jxm1605/geant4/install/include/Geant4/HepPolyhedron.h \
   /home/jxm1605/geant4/install/include/Geant4/PTL/AutoLock.hh \
   /home/jxm1605/geant4/install/include/Geant4/PTL/Config.hh \
   /home/jxm1605/geant4/install/include/Geant4/PTL/ConsumeParameters.hh \
@@ -414,6 +531,7 @@ CMakeFiles/AmBeStack.dir/AmBeMain.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe/
   /home/jxm1605/geant4/install/include/Geant4/geomdefs.hh \
   /home/jxm1605/geant4/install/include/Geant4/geomwdefs.hh \
   /home/jxm1605/geant4/install/include/Geant4/globals.hh \
+  /home/jxm1605/geant4/install/include/Geant4/graphics_reps_defs.hh \
   /home/jxm1605/geant4/install/include/Geant4/icomsdefs.hh \
   /home/jxm1605/geant4/install/include/Geant4/pwdefs.hh \
   /home/jxm1605/geant4/install/include/Geant4/rundefs.hh \
@@ -421,6 +539,7 @@ CMakeFiles/AmBeStack.dir/AmBeMain.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe/
   /home/jxm1605/geant4/install/include/Geant4/tls.hh \
   /home/jxm1605/geant4/install/include/Geant4/trkdefs.hh \
   /home/jxm1605/geant4/install/include/Geant4/trkgdefs.hh \
+  /home/jxm1605/geant4/install/include/Geant4/windefs.hh \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -3298,8 +3417,6 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/G4Tokenizer.hh:
 
-/home/jxm1605/geant4/install/include/Geant4/G4TP2ToolsManager.hh:
-
 /home/jxm1605/geant4/install/include/Geant4/G4TP1ToolsManager.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4THnToolsManager.icc:
@@ -3310,8 +3427,6 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/G4THnMessenger.hh:
 
-/home/jxm1605/geant4/install/include/Geant4/G4THnManager.icc:
-
 /home/jxm1605/geant4/install/include/Geant4/G4TH2ToolsManager.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4TH1ToolsManager.hh:
@@ -3319,8 +3434,6 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 /home/jxm1605/geant4/install/include/Geant4/G4HnInformation.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4GenericAnalysisManager.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/G4BaseFileManager.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4BaseAnalysisManager.hh:
 
@@ -3330,27 +3443,7 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/Documents/AmBe_stack/AmBe/src/EventAction.cc:
 
-/home/jxm1605/geant4/install/include/Geant4/HepPolyhedron.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4Visible.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/G4Visible.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4TwoVector.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4Tubs.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/G4Polyhedron.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4Point3D.hh:
-
 /home/jxm1605/geant4/install/include/Geant4/G4NistMaterialBuilder.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4GeomConfig.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4Box.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/G4Box.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4VUserPrimaryGeneratorAction.hh:
 
@@ -3363,10 +3456,6 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/TwoVector.h:
-
-/usr/include/x86_64-linux-gnu/sys/types.h:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
@@ -3388,8 +3477,6 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
@@ -3405,8 +3492,6 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
 
@@ -3439,8 +3524,6 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 /home/jxm1605/geant4/install/include/Geant4/tools/histo/p1d:
 
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
 
@@ -3490,10 +3573,6 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /usr/include/sched.h:
 
-/home/jxm1605/geant4/install/include/Geant4/G4NtupleBookingManager.icc:
-
-/usr/include/pthread.h:
-
 /usr/include/locale.h:
 
 /usr/include/linux/limits.h:
@@ -3505,8 +3584,6 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 /usr/include/errno.h:
 
 /usr/include/ctype.h:
-
-/usr/include/c++/13/vector:
 
 /usr/include/c++/13/unordered_map:
 
@@ -3580,13 +3657,9 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /usr/include/c++/13/future:
 
-/usr/include/c++/13/fstream:
-
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
 /usr/include/c++/13/ext/type_traits.h:
-
-/usr/include/c++/13/ext/numeric_traits.h:
 
 /usr/include/c++/13/ext/concurrence.h:
 
@@ -3628,10 +3701,6 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /usr/include/c++/13/compare:
 
-/usr/include/c++/13/stdexcept:
-
-/usr/include/c++/13/clocale:
-
 /usr/include/c++/13/climits:
 
 /usr/include/c++/13/chrono:
@@ -3646,49 +3715,205 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /usr/include/c++/13/bits/unique_lock.h:
 
-/home/jxm1605/geant4/install/include/Geant4/G4Cons.hh:
+/usr/include/c++/13/bits/uniform_int_dist.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+/usr/include/c++/13/cerrno:
 
-/home/jxm1605/geant4/install/include/Geant4/G4PhysicsVector.hh:
+/usr/include/c++/13/bits/stringfwd.h:
 
-/usr/include/c++/13/bits/ios_base.h:
+/usr/include/c++/13/bits/string_view.tcc:
 
-/home/jxm1605/geant4/install/include/Geant4/G4PhysicsModelCatalog.hh:
+/usr/include/c++/13/bits/stl_vector.h:
 
-/home/jxm1605/geant4/install/include/Geant4/G4AntiOmegaMinus.hh:
+/usr/include/c++/13/initializer_list:
 
-/home/jxm1605/geant4/install/include/Geant4/G4ParameterisedNavigation.hh:
+/usr/include/c++/13/bits/stl_stack.h:
 
-/home/jxm1605/geant4/install/include/Geant4/G4OrderedTable.hh:
+/home/jxm1605/Documents/AmBe_stack/AmBe/src/SteppingAction.cc:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
+/usr/include/c++/13/bits/stl_set.h:
 
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/Random.icc:
+/usr/include/c++/13/bits/stl_relops.h:
 
-/home/jxm1605/geant4/install/include/Geant4/G4OmegabMinus.hh:
+/usr/include/c++/13/bits/stl_raw_storage_iter.h:
 
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RanecuEngine.h:
+/usr/include/c++/13/bits/stl_pair.h:
 
-/home/jxm1605/geant4/install/include/Geant4/G4ParticleMomentum.hh:
+/home/jxm1605/geant4/install/include/Geant4/G4ICRU90StoppingData.hh:
 
-/home/jxm1605/geant4/install/include/Geant4/G4ParticleChange.hh:
+/usr/include/c++/13/bits/stl_multiset.h:
 
-/home/jxm1605/geant4/install/include/Geant4/globals.hh:
+/usr/include/c++/13/bits/stl_multimap.h:
+
+/usr/include/c++/13/locale:
+
+/usr/include/c++/13/bits/stl_map.h:
+
+/usr/include/c++/13/debug/debug.h:
+
+/usr/include/c++/13/bits/stl_list.h:
+
+/usr/include/c++/13/bits/stl_iterator_base_types.h:
+
+/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/13/bits/stl_iterator.h:
+
+/usr/include/c++/13/bits/stl_function.h:
+
+/usr/include/c++/13/bits/stl_algobase.h:
+
+/usr/include/c++/13/bits/stl_algo.h:
+
+/usr/include/c++/13/bits/std_mutex.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/c++/13/bits/std_abs.h:
+
+/usr/include/c++/13/bits/specfun.h:
+
+/usr/include/c++/13/bits/shared_ptr_base.h:
+
+/usr/include/c++/13/bits/shared_ptr.h:
+
+/usr/include/c++/13/bits/regex_scanner.tcc:
+
+/usr/include/c++/13/bits/regex_error.h:
+
+/usr/include/c++/13/bits/regex_constants.h:
+
+/usr/include/c++/13/bits/regex_compiler.h:
+
+/usr/include/c++/13/bits/regex_automaton.h:
+
+/usr/include/c++/13/bits/regex.tcc:
+
+/usr/include/c++/13/bits/regex.h:
+
+/usr/include/c++/13/bits/refwrap.h:
+
+/usr/include/c++/13/bits/range_access.h:
+
+/usr/include/c++/13/bits/ptr_traits.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
+
+/usr/include/c++/13/bits/predefined_ops.h:
+
+/usr/include/c++/13/bits/postypes.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4AnalysisManager.hh:
+
+/usr/include/c++/13/bits/parse_numbers.h:
+
+/usr/include/c++/13/system_error:
+
+/usr/include/c++/13/bits/ostream_insert.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
+
+/usr/include/c++/13/bits/ostream.tcc:
+
+/usr/include/c++/13/bits/node_handle.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4SubtractionSolid.hh:
+
+/usr/include/c++/13/bits/new_allocator.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/usr/include/c++/13/bits/nested_exception.h:
+
+/usr/include/c++/13/bits/move.h:
+
+/usr/include/c++/13/bits/memoryfwd.h:
+
+/usr/include/c++/13/bits/locale_facets_nonio.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VNotifier.hh:
+
+/usr/include/c++/13/bits/locale_facets.tcc:
+
+/usr/include/c++/13/bits/locale_classes.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/usr/include/features-time64.h:
+
+/usr/include/c++/13/type_traits:
+
+/usr/include/c++/13/bits/list.tcc:
+
+/usr/include/c++/13/bits/hashtable.h:
 
 /usr/include/c++/13/bits/hash_bytes.h:
 
+/usr/include/c++/13/bits/functional_hash.h:
+
+/usr/include/c++/13/bits/functexcept.h:
+
+/usr/include/c++/13/bits/fstream.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/usr/include/c++/13/bits/this_thread_sleep.h:
+
+/usr/include/c++/13/bits/exception_ptr.h:
+
+/usr/include/c++/13/bits/exception_defines.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/c++/13/bits/erase_if.h:
+
+/usr/include/c++/13/bits/deque.tcc:
+
+/usr/include/c++/13/bits/cxxabi_forced.h:
+
+/usr/include/c++/13/bits/cpp_type_traits.h:
+
+/usr/include/c++/13/bits/concept_check.h:
+
+/usr/include/c++/13/bits/codecvt.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
+
+/usr/include/c++/13/bits/charconv.h:
+
+/usr/include/c++/13/bits/char_traits.h:
+
+/usr/include/c++/13/bits/basic_ios.h:
+
+/usr/include/c++/13/bits/atomic_futex.h:
+
+/usr/include/c++/13/bits/alloc_traits.h:
+
+/usr/include/c++/13/bits/algorithmfwd.h:
+
+/usr/include/c++/13/bit:
+
+/usr/include/c++/13/backward/binders.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VStoreNotifier.hh:
+
+/usr/include/c++/13/backward/auto_ptr.h:
+
+/usr/include/c++/13/array:
+
+/usr/include/c++/13/algorithm:
+
+/usr/include/c++/13/bits/cxxabi_init_exception.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Neutron.hh:
+
 /home/jxm1605/geant4/install/include/Geant4/G4NeutrinoMu.hh:
 
-/home/jxm1605/geant4/install/include/Geant4/G4OpticalPhoton.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4NavigationHistory.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4NavigationLogger.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4NavigationLevelRep.icc:
-
 /home/jxm1605/geant4/install/include/Geant4/G4MaterialPropertyVector.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4PolyhedraSide.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4THitsMap.hh:
 
 /usr/include/stdint.h:
 
@@ -3700,31 +3925,15 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandLandau.h:
 
-/usr/include/endian.h:
+/usr/include/c++/13/bits/requires_hosted.h:
 
-/home/jxm1605/geant4/install/include/Geant4/G4MaterialPropertiesIndex.hh:
-
-/usr/include/c++/13/bits/regex.tcc:
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/BoostX.icc:
 
 /home/jxm1605/geant4/install/include/Geant4/G4MaterialCutsCouple.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4MCCIndexConversionTable.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4AntiSigmabZero.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4SteppingControl.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4LogicalVolume.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4ReactionProduct.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4PhysListFactory.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4Tubs.hh:
-
-/usr/include/time.h:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandGaussQ.h:
 
 /home/jxm1605/geant4/install/include/Geant4/G4Lambdab.hh:
 
@@ -3738,17 +3947,13 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/G4VUserTaskQueue.hh:
 
+/usr/include/c++/13/bits/regex_executor.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4KaonZeroLong.hh:
+
 /home/jxm1605/geant4/install/include/Geant4/G4KaonMinus.hh:
 
-/home/jxm1605/geant4/install/include/Geant4/tools/forit:
-
-/home/jxm1605/geant4/install/include/Geant4/G4LorentzVector.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4JPsi.hh:
-
 /home/jxm1605/geant4/install/include/Geant4/G4BsMesonZero.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4Ions.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4IonisParamElm.hh:
 
@@ -3756,23 +3961,7 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/G4IEEE754.hh:
 
-/home/jxm1605/geant4/install/include/Geant4/G4VBooleanProcessor.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4PhysicsFreeVector.hh:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4IonisParamMat.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4UImanager.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4He3.hh:
-
-/usr/include/c++/13/bits/functexcept.h:
-
 /home/jxm1605/geant4/install/include/Geant4/G4Material.hh:
-
-/usr/include/c++/13/bits/std_mutex.h:
 
 /usr/include/c++/13/tr1/exp_integral.tcc:
 
@@ -3782,17 +3971,53 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandBit.icc:
 
+/home/jxm1605/geant4/install/include/Geant4/tools/forit:
+
+/home/jxm1605/geant4/install/include/Geant4/G4JPsi.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4LorentzVector.hh:
+
+/usr/include/c++/13/bits/stl_uninitialized.h:
+
+/usr/include/c++/13/bits/regex_automaton.tcc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VNavigation.hh:
+
+/usr/include/c++/13/bits/istream.tcc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4GraphicsSystemList.hh:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/c++/13/bits/locale_conv.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Gamma.hh:
+
 /usr/include/c++/13/bits/uses_allocator_args.h:
 
 /home/jxm1605/geant4/install/include/Geant4/G4HadronicProcessType.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4GPILSelection.hh:
 
+/usr/include/c++/13/iostream:
+
+/usr/include/asm-generic/errno.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Proton.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4GMocrenFile.hh:
+
+/usr/include/time.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Tubs.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandGaussQ.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4PhysListFactory.hh:
+
 /home/jxm1605/geant4/install/include/Geant4/G4GeomTypes.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4Etac.hh:
-
-/usr/include/c++/13/bits/stl_pair.h:
 
 /home/jxm1605/geant4/install/include/Geant4/G4AnalysisUtilities.hh:
 
@@ -3800,27 +4025,25 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/G4DensityEffectCalculator.hh:
 
-/home/jxm1605/geant4/install/include/Geant4/G4SubtractionSolid.hh:
-
-/usr/include/c++/13/bits/new_allocator.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4VNavigation.hh:
-
-/usr/include/c++/13/bits/regex_automaton.tcc:
-
-/usr/include/c++/13/bits/stl_uninitialized.h:
-
 /home/jxm1605/geant4/install/include/Geant4/G4VUPLSplitter.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Ions.hh:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
 /home/jxm1605/geant4/install/include/Geant4/G4ElementVector.hh:
 
-/home/jxm1605/geant4/install/include/Geant4/G4DynamicParticle.hh:
+/home/jxm1605/geant4/install/include/Geant4/G4Polycone.icc:
 
 /home/jxm1605/Documents/AmBe_stack/AmBe/include/EventAction.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4Deuteron.hh:
+
+/usr/include/c++/13/bits/stl_tempbuf.h:
+
+/usr/include/c++/13/bits/regex_executor.tcc:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Units/SystemOfUnits.h:
 
 /home/jxm1605/geant4/install/include/Geant4/G4DataVector.icc:
 
@@ -3830,27 +4053,37 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/G4PhysicsListHelper.hh:
 
+/home/jxm1605/geant4/install/include/Geant4/G4TessellatedSolid.hh:
+
 /usr/include/c++/13/bits/utility.h:
 
 /home/jxm1605/geant4/install/include/Geant4/G4DMesonPlus.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandExponential.h:
 
+/home/jxm1605/geant4/install/include/Geant4/G4DAWNFILE.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandGamma.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VCSGface.hh:
+
 /usr/include/stdlib.h:
 
 /home/jxm1605/geant4/install/include/Geant4/G4CrossSectionDataStore.hh:
 
-/usr/include/c++/13/debug/assertions.h:
+/home/jxm1605/geant4/install/include/Geant4/G4DynamicParticle.hh:
 
-/home/jxm1605/geant4/install/include/Geant4/G4OmegacZero.hh:
+/home/jxm1605/geant4/install/include/Geant4/G4NtupleBookingManager.icc:
 
-/home/jxm1605/geant4/install/include/Geant4/G4RNGHelper.hh:
+/usr/include/pthread.h:
 
-/home/jxm1605/geant4/install/include/Geant4/G4Event.hh:
+/home/jxm1605/geant4/install/include/Geant4/G4Colour.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Color.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4EnergyRangeManager.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4ProductionCuts.hh:
-
-/usr/include/c++/13/bits/alloc_traits.h:
 
 /home/jxm1605/geant4/install/include/Geant4/G4IsotopeVector.hh:
 
@@ -3858,15 +4091,49 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/templates.hh:
 
+/home/jxm1605/geant4/install/include/Geant4/G4Box.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/geomdefs.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4MCCIndexConversionTable.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4AntiSigmabZero.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Box.hh:
+
+/usr/include/c++/13/bits/allocator.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VFilter.hh:
+
 /home/jxm1605/geant4/install/include/Geant4/G4DataVector.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4DynamicParticle.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4He3.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4SceneList.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4BMesonPlus.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4ToolsAnalysisManager.icc:
 
 /home/jxm1605/geant4/install/include/Geant4/G4PionPlus.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4PolyhedraHistorical.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VisExecutive.icc:
+
+/usr/include/c++/13/stack:
+
+/home/jxm1605/geant4/install/include/Geant4/G4RunManagerFactory.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4NavigationLevelRep.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4AttValue.hh:
+
+/usr/include/c++/13/fstream:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Polycone.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4EventManager.hh:
 
@@ -3884,9 +4151,15 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/LorentzVector.h:
 
-/usr/include/c++/13/bits/functional_hash.h:
-
 /home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandPoisson.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Event.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4RNGHelper.hh:
+
+/usr/include/c++/13/bits/shared_ptr_atomic.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4RayTracer.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4NavigationHistoryPool.hh:
 
@@ -3894,21 +4167,23 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/G4BMesonMinus.hh:
 
-/home/jxm1605/geant4/install/include/Geant4/G4ParticleDefinition.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Units/PhysicalConstants.h:
-
 /home/jxm1605/Documents/AmBe_stack/AmBe/src/ActionInitialization.cc:
 
+/home/jxm1605/geant4/install/include/Geant4/G4Ellipsoid.icc:
+
 /home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/RotationY.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/JamesRandom.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Plane3D.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4DisplacedSolid.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4Navigator.icc:
 
-/usr/include/c++/13/bits/regex_compiler.h:
+/usr/include/c++/13/bits/locale_facets_nonio.tcc:
 
-/usr/include/c++/13/bits/stl_iterator_base_types.h:
+/home/jxm1605/geant4/install/include/Geant4/G4StepStatus.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4MTBarrier.hh:
 
@@ -3920,19 +4195,15 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/G4ProductionCutsTable.hh:
 
-/home/jxm1605/geant4/install/include/Geant4/G4Nucleus.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4PDefManager.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4AffineTransform.hh:
-
 /home/jxm1605/geant4/install/include/Geant4/G4THnManager.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4NavigationLevel.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/Ranlux64Engine.h:
 
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Geometry/Transform3D.h:
+/usr/include/c++/13/bits/stl_tree.h:
+
+/home/jxm1605/geant4/install/include/Geant4/PTL/VUserTaskQueue.hh:
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
@@ -3950,317 +4221,13 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/G4ReferenceCountedHandle.hh:
 
-/home/jxm1605/geant4/install/include/Geant4/G4EnergyRangeManager.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4NormalNavigation.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4CSGSolid.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandGeneral.h:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/BoostY.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4UserTrackingAction.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4VVolumeMaterialScanner.hh:
-
-/usr/include/c++/13/bits/regex_automaton.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4ParticleChange.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/G4Trd.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/G4AntiXibZero.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4VExternalNavigation.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RanshiEngine.h:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandLandau.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandPoissonQ.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4HadronicProcessStore.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4Geantino.hh:
-
-/home/jxm1605/Documents/AmBe_stack/AmBe/src/PrimaryGeneratorAction.cc:
-
-/home/jxm1605/geant4/install/include/Geant4/G4XiMinus.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandGeneral.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/G4ParticleTableIterator.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandGamma.icc:
-
-/usr/include/c++/13/bits/unique_ptr.h:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandPoisson.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/DualRand.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4VUserEventInformation.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4NormalNavigation.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/G4PhysicsTable.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/AxisAngle.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/RotationX.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/G4Neutron.hh:
-
-/usr/include/c++/13/bits/cxxabi_init_exception.h:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RanluxppEngine.h:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Geometry/Point3D.h:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandBreitWigner.h:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RanluxEngine.h:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandomEngine.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/G4ParticleTable.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4TouchableHistory.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/ThreeVector.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Units/SystemOfUnits.h:
-
-/usr/include/c++/13/bits/regex_executor.tcc:
-
-/usr/include/c++/13/bits/stl_tempbuf.h:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandFlat.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/JamesRandom.h:
-
-/home/jxm1605/Documents/AmBe_stack/AmBe/src/RunAction.cc:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandBinomial.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Geometry/Transform3D.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandGauss.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/G4AntiSigmacZero.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4AntiXibMinus.hh:
-
 /home/jxm1605/geant4/install/include/Geant4/tools/histo/h3d:
-
-/home/jxm1605/geant4/install/include/Geant4/G4Cons.icc:
 
 /home/jxm1605/geant4/install/include/Geant4/G4NeutrinoE.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4AuxiliaryNavServices.icc:
 
-/usr/include/c++/13/stack:
-
-/home/jxm1605/geant4/install/include/Geant4/G4RunManagerFactory.hh:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:
-
-/usr/include/c++/13/ext/aligned_buffer.h:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/Boost.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4ThreadLocalSingleton.hh:
-
-/usr/include/c++/13/bits/hashtable.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4HnManager.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Geometry/BasicVector3D.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4Step.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4AntiSigmaZero.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandBreitWigner.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/G4SmartVoxelProxy.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4BooleanSolid.hh:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandBit.h:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/RotationZ.h:
-
-/usr/include/c++/13/condition_variable:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandBinomial.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4SmartVoxelHeader.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Geometry/Normal3D.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4TH3ToolsManager.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4Region.icc:
-
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4DMesonMinus.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandGauss.h:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/LorentzRotation.h:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandChiSquare.icc:
-
-/usr/include/c++/13/bits/char_traits.h:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandGamma.h:
-
-/usr/include/c++/13/bits/unordered_map.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4DsMesonPlus.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4AntiBsMesonZero.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4UserStackingAction.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4LorentzRotation.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4Lambda.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/ThreeVector.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4Navigator.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/tools/cids:
-
-/usr/include/c++/13/utility:
-
-/home/jxm1605/geant4/install/include/Geant4/G4KaonPlus.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4BlockingList.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/PTL/TaskRunManager.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/BoostY.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/G4Element.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4AntiHe3.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4NoProcess.hh:
-
-/usr/include/c++/13/bits/ptr_traits.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4HadronicInteraction.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4TaskRunManager.hh:
-
-/usr/include/c++/13/bits/exception_defines.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4VTBaseHnManager.hh:
-
-/usr/include/x86_64-linux-gnu/asm/errno.h:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/BoostZ.h:
-
-/usr/include/c++/13/bits/move.h:
-
-/usr/include/c++/13/tr1/beta_function.tcc:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/MixMaxRng.h:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/BoostZ.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/G4MuonPlus.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4AntiXicPlus.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4PionMinus.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4NeutrinoTau.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4MaterialTable.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4ElectronOccupancy.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/LorentzRotation.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/BoostX.h:
-
-/home/jxm1605/geant4/install/include/Geant4/tools/histo/p1:
-
-/home/jxm1605/geant4/install/include/Geant4/tools/histo/axes:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/LorentzVector.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/G4SmartVoxelHeader.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/G4ToolsAnalysisManager.hh:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/Rotation.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4SmartTrackStack.hh:
-
-/usr/include/c++/13/bits/fstream.tcc:
-
-/home/jxm1605/geant4/install/include/Geant4/G4BMesonZero.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4DsMesonMinus.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/RotationZ.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/Rotation.icc:
-
-/usr/include/c++/13/bits/stl_algo.h:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/RotationX.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4AntiDMesonZero.hh:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/RotationY.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4Exception.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/RotationInterfaces.icc:
-
-/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4AntiSigmacPlusPlus.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4RotationMatrix.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4KaonZero.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4AffineTransform.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/trkdefs.hh:
-
-/usr/include/c++/13/bits/stl_vector.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4AntiAlpha.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/MTwistEngine.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4TrajectoryContainer.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandFlat.h:
-
-/usr/include/c++/13/bits/stl_construct.h:
+/home/jxm1605/geant4/install/include/Geant4/G4Cons.icc:
 
 /home/jxm1605/geant4/install/include/Geant4/tools/histo/base_histo:
 
@@ -4278,31 +4245,367 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/G4ThreadPool.hh:
 
-/home/jxm1605/geant4/install/include/Geant4/G4AntiNeutrinoE.hh:
+/usr/include/c++/13/bits/stl_construct.h:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandFlat.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4ModelingParameters.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4NormalNavigation.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Visible.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4CSGSolid.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandGeneral.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4ApplicationState.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4HadProjectile.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/BoostY.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4UserTrackingAction.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VVolumeMaterialScanner.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RanshiEngine.h:
+
+/usr/include/c++/13/bits/exception.h:
+
+/home/jxm1605/Documents/AmBe_stack/AmBe/include/ActionInitialization.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandLandau.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4SteppingControl.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4ViewParameters.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandPoissonQ.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4HadronicProcessStore.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Geantino.hh:
+
+/home/jxm1605/Documents/AmBe_stack/AmBe/src/PrimaryGeneratorAction.cc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4XiMinus.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandGeneral.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4AttDef.hh:
+
+/usr/include/c++/13/bits/unique_ptr.h:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandPoisson.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/DualRand.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VUserEventInformation.hh:
+
+/usr/include/c++/13/bits/stl_bvector.h:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandGaussZiggurat.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4NormalNavigation.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4PhysicsTable.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/AxisAngle.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RanluxppEngine.h:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Geometry/Point3D.h:
+
+/usr/include/c++/13/bits/chrono.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4GlobalConfig.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandBreitWigner.h:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RanluxEngine.h:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandomEngine.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4TP2ToolsManager.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4TrajectoriesModel.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Tubs.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/HepPolyhedron.h:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/ThreeVector.icc:
+
+/usr/include/c++/13/bits/ios_base.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VVisManager.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandFlat.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Geometry/Plane3D.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4AntiOmegacZero.hh:
+
+/home/jxm1605/Documents/AmBe_stack/AmBe/src/RunAction.cc:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandBinomial.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Geometry/Transform3D.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandGauss.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4AntiSigmacZero.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Ellipsoid.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4AntiXibMinus.hh:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:
+
+/usr/include/c++/13/ext/aligned_buffer.h:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/Boost.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4ThreadLocalSingleton.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4HnManager.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Geometry/BasicVector3D.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Step.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4AntiSigmaZero.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandBreitWigner.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4SmartVoxelProxy.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4BooleanSolid.hh:
+
+/usr/include/asm-generic/errno-base.h:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandBit.h:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/RotationZ.h:
+
+/usr/include/c++/13/condition_variable:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandBinomial.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4SmartVoxelHeader.hh:
+
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4DMesonMinus.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandGauss.h:
+
+/usr/include/c++/13/bits/enable_special_members.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4ModelingParameters.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/LorentzRotation.h:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandChiSquare.icc:
+
+/usr/include/c++/13/bits/locale_classes.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VisManager.icc:
+
+/usr/include/c++/13/bits/unordered_map.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4DsMesonPlus.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4AntiBsMesonZero.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4UserStackingAction.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VViewer.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Lambda.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Navigator.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/tools/cids:
+
+/usr/include/c++/13/utility:
+
+/home/jxm1605/geant4/install/include/Geant4/G4KaonPlus.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4BlockingList.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/PTL/TaskRunManager.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RanecuEngine.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4OmegabMinus.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4ASCIITree.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/BoostY.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Geometry/Normal3D.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4PhysicalVolumeModel.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4TH3ToolsManager.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Region.icc:
+
+/usr/include/c++/13/bits/std_thread.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VHitsCollection.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Element.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4AntiHe3.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4NoProcess.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4HadronicInteraction.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4TaskRunManager.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VTBaseHnManager.hh:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/BoostZ.h:
+
+/usr/include/c++/13/tr1/beta_function.tcc:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/MixMaxRng.h:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/BoostZ.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VisExecutive.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4MuonPlus.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4AntiXicPlus.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4PionMinus.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4NeutrinoTau.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4MaterialTable.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4ElectronOccupancy.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/LorentzRotation.icc:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/Random.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4OrderedTable.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/tools/histo/p1:
+
+/home/jxm1605/geant4/install/include/Geant4/tools/histo/axes:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/LorentzVector.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4SmartVoxelHeader.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4ToolsAnalysisManager.hh:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/Rotation.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4SmartTrackStack.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Sphere.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4BMesonZero.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4DsMesonMinus.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/RotationZ.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/Rotation.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/RotationX.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VSceneHandler.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4AntiDMesonZero.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4GeomConfig.hh:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/RotationY.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4ParticleMomentum.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VSceneHandler.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Exception.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/RotationInterfaces.icc:
+
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4AntiSigmacPlusPlus.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4AffineTransform.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Nucleus.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4PDefManager.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4KaonZero.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4AffineTransform.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/trkdefs.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4AntiAlpha.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/MTwistEngine.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4TrajectoryContainer.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Run.hh:
+
+/usr/include/c++/13/bits/allocated_ptr.h:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Geometry/Vector3D.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4ExceptionSeverity.hh:
+
+/usr/include/x86_64-linux-gnu/sys/types.h:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/TwoVector.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4AntiLambdab.hh:
+
+/usr/include/c++/13/bits/stl_queue.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4SmartVoxelProxy.icc:
+
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4TauMinus.hh:
 
 /usr/include/c++/13/bits/basic_string.h:
 
 /home/jxm1605/geant4/install/include/Geant4/G4VUserDetectorConstruction.hh:
 
+/usr/include/c++/13/bits/streambuf_iterator.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4BlockingList.hh:
+
 /home/jxm1605/geant4/install/include/Geant4/G4PrimaryParticle.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4ProcessVector.icc:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-/usr/include/features-time64.h:
-
-/usr/include/c++/13/type_traits:
-
-/usr/include/c++/13/bits/list.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
-
-/usr/include/c++/13/bits/nested_exception.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4KaonZeroLong.hh:
-
-/usr/include/c++/13/bits/regex_executor.h:
 
 /home/jxm1605/geant4/install/include/Geant4/G4ParticleTypes.hh:
 
@@ -4316,15 +4619,11 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/G4XicPlus.hh:
 
-/usr/include/c++/13/bits/stl_algobase.h:
-
 /home/jxm1605/geant4/install/include/Geant4/G4Log.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandExpZiggurat.h:
 
 /home/jxm1605/geant4/install/include/Geant4/G4TrackStatus.hh:
-
-/usr/include/c++/13/bits/locale_classes.h:
 
 /home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/RotationInterfaces.h:
 
@@ -4332,9 +4631,9 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandGaussQ.icc:
 
-/home/jxm1605/geant4/install/include/Geant4/G4GlobalConfig.hh:
+/home/jxm1605/geant4/install/include/Geant4/G4LorentzRotation.hh:
 
-/usr/include/c++/13/bits/chrono.h:
+/home/jxm1605/geant4/install/include/Geant4/G4VModelFactory.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4AntiKaonZero.hh:
 
@@ -4347,20 +4646,6 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 /home/jxm1605/geant4/install/include/Geant4/CLHEP/Utility/thread_local.h:
 
 /home/jxm1605/geant4/install/include/Geant4/G4StackedTrack.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4AntiLambdab.hh:
-
-/usr/include/c++/13/bits/stl_queue.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4SmartVoxelProxy.icc:
-
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4TauMinus.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4ParameterisedNavigation.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/G4LogicalVolume.icc:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
@@ -4378,8 +4663,6 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/G4Track.icc:
 
-/usr/include/c++/13/bits/atomic_futex.h:
-
 /usr/include/c++/13/tr1/gamma.tcc:
 
 /home/jxm1605/geant4/install/include/Geant4/G4AntiNeutron.hh:
@@ -4390,8 +4673,6 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/G4AntiSigmaMinus.hh:
 
-/home/jxm1605/geant4/install/include/Geant4/G4ParticleTable.icc:
-
 /usr/include/c++/13/cmath:
 
 /home/jxm1605/geant4/install/include/Geant4/G4MTRunManager.hh:
@@ -4399,6 +4680,14 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 /home/jxm1605/Documents/AmBe_stack/AmBe/include/DetectorConstruction.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4VDiscreteProcess.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4AntiOmegaMinus.hh:
+
+/usr/include/c++/13/bits/stl_heap.h:
+
+/usr/include/c++/13/bits/atomic_lockfree_defines.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4PhysicsListOrderingParameter.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4AntiOmegabMinus.hh:
 
@@ -4418,8 +4707,6 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/G4AntiXiZero.hh:
 
-/home/jxm1605/geant4/install/include/Geant4/G4AntiOmegacZero.hh:
-
 /home/jxm1605/geant4/install/include/Geant4/G4AntiSigmaPlus.hh:
 
 /usr/include/c++/13/bits/basic_ios.tcc:
@@ -4438,31 +4725,113 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/G4AntiSigmabPlus.hh:
 
-/usr/include/c++/13/bits/stl_deque.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4PhysicsTable.icc:
-
-/usr/include/x86_64-linux-gnu/bits/errno.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4ForceCondition.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4GeomSplitter.hh:
-
 /home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/Boost.icc:
 
 /home/jxm1605/geant4/install/include/Geant4/G4AntiDeuteron.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4AntiXicZero.hh:
 
-/home/jxm1605/geant4/install/include/Geant4/G4HadProjectile.hh:
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
-/home/jxm1605/geant4/install/include/Geant4/G4ApplicationState.hh:
+/home/jxm1605/geant4/install/include/Geant4/G4NullModel.hh:
 
-/usr/include/c++/13/pstl/glue_memory_defs.h:
+/usr/include/c++/13/bits/regex_scanner.h:
 
-/home/jxm1605/geant4/install/include/Geant4/G4GenericIon.hh:
+/home/jxm1605/geant4/install/include/Geant4/G4OmegaMinus.hh:
 
-/usr/include/c++/13/bits/memory_resource.h:
+/home/jxm1605/geant4/install/include/Geant4/G4ParticleTable.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4TouchableHistory.hh:
+
+/usr/include/c++/13/debug/assertions.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4OmegacZero.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4NavigationHistory.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4OpticalPhoton.hh:
+
+/usr/include/x86_64-linux-gnu/bits/errno.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4ForceCondition.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4DigiFilterFactories.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4GeomSplitter.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VisExtent.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Orb.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VPhysicalVolume.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Orb.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4ParameterisedNavigation.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4LogicalVolume.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4ParameterisedNavigation.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4ParticleChange.hh:
+
+/usr/include/c++/13/bits/streambuf.tcc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4ChargedUnknownParticle.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VMarker.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/PTL/detail/CxxBackports.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/globals.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4ParticleChange.icc:
+
+/usr/include/c++/13/bits/invoke.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4ProcessManager.hh:
+
+/usr/include/c++/13/bits/atomic_base.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4ParticleDefinition.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Units/PhysicalConstants.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4ParticleDefinition.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4ParticleTable.icc:
+
+/usr/include/endian.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4MaterialPropertiesIndex.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VRML2File.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandGamma.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4ParticleTableIterator.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VBooleanProcessor.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4PhysicsFreeVector.hh:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4IonisParamMat.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4UImanager.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4PhysicsModelCatalog.hh:
+
+/usr/include/c++/13/bits/stl_deque.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4PhysicsTable.icc:
+
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Cons.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4PhysicsVector.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/Random.h:
 
@@ -4470,21 +4839,57 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/G4PhysicsVectorType.hh:
 
+/home/jxm1605/geant4/install/include/Geant4/G4HitFilterFactories.hh:
+
 /home/jxm1605/geant4/install/include/Geant4/PTL/TaskGroup.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4PionZero.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4UIcommandStatus.hh:
 
-/home/jxm1605/geant4/install/include/Geant4/G4PrimaryTransformer.hh:
+/home/jxm1605/geant4/install/include/Geant4/G4Point3D.hh:
 
-/home/jxm1605/geant4/install/include/Geant4/G4PrimaryVertex.hh:
+/usr/include/assert.h:
 
-/home/jxm1605/geant4/install/include/Geant4/G4Positron.hh:
+/home/jxm1605/geant4/install/include/Geant4/G4Para.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4XibZero.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VGraphicsSystem.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4PolyconeHistorical.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/RotationX.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Polyhedra.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Polyhedra.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4BaseFileManager.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Scene.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Trap.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4ProcessManager.icc:
 
+/home/jxm1605/geant4/install/include/Geant4/G4Positron.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4PrimaryTransformer.hh:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Vector3D.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4PrimaryVertex.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4UIbatch.hh:
+
 /home/jxm1605/geant4/install/include/Geant4/G4AntiSigmacPlus.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4PolyconeSide.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4ToolsSGX11ZB.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4ProcessType.hh:
 
@@ -4494,6 +4899,16 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/G4ProcessVector.hh:
 
+/home/jxm1605/geant4/install/include/Geant4/G4THnManager.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/graphics_reps_defs.hh:
+
+/usr/include/c++/13/ext/numeric_traits.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4PseudoScene.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4RayTracerQt.hh:
+
 /home/jxm1605/geant4/install/include/Geant4/G4ReactionProductVector.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4StepPoint.icc:
@@ -4502,13 +4917,17 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/G4Region.hh:
 
-/usr/include/c++/13/locale:
+/usr/include/c++/13/atomic:
 
-/usr/include/c++/13/bits/stl_map.h:
+/home/jxm1605/geant4/install/include/Geant4/PTL/ScopeDestructor.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4ReplicaNavigation.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4ReplicaNavigation.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Triton.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Upsilon.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4RunManager.hh:
 
@@ -4519,6 +4938,16 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 /home/jxm1605/geant4/install/include/Geant4/tls.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4SandiaTable.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Scene.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4SceneHandlerList.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4UIdirectory.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Polyhedron.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VisAttributes.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4AntiLambda.hh:
 
@@ -4542,10 +4971,6 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/G4SigmabZero.hh:
 
-/home/jxm1605/geant4/install/include/Geant4/G4StepStatus.hh:
-
-/usr/include/c++/13/bits/locale_facets_nonio.tcc:
-
 /home/jxm1605/geant4/install/include/Geant4/G4GenericFileManager.icc:
 
 /home/jxm1605/geant4/install/include/Geant4/G4SigmacPlus.hh:
@@ -4560,6 +4985,12 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/G4SmartVoxelNode.icc:
 
+/home/jxm1605/geant4/install/include/Geant4/G4Sphere.hh:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4String.icc:
+
 /usr/include/c++/13/functional:
 
 /home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandStudentT.h:
@@ -4568,17 +4999,7 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/G4StackManager.hh:
 
-/home/jxm1605/geant4/install/include/Geant4/G4MuonMinus.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4SteppingVerbose.hh:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
-
-/usr/include/c++/13/bits/charconv.h:
-
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4String.icc:
+/home/jxm1605/geant4/install/include/Geant4/G4UIsession.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4SubEvent.hh:
 
@@ -4594,9 +5015,21 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/PTL/ConsumeParameters.hh:
 
+/home/jxm1605/geant4/install/include/Geant4/G4NavigationLogger.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4SurfBits.icc:
+
 /home/jxm1605/geant4/install/include/Geant4/G4TrackingManager.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4TBBTaskGroup.hh:
+
+/usr/include/c++/13/pstl/glue_memory_defs.h:
+
+/usr/include/c++/13/bits/memory_resource.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4GenericIon.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4THitsCollection.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4TaskGroup.hh:
 
@@ -4608,51 +5041,21 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/G4TauPlus.hh:
 
-/home/jxm1605/geant4/install/include/Geant4/G4VHitsCollection.hh:
-
-/usr/include/c++/13/bits/std_thread.h:
-
 /home/jxm1605/geant4/install/include/Geant4/G4ThreeVector.hh:
 
 /usr/include/c++/13/istream:
 
 /home/jxm1605/geant4/install/include/Geant4/G4VProcess.hh:
 
-/home/jxm1605/geant4/install/include/Geant4/G4TouchableHandle.hh:
+/home/jxm1605/geant4/install/include/Geant4/G4ToolsSGOffscreen.hh:
 
-/home/jxm1605/geant4/install/include/Geant4/G4UImessenger.hh:
+/home/jxm1605/geant4/install/include/Geant4/G4ToolsSGQtGLES.hh:
 
-/home/jxm1605/geant4/install/include/Geant4/G4Track.hh:
+/home/jxm1605/geant4/install/include/Geant4/G4ToolsSGQtZB.hh:
 
-/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
+/home/jxm1605/geant4/install/include/Geant4/G4AntiNeutrinoE.hh:
 
-/home/jxm1605/geant4/install/include/Geant4/G4TrackStack.hh:
-
-/usr/include/c++/13/bits/node_handle.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4TrackVector.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4TrackingMessenger.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4Transform3D.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4Upsilon.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4Triton.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandomEngine.h:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandExponential.icc:
-
-/home/jxm1605/geant4/install/include/Geant4/G4Types.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4UIcommand.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4UIdirectory.hh:
-
-/home/jxm1605/Documents/AmBe_stack/AmBe/include/RunAction.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4UIparameter.hh:
+/home/jxm1605/geant4/install/include/Geant4/G4ToolsSGX11GLES.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4UserSteppingAction.hh:
 
@@ -4662,7 +5065,101 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/G4VDigiCollection.hh:
 
+/usr/include/c++/13/stdexcept:
+
+/usr/include/c++/13/clocale:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Torus.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4TouchableHandle.hh:
+
+/usr/include/c++/13/bits/hashtable_policy.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4TouchableHistory.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4UImessenger.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Track.hh:
+
+/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4TrackStack.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4TrackingMessenger.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4TrajectoryFilterFactories.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4TrajectoryModelFactories.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/PTL/TaskManager.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Transform3D.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Trap.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4AntiXibZero.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VExternalNavigation.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4SceneTreeItem.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Trd.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4TwoVector.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4TypeKey.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandomEngine.h:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandExponential.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Types.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4RotationMatrix.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4UIExecutive.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4UIcommand.hh:
+
+/home/jxm1605/Documents/AmBe_stack/AmBe/include/RunAction.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4UIparameter.hh:
+
+/usr/include/c++/13/bits/quoted_string.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4UnknownParticle.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4TrackVector.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VCSGfaceted.hh:
+
 /home/jxm1605/geant4/install/include/Geant4/G4VCrossSectionDataSet.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VisManager.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VDigi.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VFacet.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/ThreeVector.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VGraphicsScene.hh:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VMarker.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VModel.hh:
+
+/usr/include/c++/13/bits/std_function.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VParticleChange.hh:
+
+/usr/include/c++/13/bits/regex_compiler.tcc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VTree.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VModel.icc:
 
 /usr/include/c++/13/bits/sstream.tcc:
 
@@ -4672,41 +5169,43 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/G4VPVParameterisation.hh:
 
-/usr/include/c++/13/bits/std_function.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4VParticleChange.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4VStoreNotifier.hh:
-
-/usr/include/c++/13/backward/auto_ptr.h:
-
 /home/jxm1605/geant4/install/include/Geant4/G4Normal3D.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4VParticleChange.icc:
 
-/home/jxm1605/geant4/install/include/Geant4/G4OmegaMinus.hh:
-
-/usr/include/c++/13/bits/regex_scanner.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4VPhysicalVolume.hh:
+/home/jxm1605/geant4/install/include/Geant4/G4Visible.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4RunManagerKernel.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4VPhysicsConstructor.hh:
 
+/home/jxm1605/geant4/install/include/Geant4/G4Torus.hh:
+
 /home/jxm1605/geant4/install/include/Geant4/G4VSolid.hh:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/include/c++/13/bits/basic_string.tcc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VSolid.icc:
 
 /home/jxm1605/geant4/install/include/Geant4/G4VStateDependent.hh:
 
-/usr/include/c++/13/bits/regex.h:
+/usr/include/c++/13/bits/align.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VSteppingVerbose.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4VTouchable.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4VTrajectory.hh:
 
-/home/jxm1605/geant4/install/include/Geant4/G4VNotifier.hh:
+/home/jxm1605/geant4/install/include/Geant4/G4MuonMinus.hh:
 
-/usr/include/c++/13/bits/locale_facets.tcc:
+/home/jxm1605/geant4/install/include/Geant4/G4SteppingVerbose.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VTrajectoryModel.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VUIshell.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4VUserPhysicsList.hh:
 
@@ -4714,21 +5213,37 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/G4VUserTrackInformation.hh:
 
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Geometry/Transform3D.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VViewer.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4ViewParameters.icc:
+
+/home/jxm1605/geant4/install/include/Geant4/G4ViewerList.hh:
+
+/usr/include/c++/13/bits/locale_facets.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4VisAttributes.icc:
+
 /home/jxm1605/geant4/install/include/Geant4/Randomize.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4VoxelNavigation.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4ios.hh:
 
-/usr/include/c++/13/cerrno:
-
-/usr/include/c++/13/bits/stringfwd.h:
-
 /home/jxm1605/Documents/AmBe_stack/AmBe/src/DetectorConstruction.cc:
 
 /home/jxm1605/geant4/install/include/Geant4/G4VoxelNavigation.icc:
 
+/home/jxm1605/geant4/install/include/Geant4/G4Para.hh:
+
 /home/jxm1605/geant4/install/include/Geant4/icomsdefs.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Voxelizer.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/BoostX.h:
+
+/home/jxm1605/geant4/install/include/Geant4/G4Voxelizer.icc:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h:
 
@@ -4738,13 +5253,7 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/G4XicZero.hh:
 
-/usr/include/c++/13/bits/specfun.h:
-
-/home/jxm1605/geant4/install/include/Geant4/PTL/detail/CxxBackports.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4ChargedUnknownParticle.hh:
-
-/usr/include/c++/13/bits/streambuf.tcc:
+/home/jxm1605/geant4/install/include/Geant4/G4coutDestination.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/G4AllocatorPool.hh:
 
@@ -4756,13 +5265,9 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /usr/include/c++/13/memory:
 
+/home/jxm1605/geant4/install/include/Geant4/G4VHit.hh:
+
 /home/jxm1605/geant4/install/include/Geant4/PTL/Task.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/PTL/TaskManager.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/G4BlockingList.hh:
-
-/usr/include/c++/13/bits/streambuf_iterator.h:
 
 /home/jxm1605/geant4/install/include/Geant4/PTL/ThreadData.hh:
 
@@ -4776,210 +5281,22 @@ CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_s
 
 /home/jxm1605/geant4/install/include/Geant4/PTL/VTask.hh:
 
-/home/jxm1605/geant4/install/include/Geant4/geomdefs.hh:
-
-/usr/include/c++/13/bits/deque.tcc:
-
 /home/jxm1605/geant4/install/include/Geant4/geomwdefs.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/pwdefs.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/rundefs.hh:
 
-/usr/include/c++/13/bits/refwrap.h:
-
 /home/jxm1605/geant4/install/include/Geant4/G4VUserActionInitialization.hh:
 
 /home/jxm1605/geant4/install/include/Geant4/trkgdefs.hh:
 
+/usr/include/c++/13/vector:
+
+/home/jxm1605/geant4/install/include/Geant4/G4SurfBits.hh:
+
+/home/jxm1605/geant4/install/include/Geant4/windefs.hh:
+
 /home/jxm1605/geant4/install/include/Geant4/G4Trd.hh:
 
 /usr/include/alloca.h:
-
-/usr/include/c++/13/iostream:
-
-/home/jxm1605/geant4/install/include/Geant4/G4Proton.hh:
-
-/usr/include/asm-generic/errno.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4XibZero.hh:
-
-/usr/include/assert.h:
-
-/usr/include/c++/13/algorithm:
-
-/usr/include/c++/13/array:
-
-/home/jxm1605/geant4/install/include/Geant4/PTL/ScopeDestructor.hh:
-
-/usr/include/c++/13/atomic:
-
-/usr/include/c++/13/backward/binders.h:
-
-/usr/include/c++/13/bit:
-
-/home/jxm1605/geant4/install/include/Geant4/G4Run.hh:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Geometry/Vector3D.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4ExceptionSeverity.hh:
-
-/usr/include/c++/13/bits/allocated_ptr.h:
-
-/usr/include/c++/13/bits/algorithmfwd.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4VSteppingVerbose.hh:
-
-/usr/include/c++/13/bits/align.h:
-
-/usr/include/c++/13/bits/allocator.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4ParticleDefinition.hh:
-
-/usr/include/c++/13/bits/atomic_base.h:
-
-/usr/include/c++/13/bits/basic_ios.h:
-
-/usr/include/c++/13/bits/regex_error.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4VSolid.icc:
-
-/usr/include/c++/13/bits/basic_string.tcc:
-
-/usr/include/c++/13/bits/codecvt.h:
-
-/home/jxm1605/geant4/install/include/Geant4/PTL/VUserTaskQueue.hh:
-
-/usr/include/c++/13/bits/stl_tree.h:
-
-/usr/include/c++/13/bits/concept_check.h:
-
-/usr/include/c++/13/bits/cpp_type_traits.h:
-
-/usr/include/c++/13/bits/cxxabi_forced.h:
-
-/usr/include/c++/13/bits/enable_special_members.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/usr/include/c++/13/bits/erase_if.h:
-
-/usr/include/c++/13/debug/debug.h:
-
-/usr/include/c++/13/bits/stl_list.h:
-
-/home/jxm1605/Documents/AmBe_stack/AmBe/include/ActionInitialization.hh:
-
-/usr/include/c++/13/bits/exception.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4TouchableHistory.icc:
-
-/usr/include/c++/13/bits/hashtable_policy.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4ProcessManager.hh:
-
-/usr/include/c++/13/bits/invoke.h:
-
-/usr/include/c++/13/bits/istream.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4Gamma.hh:
-
-/usr/include/c++/13/bits/locale_conv.h:
-
-/usr/include/c++/13/bits/locale_classes.tcc:
-
-/usr/include/c++/13/bits/uniform_int_dist.h:
-
-/usr/include/c++/13/bits/locale_facets.h:
-
-/usr/include/c++/13/bits/locale_facets_nonio.h:
-
-/usr/include/c++/13/bits/memoryfwd.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
-
-/usr/include/c++/13/bits/ostream.tcc:
-
-/usr/include/c++/13/system_error:
-
-/usr/include/c++/13/bits/ostream_insert.h:
-
-/home/jxm1605/Documents/AmBe_stack/AmBe/src/SteppingAction.cc:
-
-/usr/include/c++/13/bits/stl_set.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4AnalysisManager.hh:
-
-/usr/include/c++/13/bits/parse_numbers.h:
-
-/usr/include/linux/errno.h:
-
-/usr/include/c++/13/bits/std_abs.h:
-
-/usr/include/c++/13/bits/postypes.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
-
-/usr/include/c++/13/bits/predefined_ops.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4UnknownParticle.hh:
-
-/usr/include/c++/13/bits/quoted_string.h:
-
-/usr/include/c++/13/bits/range_access.h:
-
-/usr/include/c++/13/bits/regex_compiler.tcc:
-
-/usr/include/c++/13/bits/regex_constants.h:
-
-/usr/include/c++/13/bits/regex_scanner.tcc:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Vector/BoostX.icc:
-
-/usr/include/c++/13/bits/requires_hosted.h:
-
-/usr/include/c++/13/bits/shared_ptr.h:
-
-/usr/include/c++/13/bits/shared_ptr_atomic.h:
-
-/usr/include/c++/13/bits/shared_ptr_base.h:
-
-/home/jxm1605/geant4/install/include/Geant4/CLHEP/Random/RandGaussZiggurat.h:
-
-/usr/include/c++/13/bits/stl_bvector.h:
-
-/usr/include/c++/13/bits/stl_function.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4PhysicsListOrderingParameter.hh:
-
-/usr/include/c++/13/bits/atomic_lockfree_defines.h:
-
-/usr/include/c++/13/bits/stl_heap.h:
-
-/usr/include/c++/13/bits/stl_iterator.h:
-
-/usr/include/c++/13/bits/stl_multimap.h:
-
-/home/jxm1605/geant4/install/include/Geant4/G4ICRU90StoppingData.hh:
-
-/usr/include/c++/13/bits/stl_multiset.h:
-
-/usr/include/c++/13/bits/stl_raw_storage_iter.h:
-
-/usr/include/c++/13/bits/stl_relops.h:
-
-/usr/include/c++/13/initializer_list:
-
-/usr/include/c++/13/bits/stl_stack.h:
-
-/usr/include/c++/13/bits/string_view.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/c++/13/bits/exception_ptr.h:
-
-/usr/include/c++/13/bits/this_thread_sleep.h:
