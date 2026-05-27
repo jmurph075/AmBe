@@ -55,7 +55,7 @@ namespace AmBeStack
     void RunAction::BeginOfRunAction(const G4Run* run)
     {
                 // !!!!!!!!!!!!! for debugging !!!!!!!!!!
-        G4cout << "Coming from BeginOfRunAction" << G4endl;
+        //G4cout << "Coming from BeginOfRunAction" << G4endl;
 
         // analysis manager instance
         G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();

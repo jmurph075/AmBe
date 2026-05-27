@@ -29,7 +29,7 @@ namespace AmBeStack
     void EventAction::BeginOfEventAction(const G4Event* event)
     {
                 // !!!!!!!!!!!!! for debugging !!!!!!!!!!
-        G4cout << "Coming from BeginOfEventAction" << G4endl;
+        //G4cout << "Coming from BeginOfEventAction" << G4endl;
 
         fEdep = 0.; // reset total event energy back to 0
 

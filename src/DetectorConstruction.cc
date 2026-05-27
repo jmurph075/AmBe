@@ -29,7 +29,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
      // NOTE: when things are defined with "new" they can be looked up in a different scope
      // based on their name
              // !!!!!!!!!!!!! for debugging !!!!!!!!!!
-        G4cout << "Coming from Construct" << G4endl;
+        //G4cout << "Coming from Construct" << G4endl;
 
 
      // declare essential physical and logical volumes
