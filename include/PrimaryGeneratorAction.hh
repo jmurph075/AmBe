@@ -12,7 +12,7 @@
 
 // forward declarations of some default classes
 // we'll include full definitions in .cc
-class G4ParticleGun;
+class G4GeneralParticleSource;
 class G4Event;
 
 namespace AmBeStack
@@ -34,24 +34,17 @@ namespace AmBeStack
             // virtual PrimaryGeneratorAction class
             void GeneratePrimaries(G4Event*) override;
 
-            // method to access the particle gun
-            // (and its properties) within the .cc file
-            // as its defined here (in private below),
-            // can use this method to construct and destruct 
-            // the particle gun in .cc
-            const G4ParticleGun* GetParticleGun() const 
-            {
-                return fParticleGun;
-            }
+            // no longer need a method to access the 
+            // general particle source like for the gun
 
         private:
-            // define particle gun through pointer
+            // define general particle source through pointer
             // this is a member variable
             // should be defined exclusively in the header file
             // exists as long as the object (the specific instance of the class) lives
             // runmanager keeps primarygeneratoraction object alive for whole run
             // so this means anything stored in it is accessible
-            G4ParticleGun* fParticleGun = nullptr;
+            G4GeneralParticleSource* fGPS = nullptr;
             
     };
 
