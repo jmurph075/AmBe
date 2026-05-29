@@ -119,6 +119,70 @@ void ReadSourceSpec(const std::string& filename, G4UImanager* uiManager)
     G4cout << "--> Loaded in the source spectrum data from: " << filename << G4endl; 
 }
 
+// gemini suggestion for sorting energy bins
+
+void GemReadSourceSpec(const std::string& filename, G4UImanager* uiManager)
+{
+    // try to open the file
+    std::ifstream csvFile(filename);
+    if (!csvFile.is_open())
+    {
+        G4cerr << "Error: could not open the data file: " << filename << G4endl;
+        return;
+    }
+
+    
+    std::vector<double> energies;
+    std::vector<double> weights;
+    std::string line;
+
+    while (std::getline(csvFile, line))
+    {
+        if (line.empty()) continue;
+
+        // Strip trailing carriage returns (\r) from Windows files
+        if (line.back() == '\r') 
+        {
+            line.pop_back();
+        }
+
+        std::stringstream ss(line);
+        std::string energy_str, rate_str;
+    
+        if (std::getline(ss, energy_str, ',') && std::getline(ss, rate_str))
+        {
+            try 
+            {
+                energies.push_back(std::stod(energy_str));
+                weights.push_back(std::stod(rate_str));
+            }
+            catch (const std::invalid_argument& e) 
+            {
+                // Safely skips header rows like "E_i [MeV], Emission_rate..."
+                continue; 
+            }
+        }
+    }
+
+    // Translate the Lower-Bound layout into Geant4's Upper-Bound layout
+    if (!energies.empty() && energies.size() == weights.size()) 
+    {
+        // 1. Establish the absolute lower limit of the spectrum using E_0
+        std::string base_command = "/gps/hist/point " + std::to_string(energies[0]) + " 0";
+        uiManager->ApplyCommand(base_command);
+
+        // 2. Loop through and pair the upper edge (i+1) with the correct bin weight (i)
+        for (size_t i = 0; i < energies.size() - 1; ++i) 
+        {
+            double upper_edge = energies[i+1];
+            double bin_weight = weights[i];
+        
+            std::string command = "/gps/hist/point " + std::to_string(upper_edge) + " " + std::to_string(bin_weight);
+            uiManager->ApplyCommand(command);
+        }
+    }
+}
+
 // main simulation function 
 // links things between the computational resources, 
 // macro, and model files
@@ -207,8 +271,8 @@ int main(int argc, char** argv)
     // data for the histogram
     // since compilation copied over the csv,
     // can just give file name rather than path
-    ReadSourceSpec("ISO_2021_small.csv", UImanager);
-
+    //ReadSourceSpec("ISO_2021_small.csv", UImanager);
+    GemReadSourceSpec("ISO_2021_small.csv", UImanager);
     // if a macro file (running in batch mode) supplied, execute it
     if (argc > 1)
     {

@@ -2066,10 +2066,17 @@ CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o: /home/jxm1605/Document
   /home/jxm1605/geant4/install/include/Geant4/G4AffineTransform.icc \
   /home/jxm1605/geant4/install/include/Geant4/G4Allocator.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4AllocatorPool.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4AnalysisManager.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4AnalysisManagerState.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4AnalysisUtilities.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4AnalysisVerbose.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4ApplicationState.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4AutoLock.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4AuxiliaryNavServices.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4AuxiliaryNavServices.icc \
+  /home/jxm1605/geant4/install/include/Geant4/G4BaseAnalysisManager.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4BaseFileManager.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4BinScheme.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4BlockingList.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4BlockingList.icc \
   /home/jxm1605/geant4/install/include/Geant4/G4Box.hh \
@@ -2083,14 +2090,21 @@ CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o: /home/jxm1605/Document
   /home/jxm1605/geant4/install/include/Geant4/G4Event.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4Exception.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4ExceptionSeverity.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Fcn.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4GeneralParticleSource.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4GeneralParticleSourceData.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4GeneralParticleSourceMessenger.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4GenericAnalysisManager.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4GenericAnalysisManager.icc \
+  /home/jxm1605/geant4/install/include/Geant4/G4GenericFileManager.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4GenericFileManager.icc \
   /home/jxm1605/geant4/install/include/Geant4/G4GeomConfig.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4GeomSplitter.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4GeomTypes.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4GlobalConfig.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4HCofThisEvent.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4HnInformation.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4HnManager.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4IEEE754.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4Log.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4LogicalVolume.hh \
@@ -2109,6 +2123,8 @@ CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o: /home/jxm1605/Document
   /home/jxm1605/geant4/install/include/Geant4/G4Normal3D.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4NormalNavigation.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4NormalNavigation.icc \
+  /home/jxm1605/geant4/install/include/Geant4/G4NtupleBookingManager.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4NtupleBookingManager.icc \
   /home/jxm1605/geant4/install/include/Geant4/G4PDefManager.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4ParameterisedNavigation.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4ParameterisedNavigation.icc \
@@ -2148,8 +2164,22 @@ CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o: /home/jxm1605/Document
   /home/jxm1605/geant4/install/include/Geant4/G4String.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4String.icc \
   /home/jxm1605/geant4/install/include/Geant4/G4SystemOfUnits.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4TH1ToolsManager.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4TH2ToolsManager.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4TH3ToolsManager.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4THnManager.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4THnManager.icc \
+  /home/jxm1605/geant4/install/include/Geant4/G4THnMessenger.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4THnMessenger.icc \
+  /home/jxm1605/geant4/install/include/Geant4/G4THnToolsManager.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4THnToolsManager.icc \
+  /home/jxm1605/geant4/install/include/Geant4/G4TP1ToolsManager.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4TP2ToolsManager.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4Threading.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4ThreeVector.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4Tokenizer.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4ToolsAnalysisManager.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4ToolsAnalysisManager.icc \
   /home/jxm1605/geant4/install/include/Geant4/G4TouchableHandle.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4TouchableHistory.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4TouchableHistory.icc \
@@ -2161,11 +2191,15 @@ CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o: /home/jxm1605/Document
   /home/jxm1605/geant4/install/include/Geant4/G4UIdirectory.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4UImessenger.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4UIparameter.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VAnalysisManager.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VAnalysisManager.icc \
   /home/jxm1605/geant4/install/include/Geant4/G4VDigiCollection.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VExternalNavigation.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VFileManager.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VHitsCollection.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VNavigation.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VNotifier.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VNtupleManager.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VPVParameterisation.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VPhysicalVolume.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VPhysicalVolume.icc \
@@ -2173,6 +2207,8 @@ CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o: /home/jxm1605/Document
   /home/jxm1605/geant4/install/include/Geant4/G4VSolid.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VSolid.icc \
   /home/jxm1605/geant4/install/include/Geant4/G4VStoreNotifier.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VTBaseHnManager.hh \
+  /home/jxm1605/geant4/install/include/Geant4/G4VTHnFileManager.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VTouchable.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VTrajectory.hh \
   /home/jxm1605/geant4/install/include/Geant4/G4VUserEventInformation.hh \
@@ -2192,6 +2228,30 @@ CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o: /home/jxm1605/Document
   /home/jxm1605/geant4/install/include/Geant4/pwdefs.hh \
   /home/jxm1605/geant4/install/include/Geant4/templates.hh \
   /home/jxm1605/geant4/install/include/Geant4/tls.hh \
+  /home/jxm1605/geant4/install/include/Geant4/tools/cid \
+  /home/jxm1605/geant4/install/include/Geant4/tools/cids \
+  /home/jxm1605/geant4/install/include/Geant4/tools/eqT \
+  /home/jxm1605/geant4/install/include/Geant4/tools/forit \
+  /home/jxm1605/geant4/install/include/Geant4/tools/histo/axes \
+  /home/jxm1605/geant4/install/include/Geant4/tools/histo/axis \
+  /home/jxm1605/geant4/install/include/Geant4/tools/histo/b1 \
+  /home/jxm1605/geant4/install/include/Geant4/tools/histo/b2 \
+  /home/jxm1605/geant4/install/include/Geant4/tools/histo/b3 \
+  /home/jxm1605/geant4/install/include/Geant4/tools/histo/base_histo \
+  /home/jxm1605/geant4/install/include/Geant4/tools/histo/h1 \
+  /home/jxm1605/geant4/install/include/Geant4/tools/histo/h1d \
+  /home/jxm1605/geant4/install/include/Geant4/tools/histo/h2 \
+  /home/jxm1605/geant4/install/include/Geant4/tools/histo/h2d \
+  /home/jxm1605/geant4/install/include/Geant4/tools/histo/h3 \
+  /home/jxm1605/geant4/install/include/Geant4/tools/histo/h3d \
+  /home/jxm1605/geant4/install/include/Geant4/tools/histo/histo_data \
+  /home/jxm1605/geant4/install/include/Geant4/tools/histo/p1 \
+  /home/jxm1605/geant4/install/include/Geant4/tools/histo/p1d \
+  /home/jxm1605/geant4/install/include/Geant4/tools/histo/p2 \
+  /home/jxm1605/geant4/install/include/Geant4/tools/histo/p2d \
+  /home/jxm1605/geant4/install/include/Geant4/tools/histo/profile_data \
+  /home/jxm1605/geant4/install/include/Geant4/tools/ntuple_booking \
+  /home/jxm1605/geant4/install/include/Geant4/tools/typedefs \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -2280,6 +2340,7 @@ CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o: /home/jxm1605/Document
   /usr/include/c++/13/bits/stl_multiset.h \
   /usr/include/c++/13/bits/stl_pair.h \
   /usr/include/c++/13/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/13/bits/stl_relops.h \
   /usr/include/c++/13/bits/stl_set.h \
   /usr/include/c++/13/bits/stl_tempbuf.h \
   /usr/include/c++/13/bits/stl_tree.h \
@@ -2368,6 +2429,7 @@ CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o: /home/jxm1605/Document
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
   /usr/include/c++/13/typeinfo \
+  /usr/include/c++/13/utility \
   /usr/include/c++/13/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \

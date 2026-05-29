@@ -15,6 +15,7 @@
 // for sampling from AmBe spectrum move to 
 // general particle source
 #include "G4GeneralParticleSource.hh"
+#include "G4AnalysisManager.hh"
 
 namespace AmBeStack
 {
@@ -61,7 +62,16 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* event)
     // method for generating the primary vertex 
     // based on the details supplied by the macro
     fGPS->GeneratePrimaryVertex(event);
+
+    // want to extract the primary particle energy 
+    // and pass to the analysis manager
+    // for storage in ntuple
+    G4double primaryEnergy = fGPS->GetParticleEnergy();
     
+    G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
+    // built as column 4 within our ntuple
+    // so column index is 4 (ensure in MeV)
+    analysisManager->FillNtupleDColumn(4, primaryEnergy / MeV);
 
 }
 

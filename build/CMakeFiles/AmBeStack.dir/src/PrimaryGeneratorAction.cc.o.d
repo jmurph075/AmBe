@@ -449,4 +449,65 @@ CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o: \
  /home/jxm1605/geant4/install/include/Geant4/G4UIcommand.hh \
  /home/jxm1605/geant4/install/include/Geant4/G4ApplicationState.hh \
  /home/jxm1605/geant4/install/include/Geant4/G4UIparameter.hh \
- /home/jxm1605/geant4/install/include/Geant4/G4GeneralParticleSourceData.hh
+ /home/jxm1605/geant4/install/include/Geant4/G4GeneralParticleSourceData.hh \
+ /home/jxm1605/geant4/install/include/Geant4/G4AnalysisManager.hh \
+ /home/jxm1605/geant4/install/include/Geant4/G4GenericAnalysisManager.hh \
+ /home/jxm1605/geant4/install/include/Geant4/G4ToolsAnalysisManager.hh \
+ /home/jxm1605/geant4/install/include/Geant4/G4VAnalysisManager.hh \
+ /home/jxm1605/geant4/install/include/Geant4/G4AnalysisManagerState.hh \
+ /home/jxm1605/geant4/install/include/Geant4/G4AnalysisVerbose.hh \
+ /home/jxm1605/geant4/install/include/Geant4/G4AnalysisUtilities.hh \
+ /home/jxm1605/geant4/install/include/Geant4/G4VTBaseHnManager.hh \
+ /home/jxm1605/geant4/install/include/Geant4/G4HnInformation.hh \
+ /home/jxm1605/geant4/install/include/Geant4/G4BinScheme.hh \
+ /home/jxm1605/geant4/install/include/Geant4/G4Fcn.hh \
+ /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \
+ /home/jxm1605/geant4/install/include/Geant4/G4VAnalysisManager.icc \
+ /home/jxm1605/geant4/install/include/Geant4/G4HnManager.hh \
+ /home/jxm1605/geant4/install/include/Geant4/G4BaseAnalysisManager.hh \
+ /home/jxm1605/geant4/install/include/Geant4/G4NtupleBookingManager.hh \
+ /home/jxm1605/geant4/install/include/Geant4/tools/ntuple_booking \
+ /home/jxm1605/geant4/install/include/Geant4/tools/cids \
+ /home/jxm1605/geant4/install/include/Geant4/tools/cid \
+ /home/jxm1605/geant4/install/include/Geant4/tools/typedefs \
+ /home/jxm1605/geant4/install/include/Geant4/tools/forit \
+ /home/jxm1605/geant4/install/include/Geant4/G4NtupleBookingManager.icc \
+ /home/jxm1605/geant4/install/include/Geant4/G4VNtupleManager.hh \
+ /home/jxm1605/geant4/install/include/Geant4/G4VFileManager.hh \
+ /home/jxm1605/geant4/install/include/Geant4/G4BaseFileManager.hh \
+ /home/jxm1605/geant4/install/include/Geant4/G4VTHnFileManager.hh \
+ /home/jxm1605/geant4/install/include/Geant4/G4TH1ToolsManager.hh \
+ /home/jxm1605/geant4/install/include/Geant4/G4THnToolsManager.hh \
+ /home/jxm1605/geant4/install/include/Geant4/G4THnManager.hh \
+ /home/jxm1605/geant4/install/include/Geant4/G4THnManager.icc \
+ /home/jxm1605/geant4/install/include/Geant4/G4THnMessenger.hh \
+ /home/jxm1605/geant4/install/include/Geant4/G4THnToolsManager.icc \
+ /home/jxm1605/geant4/install/include/Geant4/G4THnMessenger.icc \
+ /home/jxm1605/geant4/install/include/Geant4/G4Tokenizer.hh \
+ /home/jxm1605/geant4/install/include/Geant4/G4TH2ToolsManager.hh \
+ /home/jxm1605/geant4/install/include/Geant4/G4TH3ToolsManager.hh \
+ /home/jxm1605/geant4/install/include/Geant4/G4TP1ToolsManager.hh \
+ /home/jxm1605/geant4/install/include/Geant4/G4TP2ToolsManager.hh \
+ /home/jxm1605/geant4/install/include/Geant4/tools/histo/h1d \
+ /home/jxm1605/geant4/install/include/Geant4/tools/histo/h1 \
+ /home/jxm1605/geant4/install/include/Geant4/tools/histo/b1 \
+ /home/jxm1605/geant4/install/include/Geant4/tools/histo/base_histo \
+ /home/jxm1605/geant4/install/include/Geant4/tools/histo/histo_data \
+ /home/jxm1605/geant4/install/include/Geant4/tools/histo/axes \
+ /home/jxm1605/geant4/install/include/Geant4/tools/histo/axis \
+ /home/jxm1605/geant4/install/include/Geant4/tools/eqT \
+ /home/jxm1605/geant4/install/include/Geant4/tools/histo/h2d \
+ /home/jxm1605/geant4/install/include/Geant4/tools/histo/h2 \
+ /home/jxm1605/geant4/install/include/Geant4/tools/histo/b2 \
+ /home/jxm1605/geant4/install/include/Geant4/tools/histo/h3d \
+ /home/jxm1605/geant4/install/include/Geant4/tools/histo/h3 \
+ /home/jxm1605/geant4/install/include/Geant4/tools/histo/b3 \
+ /home/jxm1605/geant4/install/include/Geant4/tools/histo/p1d \
+ /home/jxm1605/geant4/install/include/Geant4/tools/histo/p1 \
+ /home/jxm1605/geant4/install/include/Geant4/tools/histo/profile_data \
+ /home/jxm1605/geant4/install/include/Geant4/tools/histo/p2d \
+ /home/jxm1605/geant4/install/include/Geant4/tools/histo/p2 \
+ /home/jxm1605/geant4/install/include/Geant4/G4ToolsAnalysisManager.icc \
+ /home/jxm1605/geant4/install/include/Geant4/G4GenericAnalysisManager.icc \
+ /home/jxm1605/geant4/install/include/Geant4/G4GenericFileManager.hh \
+ /home/jxm1605/geant4/install/include/Geant4/G4GenericFileManager.icc
