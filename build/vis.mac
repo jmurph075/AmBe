@@ -15,7 +15,7 @@
 /vis/scene/endOfEventAction accumulate 100
 
 # then run with number of particles
-/run/beamOn 100000
+/run/beamOn 1000
 
 # now add back the trajectories accumulated earlier
 /vis/scene/add/trajectories smooth

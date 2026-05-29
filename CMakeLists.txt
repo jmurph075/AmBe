@@ -30,11 +30,27 @@ set(AMBESTACK_SCRIPTS
     vis.mac
 )
 
+set(AMBESTACK_DATA
+    ISO_2021_small.csv
+)
+
 # for each script in AMBESTACK_SCRIPTS (listed above)
 foreach(_script ${AMBESTACK_SCRIPTS})
     configure_file(
-        ${PROJECT_SOURCE_DIR}/${_script}
+        ${PROJECT_SOURCE_DIR}/macros/${_script}
+        # if added /macros/ here,
+        # script would be copied to build/macros
+        # rather than into the root build dir
         ${PROJECT_BINARY_DIR}/${_script}
+        COPYONLY
+    )
+endforeach()
+
+# for each data file in AMBESTACK_DATA (listed above)
+foreach(_data ${AMBESTACK_DATA})
+    configure_file(
+        ${PROJECT_SOURCE_DIR}/source_data/${_data}
+        ${PROJECT_BINARY_DIR}/${_data}
         COPYONLY
     )
 endforeach()

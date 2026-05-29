@@ -19,6 +19,7 @@
 #include "G4SystemOfUnits.hh"
 
 #include <iostream>
+#include <sstream>
 
 // declare namespace being used
 using namespace AmBeStack;
@@ -58,6 +59,66 @@ void PrintAvailablePhysLists()
     }
 }
 
+// function to read the csv file with the spectrum data
+// into a macro file ready for the generalparticlesource
+// returntype name(args)
+// takes name of file with data and ui manager to interact 
+// with geant and macro
+void ReadSourceSpec(const std::string& filename, G4UImanager* uiManager)
+{
+    // try to open the file
+    std::ifstream csvFile(filename);
+    if (!csvFile.is_open())
+    {
+        G4cerr << "Error: could not open the data file: " << filename << G4endl;
+        return;
+    }
+
+    // read the header line and ignore it
+    std::string line;
+    // getline reads a line from the file
+    // then its internal pointer moves to the next line
+    // so after this statement, line is the header
+    // and the next call of getline will be the first line of data
+    if (std::getline(csvFile, line))
+    {
+        G4cout << "Skipping header line: " << line << G4endl;
+    }
+
+    // read the data lines
+    // loops over each line for the full length of the file
+    while (std::getline(csvFile, line))
+    {
+        // if reach end, break out of loop
+        if (line.empty()) continue;
+
+        // split the line into energy and emission rate
+        // using stringstream to parse the line
+        // allows use to read line as if 
+        // it was a stream of data
+        // (like cin and cout)
+        std::stringstream ss(line);
+        // initialise vars to hold energy and rate
+        std::string energy_str, rate_str;
+        
+        // split by comma delimiter
+        // if can get the 'lines' energy_str and rate_str,
+        // can proceed and add them to the macro
+        if (std::getline(ss, energy_str, ',') &&
+            std::getline(ss, rate_str)) // no trailing comma, so just go to line end
+        {
+            // construct the command to pass to apply
+            // using the UI manager
+            std::string command = "/gps/hist/point " + energy_str + " " + rate_str;
+            uiManager->ApplyCommand(command);
+        }
+    }
+
+    // close the csv file
+    csvFile.close();
+    G4cout << "--> Loaded in the source spectrum data from: " << filename << G4endl; 
+}
+
 // main simulation function 
 // links things between the computational resources, 
 // macro, and model files
@@ -82,16 +143,6 @@ int main(int argc, char** argv)
         G4cout << "No macro file provided, attempting to start interactive session..." << G4endl;
         // instantiate a UI executive to start the interactive session
         ui = new G4UIExecutive(argc, argv);
-
-        // must force serial run mode for interactive session
-        // for some reason OpenGL won't work in multi-threaded
-        runManagerType = G4RunManagerType::Default;;
-    }
-    else
-    {
-        G4cout << "Macro file provided, running in batch mode..." << G4endl;
-        // otherwise in batch mode so can specify default runmanager type
-        runManagerType = G4RunManagerType::Default;
     }
 
     // print the available physics lists to the terminal
@@ -140,6 +191,23 @@ int main(int argc, char** argv)
     // get a UIManager instance to issue commands to geant
     // using command line interface i.e. the macro file
     auto UImanager = G4UImanager::GetUIpointer();
+
+    // need to configure the general particle source settings
+    UImanager->ApplyCommand("/gps/particle neutron");
+    UImanager->ApplyCommand("/gps/pos/type Point");
+    UImanager->ApplyCommand("/gps/pos/centre 0 0 0 cm");
+    UImanager->ApplyCommand("/gps/ang/type iso");
+    // now specify that the energy spectra data type is user defined
+    UImanager->ApplyCommand("/gps/ene/type User");
+    // specify the type of user defined histogram
+    // in this case is energy spec, so type is energy
+    UImanager->ApplyCommand("/gps/hist/type energy");
+
+    // now use the ReadSourceSpec function to read in the
+    // data for the histogram
+    // since compilation copied over the csv,
+    // can just give file name rather than path
+    ReadSourceSpec("ISO_2021_small.csv", UImanager);
 
     // if a macro file (running in batch mode) supplied, execute it
     if (argc > 1)
