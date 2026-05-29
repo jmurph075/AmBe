@@ -15,10 +15,11 @@
 /vis/scene/endOfEventAction accumulate 100
 
 # then run with number of particles
-/run/beamOn 50000
+/run/beamOn 100000
 
 # now add back the trajectories accumulated earlier
 /vis/scene/add/trajectories smooth
 
 # force viewer to only draw the events kept in local memory
 /vis/viewer/rebuild
+
