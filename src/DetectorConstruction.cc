@@ -2,6 +2,10 @@
 /// \brief Implementation of the AmBeStack::DetectorConstruction class
 
 #include "DetectorConstruction.hh"
+// also include headers related to 
+// sensitive detector logic
+#include "ScintillatorSD.hh"
+#include "G4SDManager.hh"
 
 #include "G4Box.hh"
 #include "G4Cons.hh"
@@ -14,6 +18,9 @@
 #include "G4SubtractionSolid.hh"
 #include "G4ProductionCuts.hh"
 #include "globals.hh"
+#include "G4RotationMatrix.hh"
+
+
 
 
 // include G4GDMLParser for visualisation of geometry
@@ -335,7 +342,25 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 
           // define position
           // NOTE: position for G4PVPlacement is defined as the centre of the volume (see below)
-          G4ThreeVector det_face_pos = G4ThreeVector(0, 0, 5 *cm);
+          // first detector
+          G4ThreeVector det_face_pos_1 = G4ThreeVector(0, 0, 75 *cm);
+
+          // second detector will be outside stack and to the side
+          G4ThreeVector det_face_pos_2 = G4ThreeVector(0, 50 *cm, 100 *cm); 
+
+          // get a vector for displacement between detectors
+          G4ThreeVector det_displacement = det_face_pos_2 - det_face_pos_1;
+          // second detector also rotated so will define rotation matrix here
+          // detector needs to be rotate relative to first
+          // angle should be based on displacement between two detectors
+          // det 1 is at (0,0,5) 
+          // det 2 is at (0,50,100)
+          // angle is therefore arctan(50/95)
+          // make rotation matrix
+          G4RotationMatrix* rotation = new G4RotationMatrix();
+          // this is defined around the central axis of the solid volume
+          // so need to rotate around x axis
+          rotation -> rotateX(std::atan(det_displacement[1]/det_displacement[2]) *radian);// default is clockwise, negative to get correct CCW rotation     
 
           // create active detector volume 
           // solid
@@ -356,14 +381,14 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
           );
 
           // physical
-          auto physDetActive = new G4PVPlacement(
+          auto physDetActive_1= new G4PVPlacement(
                nullptr, // no rotation applied
                // position is center of volume, so offset by half the active length in z
                // to get the face of detector at position defined above
                // add thickness as det_face_pos is position of face (including casing)
-               det_face_pos + G4ThreeVector(0, 0, (0.5 *det_active_length) + det_case_thickness),
+               det_face_pos_1 + G4ThreeVector(0, 0, (0.5 *det_active_length) + det_case_thickness),
                logicDetActive, // associated logical volume
-               "Det_Active_phys", // name
+               "Det_Active_phys_1", // name
                logicRoom, // mother logical volume 
                false, // not part of a boolean
                0, // copy number
@@ -405,13 +430,13 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
           );
 
           // physical
-          auto physDetCase = new G4PVPlacement(
+          auto physDetCase_1 = new G4PVPlacement(
                nullptr, // no rotation applied
                // position is the centre of the volume, so offset by half the total length in z 
                // to get face of detector at det_face_pos defined above
-               det_face_pos + G4ThreeVector(0, 0, 0.5 * det_tot_length),
+               det_face_pos_1 + G4ThreeVector(0, 0, 0.5 * det_tot_length),
                logicDetCase, // associated logical volume
-               "Det_Case_phys", // name
+               "Det_Case_phys_1", // name
                logicRoom, //mother logical volume
                false, // not part of a boolean
                0, // copy number
@@ -448,19 +473,62 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
           );
 
           // physical
-          auto physShield = new G4PVPlacement(
+          auto physShield_1 = new G4PVPlacement(
                nullptr, // no rotation applied
                // position is centre of volume, so offset by half shield length in z
                // to get front of shield flush with front of detector at det_face_pos
-               det_face_pos + G4ThreeVector(0, 0, (0.5 * shield_length) - shield_thickness),
+               det_face_pos_1 + G4ThreeVector(0, 0, (0.5 * shield_length) - shield_thickness),
                logicShield, // associated logical volume
-               "Shield_phys", // name
+               "Shield_phys_1", // name
                logicRoom, // mother logical volume
                false, // not part of a boolean
                0, // copy number
                true // check overlaps
           );
 
+
+          // now for second detector, solid and logical volumes are the same,
+          // but need new copy of physical vol at new position
+          
+          // physical
+          auto physDetActive_2 = new G4PVPlacement(
+               // include rotation defined above for second detector
+               rotation,
+               // position is center of volume, need to offset by half active length
+               det_face_pos_2 + G4ThreeVector(0, 0, (0.5 *det_active_length) + det_case_thickness),
+               logicDetActive, // associated logical volume
+               "Det_Active_phys_2", // name
+               logicRoom, // mother logical volume
+               false, // not part of a boolean
+               1, // copy number (set to 1 to differentiate from first detector)
+               true // check overlaps
+          );
+
+          // physical detector casing volume now in same way
+          auto physDetCase_2 = new G4PVPlacement(
+               rotation, // include rotation defined above
+               // position is center of volume, so offset by half the total length in z
+               det_face_pos_2 + G4ThreeVector(0, 0, 0.5 * det_tot_length),
+               logicDetCase, // associated logical volume
+               "Det_Case_phys_2", // name
+               logicRoom, // mother logical volume
+               false, // not part of boolean
+               1, // copy number (set to 1 to differentiate)
+               true // check overlaps
+          );
+
+          // physical shield volume now in same way
+          auto physShield_2 = new G4PVPlacement(
+               rotation, // include rotation defined above
+               // position is centre of volume, so offset by half shield length in z
+               det_face_pos_2 + G4ThreeVector(0, 0, (0.5 * shield_length) - shield_thickness),
+               logicShield, // associated logical volume
+               "Shield_phys_2", // name
+               logicRoom, // mother logical volume
+               false, // not part of boolean
+               1, // copy number (set to 1 to differentiate)
+               true // check overlaps
+          );
 
           // assign the scoring volume as the detector active region
           fScoringVolume = logicDetActive;
@@ -562,6 +630,28 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
      return physWorld;
 
 
+}
+
+// constructSD member function implementation
+// will actually assign the logical volumes defined in construct
+// to our sensitive detector hit logic
+void DetectorConstruction::ConstructSDandField()
+{
+     // get an instance of the sensitive detector manager 
+     G4SDManager* sdManager = G4SDManager::GetSDMpointer();
+
+     // make instance of the ScintillatorSD class we've made
+     // requires 1 argument, the detector name
+     G4String sdName = "OrganicSD";
+     ScintillatorSD* scintillatorSD = new ScintillatorSD(sdName);
+
+     // once we have this, pass it to the SDManager
+     // to register the detector 
+     sdManager->AddNewDetector(scintillatorSD);
+
+     // finally, attach this sensitive detector to the logical volume
+     // we made in construct() member function
+     SetSensitiveDetector(fScoringVolume, scintillatorSD);
 }
 
 }

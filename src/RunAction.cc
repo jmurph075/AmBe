@@ -42,6 +42,12 @@ namespace AmBeStack
             analysisManager->CreateNtupleDColumn("TotalEdep");
             analysisManager->CreateNtupleSColumn("RecoilName");
             analysisManager->CreateNtupleDColumn("RecoilEdep");
+            analysisManager->CreateNtupleDColumn("TimeDet0First");
+            analysisManager->CreateNtupleDColumn("TimeDet0Last");
+            analysisManager->CreateNtupleDColumn("TimeDet1First");
+            analysisManager->CreateNtupleDColumn("TimeDet1Last");
+            analysisManager->CreateNtupleDColumn("TOF");
+
             // create a column for the primary particle energy
             // to ensure the spectrum is as intended
             analysisManager->CreateNtupleDColumn("PrimaryEnergy");

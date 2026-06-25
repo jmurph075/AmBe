@@ -7,14 +7,16 @@ file(REMOVE_RECURSE
   "CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.o.d"
   "CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.o"
   "CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.o.d"
+  "CMakeFiles/AmBeStack.dir/src/DetectorHit.cc.o"
+  "CMakeFiles/AmBeStack.dir/src/DetectorHit.cc.o.d"
   "CMakeFiles/AmBeStack.dir/src/EventAction.cc.o"
   "CMakeFiles/AmBeStack.dir/src/EventAction.cc.o.d"
   "CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o"
   "CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o.d"
   "CMakeFiles/AmBeStack.dir/src/RunAction.cc.o"
   "CMakeFiles/AmBeStack.dir/src/RunAction.cc.o.d"
-  "CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o"
-  "CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o.d"
+  "CMakeFiles/AmBeStack.dir/src/ScintillatorSD.cc.o"
+  "CMakeFiles/AmBeStack.dir/src/ScintillatorSD.cc.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

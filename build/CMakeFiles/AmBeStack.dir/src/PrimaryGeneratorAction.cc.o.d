@@ -1,7 +1,7 @@
 CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o: \
- /home/jxm1605/Documents/AmBe_stack/AmBe/src/PrimaryGeneratorAction.cc \
+ /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/PrimaryGeneratorAction.cc \
  /usr/include/stdc-predef.h \
- /home/jxm1605/Documents/AmBe_stack/AmBe/include/PrimaryGeneratorAction.hh \
+ /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/include/PrimaryGeneratorAction.hh \
  /home/jxm1605/geant4/install/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
  /home/jxm1605/geant4/install/include/Geant4/G4Box.hh \
  /home/jxm1605/geant4/install/include/Geant4/G4GeomTypes.hh \

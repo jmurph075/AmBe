@@ -1,7 +1,7 @@
 CMakeFiles/AmBeStack.dir/src/RunAction.cc.o: \
- /home/jxm1605/Documents/AmBe_stack/AmBe/src/RunAction.cc \
+ /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/RunAction.cc \
  /usr/include/stdc-predef.h \
- /home/jxm1605/Documents/AmBe_stack/AmBe/include/RunAction.hh \
+ /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/include/RunAction.hh \
  /home/jxm1605/geant4/install/include/Geant4/G4UserRunAction.hh \
  /home/jxm1605/geant4/install/include/Geant4/G4Types.hh \
  /home/jxm1605/geant4/install/include/Geant4/G4GlobalConfig.hh \
@@ -233,7 +233,7 @@ CMakeFiles/AmBeStack.dir/src/RunAction.cc.o: \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/jxm1605/Documents/AmBe_stack/AmBe/include/EventAction.hh \
+ /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/include/EventAction.hh \
  /home/jxm1605/geant4/install/include/Geant4/G4UserEventAction.hh \
  /home/jxm1605/geant4/install/include/Geant4/G4AnalysisManager.hh \
  /home/jxm1605/geant4/install/include/Geant4/G4GenericAnalysisManager.hh \

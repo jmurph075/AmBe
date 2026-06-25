@@ -54,6 +54,10 @@ namespace AmBeStack // keeps things in AmBeStack namespace to avoid conflicts wi
                 return fScoringVolume; 
             }
 
+            // initialise another member function 
+            // for assigning the sensitive detector
+            void ConstructSDandField() override;
+
         protected:
             // ensure this can only be accessed by this class and not from outside
             // don't want scoring volume itself to be altered from outside 

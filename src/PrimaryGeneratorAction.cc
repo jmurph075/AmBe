@@ -69,9 +69,9 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* event)
     G4double primaryEnergy = fGPS->GetParticleEnergy();
     
     G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
-    // built as column 4 within our ntuple
-    // so column index is 4 (ensure in MeV)
-    analysisManager->FillNtupleDColumn(4, primaryEnergy / MeV);
+    // built as column 9 within our ntuple
+    // so column index is 9 (ensure in MeV)
+    analysisManager->FillNtupleDColumn(9, primaryEnergy / MeV);
 
 }
 

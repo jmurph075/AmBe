@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jxm1605/Documents/AmBe_stack/AmBe
+CMAKE_SOURCE_DIR = /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jxm1605/Documents/AmBe_stack/AmBe/build
+CMAKE_BINARY_DIR = /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/AmBeStack.dir/depend.make
@@ -70,112 +70,127 @@ include CMakeFiles/AmBeStack.dir/progress.make
 include CMakeFiles/AmBeStack.dir/flags.make
 
 CMakeFiles/AmBeStack.dir/AmBeMain.cc.o: CMakeFiles/AmBeStack.dir/flags.make
-CMakeFiles/AmBeStack.dir/AmBeMain.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe/AmBeMain.cc
+CMakeFiles/AmBeStack.dir/AmBeMain.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/AmBeMain.cc
 CMakeFiles/AmBeStack.dir/AmBeMain.cc.o: CMakeFiles/AmBeStack.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jxm1605/Documents/AmBe_stack/AmBe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/AmBeStack.dir/AmBeMain.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AmBeStack.dir/AmBeMain.cc.o -MF CMakeFiles/AmBeStack.dir/AmBeMain.cc.o.d -o CMakeFiles/AmBeStack.dir/AmBeMain.cc.o -c /home/jxm1605/Documents/AmBe_stack/AmBe/AmBeMain.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/AmBeStack.dir/AmBeMain.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AmBeStack.dir/AmBeMain.cc.o -MF CMakeFiles/AmBeStack.dir/AmBeMain.cc.o.d -o CMakeFiles/AmBeStack.dir/AmBeMain.cc.o -c /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/AmBeMain.cc
 
 CMakeFiles/AmBeStack.dir/AmBeMain.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AmBeStack.dir/AmBeMain.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jxm1605/Documents/AmBe_stack/AmBe/AmBeMain.cc > CMakeFiles/AmBeStack.dir/AmBeMain.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/AmBeMain.cc > CMakeFiles/AmBeStack.dir/AmBeMain.cc.i
 
 CMakeFiles/AmBeStack.dir/AmBeMain.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AmBeStack.dir/AmBeMain.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jxm1605/Documents/AmBe_stack/AmBe/AmBeMain.cc -o CMakeFiles/AmBeStack.dir/AmBeMain.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/AmBeMain.cc -o CMakeFiles/AmBeStack.dir/AmBeMain.cc.s
 
 CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.o: CMakeFiles/AmBeStack.dir/flags.make
-CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe/src/ActionInitialization.cc
+CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/ActionInitialization.cc
 CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.o: CMakeFiles/AmBeStack.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jxm1605/Documents/AmBe_stack/AmBe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.o -MF CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.o.d -o CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.o -c /home/jxm1605/Documents/AmBe_stack/AmBe/src/ActionInitialization.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.o -MF CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.o.d -o CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.o -c /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/ActionInitialization.cc
 
 CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jxm1605/Documents/AmBe_stack/AmBe/src/ActionInitialization.cc > CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/ActionInitialization.cc > CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.i
 
 CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jxm1605/Documents/AmBe_stack/AmBe/src/ActionInitialization.cc -o CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/ActionInitialization.cc -o CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.s
 
 CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.o: CMakeFiles/AmBeStack.dir/flags.make
-CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe/src/DetectorConstruction.cc
+CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/DetectorConstruction.cc
 CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.o: CMakeFiles/AmBeStack.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jxm1605/Documents/AmBe_stack/AmBe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.o -MF CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.o.d -o CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.o -c /home/jxm1605/Documents/AmBe_stack/AmBe/src/DetectorConstruction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.o -MF CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.o.d -o CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.o -c /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/DetectorConstruction.cc
 
 CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jxm1605/Documents/AmBe_stack/AmBe/src/DetectorConstruction.cc > CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/DetectorConstruction.cc > CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.i
 
 CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jxm1605/Documents/AmBe_stack/AmBe/src/DetectorConstruction.cc -o CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/DetectorConstruction.cc -o CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.s
+
+CMakeFiles/AmBeStack.dir/src/DetectorHit.cc.o: CMakeFiles/AmBeStack.dir/flags.make
+CMakeFiles/AmBeStack.dir/src/DetectorHit.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/DetectorHit.cc
+CMakeFiles/AmBeStack.dir/src/DetectorHit.cc.o: CMakeFiles/AmBeStack.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/AmBeStack.dir/src/DetectorHit.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AmBeStack.dir/src/DetectorHit.cc.o -MF CMakeFiles/AmBeStack.dir/src/DetectorHit.cc.o.d -o CMakeFiles/AmBeStack.dir/src/DetectorHit.cc.o -c /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/DetectorHit.cc
+
+CMakeFiles/AmBeStack.dir/src/DetectorHit.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AmBeStack.dir/src/DetectorHit.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/DetectorHit.cc > CMakeFiles/AmBeStack.dir/src/DetectorHit.cc.i
+
+CMakeFiles/AmBeStack.dir/src/DetectorHit.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AmBeStack.dir/src/DetectorHit.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/DetectorHit.cc -o CMakeFiles/AmBeStack.dir/src/DetectorHit.cc.s
 
 CMakeFiles/AmBeStack.dir/src/EventAction.cc.o: CMakeFiles/AmBeStack.dir/flags.make
-CMakeFiles/AmBeStack.dir/src/EventAction.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe/src/EventAction.cc
+CMakeFiles/AmBeStack.dir/src/EventAction.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/EventAction.cc
 CMakeFiles/AmBeStack.dir/src/EventAction.cc.o: CMakeFiles/AmBeStack.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jxm1605/Documents/AmBe_stack/AmBe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/AmBeStack.dir/src/EventAction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AmBeStack.dir/src/EventAction.cc.o -MF CMakeFiles/AmBeStack.dir/src/EventAction.cc.o.d -o CMakeFiles/AmBeStack.dir/src/EventAction.cc.o -c /home/jxm1605/Documents/AmBe_stack/AmBe/src/EventAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/AmBeStack.dir/src/EventAction.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AmBeStack.dir/src/EventAction.cc.o -MF CMakeFiles/AmBeStack.dir/src/EventAction.cc.o.d -o CMakeFiles/AmBeStack.dir/src/EventAction.cc.o -c /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/EventAction.cc
 
 CMakeFiles/AmBeStack.dir/src/EventAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AmBeStack.dir/src/EventAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jxm1605/Documents/AmBe_stack/AmBe/src/EventAction.cc > CMakeFiles/AmBeStack.dir/src/EventAction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/EventAction.cc > CMakeFiles/AmBeStack.dir/src/EventAction.cc.i
 
 CMakeFiles/AmBeStack.dir/src/EventAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AmBeStack.dir/src/EventAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jxm1605/Documents/AmBe_stack/AmBe/src/EventAction.cc -o CMakeFiles/AmBeStack.dir/src/EventAction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/EventAction.cc -o CMakeFiles/AmBeStack.dir/src/EventAction.cc.s
 
 CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o: CMakeFiles/AmBeStack.dir/flags.make
-CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe/src/PrimaryGeneratorAction.cc
+CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/PrimaryGeneratorAction.cc
 CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o: CMakeFiles/AmBeStack.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jxm1605/Documents/AmBe_stack/AmBe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o -MF CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o.d -o CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o -c /home/jxm1605/Documents/AmBe_stack/AmBe/src/PrimaryGeneratorAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o -MF CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o.d -o CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o -c /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/PrimaryGeneratorAction.cc
 
 CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jxm1605/Documents/AmBe_stack/AmBe/src/PrimaryGeneratorAction.cc > CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/PrimaryGeneratorAction.cc > CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.i
 
 CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jxm1605/Documents/AmBe_stack/AmBe/src/PrimaryGeneratorAction.cc -o CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/PrimaryGeneratorAction.cc -o CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.s
 
 CMakeFiles/AmBeStack.dir/src/RunAction.cc.o: CMakeFiles/AmBeStack.dir/flags.make
-CMakeFiles/AmBeStack.dir/src/RunAction.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe/src/RunAction.cc
+CMakeFiles/AmBeStack.dir/src/RunAction.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/RunAction.cc
 CMakeFiles/AmBeStack.dir/src/RunAction.cc.o: CMakeFiles/AmBeStack.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jxm1605/Documents/AmBe_stack/AmBe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/AmBeStack.dir/src/RunAction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AmBeStack.dir/src/RunAction.cc.o -MF CMakeFiles/AmBeStack.dir/src/RunAction.cc.o.d -o CMakeFiles/AmBeStack.dir/src/RunAction.cc.o -c /home/jxm1605/Documents/AmBe_stack/AmBe/src/RunAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/AmBeStack.dir/src/RunAction.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AmBeStack.dir/src/RunAction.cc.o -MF CMakeFiles/AmBeStack.dir/src/RunAction.cc.o.d -o CMakeFiles/AmBeStack.dir/src/RunAction.cc.o -c /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/RunAction.cc
 
 CMakeFiles/AmBeStack.dir/src/RunAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AmBeStack.dir/src/RunAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jxm1605/Documents/AmBe_stack/AmBe/src/RunAction.cc > CMakeFiles/AmBeStack.dir/src/RunAction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/RunAction.cc > CMakeFiles/AmBeStack.dir/src/RunAction.cc.i
 
 CMakeFiles/AmBeStack.dir/src/RunAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AmBeStack.dir/src/RunAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jxm1605/Documents/AmBe_stack/AmBe/src/RunAction.cc -o CMakeFiles/AmBeStack.dir/src/RunAction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/RunAction.cc -o CMakeFiles/AmBeStack.dir/src/RunAction.cc.s
 
-CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: CMakeFiles/AmBeStack.dir/flags.make
-CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe/src/SteppingAction.cc
-CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o: CMakeFiles/AmBeStack.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jxm1605/Documents/AmBe_stack/AmBe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o -MF CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o.d -o CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o -c /home/jxm1605/Documents/AmBe_stack/AmBe/src/SteppingAction.cc
+CMakeFiles/AmBeStack.dir/src/ScintillatorSD.cc.o: CMakeFiles/AmBeStack.dir/flags.make
+CMakeFiles/AmBeStack.dir/src/ScintillatorSD.cc.o: /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/ScintillatorSD.cc
+CMakeFiles/AmBeStack.dir/src/ScintillatorSD.cc.o: CMakeFiles/AmBeStack.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/AmBeStack.dir/src/ScintillatorSD.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AmBeStack.dir/src/ScintillatorSD.cc.o -MF CMakeFiles/AmBeStack.dir/src/ScintillatorSD.cc.o.d -o CMakeFiles/AmBeStack.dir/src/ScintillatorSD.cc.o -c /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/ScintillatorSD.cc
 
-CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jxm1605/Documents/AmBe_stack/AmBe/src/SteppingAction.cc > CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.i
+CMakeFiles/AmBeStack.dir/src/ScintillatorSD.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AmBeStack.dir/src/ScintillatorSD.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/ScintillatorSD.cc > CMakeFiles/AmBeStack.dir/src/ScintillatorSD.cc.i
 
-CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jxm1605/Documents/AmBe_stack/AmBe/src/SteppingAction.cc -o CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.s
+CMakeFiles/AmBeStack.dir/src/ScintillatorSD.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AmBeStack.dir/src/ScintillatorSD.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/ScintillatorSD.cc -o CMakeFiles/AmBeStack.dir/src/ScintillatorSD.cc.s
 
 # Object files for target AmBeStack
 AmBeStack_OBJECTS = \
 "CMakeFiles/AmBeStack.dir/AmBeMain.cc.o" \
 "CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.o" \
 "CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.o" \
+"CMakeFiles/AmBeStack.dir/src/DetectorHit.cc.o" \
 "CMakeFiles/AmBeStack.dir/src/EventAction.cc.o" \
 "CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o" \
 "CMakeFiles/AmBeStack.dir/src/RunAction.cc.o" \
-"CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o"
+"CMakeFiles/AmBeStack.dir/src/ScintillatorSD.cc.o"
 
 # External object files for target AmBeStack
 AmBeStack_EXTERNAL_OBJECTS =
@@ -183,10 +198,11 @@ AmBeStack_EXTERNAL_OBJECTS =
 AmBeStack: CMakeFiles/AmBeStack.dir/AmBeMain.cc.o
 AmBeStack: CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.o
 AmBeStack: CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.o
+AmBeStack: CMakeFiles/AmBeStack.dir/src/DetectorHit.cc.o
 AmBeStack: CMakeFiles/AmBeStack.dir/src/EventAction.cc.o
 AmBeStack: CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o
 AmBeStack: CMakeFiles/AmBeStack.dir/src/RunAction.cc.o
-AmBeStack: CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o
+AmBeStack: CMakeFiles/AmBeStack.dir/src/ScintillatorSD.cc.o
 AmBeStack: CMakeFiles/AmBeStack.dir/build.make
 AmBeStack: /home/jxm1605/geant4/install/lib/libG4Tree.so
 AmBeStack: /home/jxm1605/geant4/install/lib/libG4FR.so
@@ -228,7 +244,7 @@ AmBeStack: /home/jxm1605/geant4/install/lib/libG4clhep.so
 AmBeStack: /home/jxm1605/geant4/install/lib/libG4ptl.so.3.0.0
 AmBeStack: /home/jxm1605/geant4/install/lib/libG4zlib.so
 AmBeStack: CMakeFiles/AmBeStack.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/jxm1605/Documents/AmBe_stack/AmBe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable AmBeStack"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable AmBeStack"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AmBeStack.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -240,6 +256,6 @@ CMakeFiles/AmBeStack.dir/clean:
 .PHONY : CMakeFiles/AmBeStack.dir/clean
 
 CMakeFiles/AmBeStack.dir/depend:
-	cd /home/jxm1605/Documents/AmBe_stack/AmBe/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jxm1605/Documents/AmBe_stack/AmBe /home/jxm1605/Documents/AmBe_stack/AmBe /home/jxm1605/Documents/AmBe_stack/AmBe/build /home/jxm1605/Documents/AmBe_stack/AmBe/build /home/jxm1605/Documents/AmBe_stack/AmBe/build/CMakeFiles/AmBeStack.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/build /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/build /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/build/CMakeFiles/AmBeStack.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/AmBeStack.dir/depend
 

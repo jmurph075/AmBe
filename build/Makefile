@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jxm1605/Documents/AmBe_stack/AmBe
+CMAKE_SOURCE_DIR = /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jxm1605/Documents/AmBe_stack/AmBe/build
+CMAKE_BINARY_DIR = /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jxm1605/Documents/AmBe_stack/AmBe/build/CMakeFiles /home/jxm1605/Documents/AmBe_stack/AmBe/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/build/CMakeFiles /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jxm1605/Documents/AmBe_stack/AmBe/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -201,6 +201,30 @@ src/DetectorConstruction.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AmBeStack.dir/build.make CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.s
 .PHONY : src/DetectorConstruction.cc.s
 
+src/DetectorHit.o: src/DetectorHit.cc.o
+.PHONY : src/DetectorHit.o
+
+# target to build an object file
+src/DetectorHit.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AmBeStack.dir/build.make CMakeFiles/AmBeStack.dir/src/DetectorHit.cc.o
+.PHONY : src/DetectorHit.cc.o
+
+src/DetectorHit.i: src/DetectorHit.cc.i
+.PHONY : src/DetectorHit.i
+
+# target to preprocess a source file
+src/DetectorHit.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AmBeStack.dir/build.make CMakeFiles/AmBeStack.dir/src/DetectorHit.cc.i
+.PHONY : src/DetectorHit.cc.i
+
+src/DetectorHit.s: src/DetectorHit.cc.s
+.PHONY : src/DetectorHit.s
+
+# target to generate assembly for a file
+src/DetectorHit.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AmBeStack.dir/build.make CMakeFiles/AmBeStack.dir/src/DetectorHit.cc.s
+.PHONY : src/DetectorHit.cc.s
+
 src/EventAction.o: src/EventAction.cc.o
 .PHONY : src/EventAction.o
 
@@ -273,29 +297,29 @@ src/RunAction.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AmBeStack.dir/build.make CMakeFiles/AmBeStack.dir/src/RunAction.cc.s
 .PHONY : src/RunAction.cc.s
 
-src/SteppingAction.o: src/SteppingAction.cc.o
-.PHONY : src/SteppingAction.o
+src/ScintillatorSD.o: src/ScintillatorSD.cc.o
+.PHONY : src/ScintillatorSD.o
 
 # target to build an object file
-src/SteppingAction.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AmBeStack.dir/build.make CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o
-.PHONY : src/SteppingAction.cc.o
+src/ScintillatorSD.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AmBeStack.dir/build.make CMakeFiles/AmBeStack.dir/src/ScintillatorSD.cc.o
+.PHONY : src/ScintillatorSD.cc.o
 
-src/SteppingAction.i: src/SteppingAction.cc.i
-.PHONY : src/SteppingAction.i
+src/ScintillatorSD.i: src/ScintillatorSD.cc.i
+.PHONY : src/ScintillatorSD.i
 
 # target to preprocess a source file
-src/SteppingAction.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AmBeStack.dir/build.make CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.i
-.PHONY : src/SteppingAction.cc.i
+src/ScintillatorSD.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AmBeStack.dir/build.make CMakeFiles/AmBeStack.dir/src/ScintillatorSD.cc.i
+.PHONY : src/ScintillatorSD.cc.i
 
-src/SteppingAction.s: src/SteppingAction.cc.s
-.PHONY : src/SteppingAction.s
+src/ScintillatorSD.s: src/ScintillatorSD.cc.s
+.PHONY : src/ScintillatorSD.s
 
 # target to generate assembly for a file
-src/SteppingAction.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AmBeStack.dir/build.make CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.s
-.PHONY : src/SteppingAction.cc.s
+src/ScintillatorSD.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AmBeStack.dir/build.make CMakeFiles/AmBeStack.dir/src/ScintillatorSD.cc.s
+.PHONY : src/ScintillatorSD.cc.s
 
 # Help Target
 help:
@@ -315,6 +339,9 @@ help:
 	@echo "... src/DetectorConstruction.o"
 	@echo "... src/DetectorConstruction.i"
 	@echo "... src/DetectorConstruction.s"
+	@echo "... src/DetectorHit.o"
+	@echo "... src/DetectorHit.i"
+	@echo "... src/DetectorHit.s"
 	@echo "... src/EventAction.o"
 	@echo "... src/EventAction.i"
 	@echo "... src/EventAction.s"
@@ -324,9 +351,9 @@ help:
 	@echo "... src/RunAction.o"
 	@echo "... src/RunAction.i"
 	@echo "... src/RunAction.s"
-	@echo "... src/SteppingAction.o"
-	@echo "... src/SteppingAction.i"
-	@echo "... src/SteppingAction.s"
+	@echo "... src/ScintillatorSD.o"
+	@echo "... src/ScintillatorSD.i"
+	@echo "... src/ScintillatorSD.s"
 .PHONY : help
 
 

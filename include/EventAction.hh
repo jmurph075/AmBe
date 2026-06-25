@@ -32,24 +32,15 @@ namespace AmBeStack
             // second member function
             void EndOfEventAction(const G4Event* event) override;
 
-            // also need the AddEdep function
-            // which is called inside SteppingAction::UserSteppingAction
-            // to accumulate the total energy deposited in the event
-            // needs to be public for this access
-            void AddEdep(G4double edepStep)
-            {
-                fEdep += edepStep;
-            }
-
-            // finally define the member variables for the maps
-            // again must be public so steppingaction can fill
-            std::map<G4int, G4String> recoilNameMap;
-            std::map<G4int, G4double> recoilEdepMap;
-
         private:
             // define member variables
+            // this is immediately overwritten anyway
+            // once the member initialisation occurs
             RunAction* fRunAction = nullptr;
-            G4double fEdep = 0.; // no * as don't want a pointer just normal double for value 
+            // in this case the maps to structure the ntuples
+            std::map<G4int, G4String> fTrackNameMap;
+            std::map<G4int, G4double> fTrackEdepMap;
+            std::map<G4int, std::pair<G4double, G4double>> fDetTimeSummaryMap;
 
     };
 }

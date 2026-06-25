@@ -7,13 +7,13 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/jxm1605/Documents/AmBe_stack/AmBe/CMakeLists.txt"
+  "/home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/CMakeLists.txt"
   "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
-  "/home/jxm1605/Documents/AmBe_stack/AmBe/macros/run.mac"
-  "/home/jxm1605/Documents/AmBe_stack/AmBe/macros/vis.mac"
-  "/home/jxm1605/Documents/AmBe_stack/AmBe/source_data/ISO_2021_small.csv"
+  "/home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/macros/run.mac"
+  "/home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/macros/vis.mac"
+  "/home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/source_data/ISO_2021_small.csv"
   "/home/jxm1605/geant4/install/lib/cmake/Geant4/G4EXPATShim.cmake"
   "/home/jxm1605/geant4/install/lib/cmake/Geant4/G4X11Shim.cmake"
   "/home/jxm1605/geant4/install/lib/cmake/Geant4/Geant4Config.cmake"

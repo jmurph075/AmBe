@@ -6,7 +6,6 @@
 #include "PrimaryGeneratorAction.hh"
 #include "RunAction.hh"
 #include "EventAction.hh"
-#include "SteppingAction.hh"
 
 #include "globals.hh"
 
@@ -53,8 +52,9 @@ namespace AmBeStack
         auto eventAction = new EventAction(runAction);
         SetUserAction(eventAction);
 
-        // register stepping action (for access to each step within an event (particle history))
-        SetUserAction(new SteppingAction(eventAction));
+        // register sensitive detector class now 
+        // instead of stepping action like before
+        
     }
 }
                 

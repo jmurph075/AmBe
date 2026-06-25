@@ -1,9 +1,9 @@
 CMakeFiles/AmBeStack.dir/AmBeMain.cc.o: \
- /home/jxm1605/Documents/AmBe_stack/AmBe/AmBeMain.cc \
+ /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/AmBeMain.cc \
  /usr/include/stdc-predef.h \
- /home/jxm1605/Documents/AmBe_stack/AmBe/include/ActionInitialization.hh \
+ /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/include/ActionInitialization.hh \
  /home/jxm1605/geant4/install/include/Geant4/G4VUserActionInitialization.hh \
- /home/jxm1605/Documents/AmBe_stack/AmBe/include/DetectorConstruction.hh \
+ /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/include/DetectorConstruction.hh \
  /home/jxm1605/geant4/install/include/Geant4/G4VUserDetectorConstruction.hh \
  /home/jxm1605/geant4/install/include/Geant4/globals.hh \
  /home/jxm1605/geant4/install/include/Geant4/G4ios.hh \

@@ -1,11 +1,11 @@
 CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.o: \
- /home/jxm1605/Documents/AmBe_stack/AmBe/src/ActionInitialization.cc \
+ /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/ActionInitialization.cc \
  /usr/include/stdc-predef.h \
- /home/jxm1605/Documents/AmBe_stack/AmBe/include/ActionInitialization.hh \
+ /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/include/ActionInitialization.hh \
  /home/jxm1605/geant4/install/include/Geant4/G4VUserActionInitialization.hh \
- /home/jxm1605/Documents/AmBe_stack/AmBe/include/PrimaryGeneratorAction.hh \
+ /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/include/PrimaryGeneratorAction.hh \
  /home/jxm1605/geant4/install/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
- /home/jxm1605/Documents/AmBe_stack/AmBe/include/RunAction.hh \
+ /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/include/RunAction.hh \
  /home/jxm1605/geant4/install/include/Geant4/G4UserRunAction.hh \
  /home/jxm1605/geant4/install/include/Geant4/G4Types.hh \
  /home/jxm1605/geant4/install/include/Geant4/G4GlobalConfig.hh \
@@ -237,7 +237,5 @@ CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.o: \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/jxm1605/Documents/AmBe_stack/AmBe/include/EventAction.hh \
- /home/jxm1605/geant4/install/include/Geant4/G4UserEventAction.hh \
- /home/jxm1605/Documents/AmBe_stack/AmBe/include/SteppingAction.hh \
- /home/jxm1605/geant4/install/include/Geant4/G4UserSteppingAction.hh
+ /home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/include/EventAction.hh \
+ /home/jxm1605/geant4/install/include/Geant4/G4UserEventAction.hh

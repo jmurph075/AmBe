@@ -8,13 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/jxm1605/Documents/AmBe_stack/AmBe/AmBeMain.cc" "CMakeFiles/AmBeStack.dir/AmBeMain.cc.o" "gcc" "CMakeFiles/AmBeStack.dir/AmBeMain.cc.o.d"
-  "/home/jxm1605/Documents/AmBe_stack/AmBe/src/ActionInitialization.cc" "CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.o" "gcc" "CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.o.d"
-  "/home/jxm1605/Documents/AmBe_stack/AmBe/src/DetectorConstruction.cc" "CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.o" "gcc" "CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.o.d"
-  "/home/jxm1605/Documents/AmBe_stack/AmBe/src/EventAction.cc" "CMakeFiles/AmBeStack.dir/src/EventAction.cc.o" "gcc" "CMakeFiles/AmBeStack.dir/src/EventAction.cc.o.d"
-  "/home/jxm1605/Documents/AmBe_stack/AmBe/src/PrimaryGeneratorAction.cc" "CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o" "gcc" "CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o.d"
-  "/home/jxm1605/Documents/AmBe_stack/AmBe/src/RunAction.cc" "CMakeFiles/AmBeStack.dir/src/RunAction.cc.o" "gcc" "CMakeFiles/AmBeStack.dir/src/RunAction.cc.o.d"
-  "/home/jxm1605/Documents/AmBe_stack/AmBe/src/SteppingAction.cc" "CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o" "gcc" "CMakeFiles/AmBeStack.dir/src/SteppingAction.cc.o.d"
+  "/home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/AmBeMain.cc" "CMakeFiles/AmBeStack.dir/AmBeMain.cc.o" "gcc" "CMakeFiles/AmBeStack.dir/AmBeMain.cc.o.d"
+  "/home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/ActionInitialization.cc" "CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.o" "gcc" "CMakeFiles/AmBeStack.dir/src/ActionInitialization.cc.o.d"
+  "/home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/DetectorConstruction.cc" "CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.o" "gcc" "CMakeFiles/AmBeStack.dir/src/DetectorConstruction.cc.o.d"
+  "/home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/DetectorHit.cc" "CMakeFiles/AmBeStack.dir/src/DetectorHit.cc.o" "gcc" "CMakeFiles/AmBeStack.dir/src/DetectorHit.cc.o.d"
+  "/home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/EventAction.cc" "CMakeFiles/AmBeStack.dir/src/EventAction.cc.o" "gcc" "CMakeFiles/AmBeStack.dir/src/EventAction.cc.o.d"
+  "/home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/PrimaryGeneratorAction.cc" "CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o" "gcc" "CMakeFiles/AmBeStack.dir/src/PrimaryGeneratorAction.cc.o.d"
+  "/home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/RunAction.cc" "CMakeFiles/AmBeStack.dir/src/RunAction.cc.o" "gcc" "CMakeFiles/AmBeStack.dir/src/RunAction.cc.o.d"
+  "/home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/src/ScintillatorSD.cc" "CMakeFiles/AmBeStack.dir/src/ScintillatorSD.cc.o" "gcc" "CMakeFiles/AmBeStack.dir/src/ScintillatorSD.cc.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
