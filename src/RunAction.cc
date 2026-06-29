@@ -40,8 +40,11 @@ namespace AmBeStack
             // define the columns for the Ntuple
             analysisManager->CreateNtupleIColumn("EventID");
             analysisManager->CreateNtupleDColumn("TotalEdep");
+            analysisManager->CreateNtupleDColumn("TotalDet0Edep");
+            analysisManager->CreateNtupleDColumn("TotalDet1Edep");
             analysisManager->CreateNtupleSColumn("RecoilName");
-            analysisManager->CreateNtupleDColumn("RecoilEdep");
+            analysisManager->CreateNtupleDColumn("RecoilDet0Edep");
+            analysisManager->CreateNtupleDColumn("RecoilDet1Edep");
             analysisManager->CreateNtupleDColumn("TimeDet0First");
             analysisManager->CreateNtupleDColumn("TimeDet0Last");
             analysisManager->CreateNtupleDColumn("TimeDet1First");

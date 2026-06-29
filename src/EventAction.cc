@@ -82,6 +82,8 @@ namespace AmBeStack
         // make a varible to hold the total energy deposited 
         // across the event
         G4double totalEdep = 0.0;
+        G4double totalDet0Edep = 0.0;
+        G4double totalDet1Edep = 0.0;
 
         // can then loop through the number of hits in collection
         // (as long as it exists)
@@ -108,6 +110,18 @@ namespace AmBeStack
                 
                 // add the edep in this hit to the total event edep
                 totalEdep += edep;
+                if (copyNo == 0)
+                {
+                    totalDet0Edep += edep;
+                    // do the same for the energy deposited by the track
+                    // for each detector based on the copyNo
+                    fTrackEdepMap[trackID].first += edep;
+                }
+                else if (copyNo == 1)
+                {
+                    totalDet1Edep += edep;
+                    fTrackEdepMap[trackID].second += edep;
+                }
 
                 // now we look at the type of interaction
 
@@ -120,9 +134,6 @@ namespace AmBeStack
                     // so we assign it for the first time
                     fTrackNameMap[trackID] = particleName;
                 }
-
-                // do the same for the energy deposited by the track
-                fTrackEdepMap[trackID] += edep;
 
                 // need to record the time associated with
                 // the copy number
@@ -199,17 +210,21 @@ namespace AmBeStack
             analysisManager->FillNtupleIColumn(0, eventID);
             // then add the total energy for the event
             analysisManager->FillNtupleDColumn(1, totalEdep);
+            // add total energy for each detector (will just be 0)
+            analysisManager->FillNtupleDColumn(2, totalDet0Edep);
+            analysisManager->FillNtupleDColumn(3, totalDet1Edep);
             // specify no recoil for recoil type
-            analysisManager->FillNtupleSColumn(2, "No_recoil");
-            // specify no recoil energy
-            analysisManager->FillNtupleDColumn(3, 0.0);
+            analysisManager->FillNtupleSColumn(4, "No_recoil");
+            // specify no recoil energy for both detectors
+            analysisManager->FillNtupleDColumn(5, 0.0);
+            analysisManager->FillNtupleDColumn(6, 0.0);
             // specify the time into each detector and TOF
             // will be the default values set above in this case
-            analysisManager->FillNtupleDColumn(4, timeDet0.first);
-            analysisManager->FillNtupleDColumn(5, timeDet0.second);
-            analysisManager->FillNtupleDColumn(6, timeDet1.first);
-            analysisManager->FillNtupleDColumn(7, timeDet1.second);
-            analysisManager->FillNtupleDColumn(8, tof);
+            analysisManager->FillNtupleDColumn(7, timeDet0.first);
+            analysisManager->FillNtupleDColumn(8, timeDet0.second);
+            analysisManager->FillNtupleDColumn(9, timeDet1.first);
+            analysisManager->FillNtupleDColumn(10, timeDet1.second);
+            analysisManager->FillNtupleDColumn(11, tof);
             // add new row now that event info been written
             analysisManager->AddNtupleRow();
         }
@@ -227,16 +242,20 @@ namespace AmBeStack
                 analysisManager->FillNtupleIColumn(0, eventID);
                 // then add the total energy for the event
                 analysisManager->FillNtupleDColumn(1, totalEdep);
+                // add total energies in each detector
+                analysisManager->FillNtupleDColumn(2, totalDet0Edep);
+                analysisManager->FillNtupleDColumn(3, totalDet1Edep);
                 // specify recoil type
-                analysisManager->FillNtupleSColumn(2, recoilName);
-                // specify recoil energy
-                analysisManager->FillNtupleDColumn(3, recoilEdep);
+                analysisManager->FillNtupleSColumn(4, recoilName);
+                // specify no recoil energy for both detectors
+                analysisManager->FillNtupleDColumn(5, recoilEdep.first);
+                analysisManager->FillNtupleDColumn(6, recoilEdep.second);
                 // specify the time into each detector and TOF
-                analysisManager->FillNtupleDColumn(4, timeDet0.first);
-                analysisManager->FillNtupleDColumn(5, timeDet0.second);
-                analysisManager->FillNtupleDColumn(6, timeDet1.first);
-                analysisManager->FillNtupleDColumn(7, timeDet1.second);
-                analysisManager->FillNtupleDColumn(8, tof);
+                analysisManager->FillNtupleDColumn(7, timeDet0.first);
+                analysisManager->FillNtupleDColumn(8, timeDet0.second);
+                analysisManager->FillNtupleDColumn(9, timeDet1.first);
+                analysisManager->FillNtupleDColumn(10, timeDet1.second);
+                analysisManager->FillNtupleDColumn(11, tof);
                 // add new row now that event info been written
                 analysisManager->AddNtupleRow();
             }

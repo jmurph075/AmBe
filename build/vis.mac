@@ -12,10 +12,10 @@
 # tell geant to accumulate these trajectories rather than wiping after each event
 # can specify the number of events to store before capping
 # (to avoid overloading ram on bigger stat runs)
-/vis/scene/endOfEventAction accumulate 1000
+/vis/scene/endOfEventAction accumulate 100
 
 # then run with number of particles
-/run/beamOn 10000
+/run/beamOn 1000
 
 # now add back the trajectories accumulated earlier
 /vis/scene/add/trajectories smooth

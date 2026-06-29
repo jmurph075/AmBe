@@ -259,8 +259,10 @@ int main(int argc, char** argv)
     // need to configure the general particle source settings
     UImanager->ApplyCommand("/gps/particle neutron");
     UImanager->ApplyCommand("/gps/pos/type Point");
-    UImanager->ApplyCommand("/gps/pos/centre 0 0 0 cm");
-    UImanager->ApplyCommand("/gps/ang/type iso");
+    UImanager->ApplyCommand("/gps/pos/centre 0 0 10 cm");
+    //UImanager->ApplyCommand("/gps/ang/type beam1d");
+    // UImanager->ApplyCommand("/gps/ang/type direction");
+    UImanager->ApplyCommand("/gps/direction 0 0 1");
     // now specify that the energy spectra data type is user defined
     UImanager->ApplyCommand("/gps/ene/type User");
     // specify the type of user defined histogram
@@ -281,6 +283,10 @@ int main(int argc, char** argv)
         // i.e. read the macro file supplied
         G4String command = "/control/execute ";
         G4String fileName = argv[1]; // our macro
+        // temp. monoenergetic source option
+        UImanager->ApplyCommand("/gps/ene/type Mono");
+        UImanager->ApplyCommand("/gps/ene/mono 10 MeV");
+        //UImanager->ApplyCommand("/gps/energy 10");
         // apply the command
         UImanager->ApplyCommand(command + fileName);
     }

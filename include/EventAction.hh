@@ -39,7 +39,7 @@ namespace AmBeStack
             RunAction* fRunAction = nullptr;
             // in this case the maps to structure the ntuples
             std::map<G4int, G4String> fTrackNameMap;
-            std::map<G4int, G4double> fTrackEdepMap;
+            std::map<G4int, std::pair<G4double, G4double>> fTrackEdepMap;
             std::map<G4int, std::pair<G4double, G4double>> fDetTimeSummaryMap;
 
     };

@@ -14,4 +14,4 @@
 #/gun/energy 10 MeV
 
 # Fire specified number of neutrons from particleGun
-/run/beamOn 100000
+/run/beamOn 1000000
