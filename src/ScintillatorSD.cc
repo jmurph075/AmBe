@@ -4,6 +4,10 @@
 #include "ScintillatorSD.hh"
 
 #include "G4SDManager.hh"
+#include "G4StepStatus.hh"
+#include "G4Step.hh"    
+#include "G4Track.hh"
+#include "G4VProcess.hh"
 
 namespace AmBeStack 
 {
@@ -18,8 +22,11 @@ namespace AmBeStack
         : G4VSensitiveDetector(name),  // - parent setup (from virtual geant class)
         // in this case just the name of the specific sensitive detector
         // assign member variables (defined in .hh file)
-        // only the hitscollection variable in this case
-        fHitsCollection(nullptr) // assign as nullptr initially
+        fHitsCollection(nullptr), // assign as nullptr initially
+        fIncomingNeutronEnergyMap() // initialise the map
+        // at start of simulation
+        // will reset at start of each event in Initialize too
+
     {
         // going to register the name of the data table detector generates
         // do this in the constructor so that the assignment is done 
@@ -52,6 +59,10 @@ namespace AmBeStack
         // mapped to the SD/scintillatorHits
         fHitsCollection = new DetectorHitsCollection(SensitiveDetectorName, collectionName[0]);
 
+        // also reset the fIncomingNeutronEnergy variable to unphysical value
+        // that only becomes physical when correct physics (defined in ProcessHits) occurs
+        fIncomingNeutronEnergyMap[0] = -1.0;
+        fIncomingNeutronEnergyMap[1] = -1.0;
         // next step is to get the collectionID from the SDManager
         // first create a static variable (exists in memory across function calls)
         static G4int hcID = -1;
@@ -84,6 +95,70 @@ namespace AmBeStack
     {
         // this deals with the setters and getter variables and functions
         
+
+        // going to add in the incident energy of the neutron to the hitscollection
+        // for a given event,
+        // for verification of the tof logic
+        // already know the particle is in the scoring volume
+        // so just need to verify this is a neutron
+        // and that it is the first step within the volume
+        // if so, add the energy the neutron has (not that it deposits)
+        // to the hitscollection for this event
+        
+        // get particle defintiion
+        G4String particleName = step->GetTrack()->GetDefinition()->GetParticleName();
+        // get a bool for if first step within the scoring volume or not
+        // geant forces the first step within a new volume 
+        // to start from the boundary of the volume
+        // fGeomBoundary is a builtin geant keyword for checking this
+        // (haven't had to define it explicitly anywhere)
+        // since ProcessHits only runs when particle is in the scoring volume
+        // geomboundary being true must mean it is at the boundary of the scoring volume
+        // note we use presteppoint to make sure we only get the entering case
+        // the exiting case will also be a geomboundary but only at the 
+        // poststeppoint, so we don't include this
+        G4bool isEntering = step->GetPreStepPoint()->GetStepStatus() == fGeomBoundary;
+        // also ensure the trackID is 1 so we know its a primary neutron
+        G4int trackID = step->GetTrack()->GetTrackID();
+
+        // get copyNo for map to each detector incident energy
+        G4int copyNo = step->GetPreStepPoint()->GetTouchableHandle()->GetCopyNumber();
+        if (particleName == "neutron" && isEntering && trackID == 1)
+        {
+            // add the incident energy of the neutron to the hits collection
+            fIncomingNeutronEnergyMap[copyNo] = step->GetPreStepPoint()->GetKineticEnergy();
+            
+        }
+
+        // get process name to pair with trackID and particleName
+        // can then reconstruct the mechanisms of energy deposition
+        // need to differentiate between a primary and secondary tracks
+        G4String processName = "Primary";
+
+        // if not a primary
+        if (trackID > 1)
+        {
+            const G4VProcess* creatorProcess = step->GetTrack()->GetCreatorProcess();
+
+            // make sure not a nullptr
+            if (creatorProcess != nullptr)
+            {
+                processName = creatorProcess->GetProcessName();
+            }
+            else
+            {
+                processName = "Unknown_secondary";
+            }
+        }
+        else // is a primary interaction (but no explicit secondary track made)
+        {
+            const G4VProcess* stepProcess = step->GetPostStepPoint()->GetProcessDefinedStep();
+            if (stepProcess)
+            {
+                processName = stepProcess->GetProcessName();
+            }
+        }
+
         // get energy deposited in the step
         G4double edep = step->GetTotalEnergyDeposit();
 
@@ -97,11 +172,11 @@ namespace AmBeStack
         // fill with various setters 
         newHit->SetEdep(edep);
         newHit->SetTime(step->GetPreStepPoint()->GetGlobalTime());
-        newHit->SetCopyNo(step->GetPreStepPoint()->GetTouchableHandle()->GetCopyNumber());
-        newHit->SetTrackID(step->GetTrack()->GetTrackID());
-        newHit->SetParticleName(step->GetTrack()->GetDefinition()->GetParticleName());
-        newHit->SetIsRecoil(step->GetTrack()->GetDefinition()->GetBaryonNumber() >= 1);
-    
+        newHit->SetCopyNo(copyNo);
+        newHit->SetTrackID(trackID);
+        newHit->SetParticleName(particleName);
+        newHit->SetProcessName(processName);
+        newHit->SetIncidentEnergy(fIncomingNeutronEnergyMap[copyNo]); 
         // do not need to guard against different interactions types here
         // no if statements apart form to get bool for IsRecoil
         // simply write everthing as it is

@@ -11,7 +11,8 @@ namespace AmBeStack
         : G4VHit(),  // - parent setup (from virtual geant class)
         // assign member variables (defined in .hh file)
         fEdep(0.), fTime(0.), fCopyNo(-1), 
-        fTrackID(-1), fParticleName(""), fIsRecoil(false)
+        fTrackID(-1), fParticleName(""), fProcessName(""),
+        fIncidentEnergy(-1.0)
         {}
 
     // don't need to define destrcutor again here

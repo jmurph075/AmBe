@@ -259,7 +259,7 @@ int main(int argc, char** argv)
     // need to configure the general particle source settings
     UImanager->ApplyCommand("/gps/particle neutron");
     UImanager->ApplyCommand("/gps/pos/type Point");
-    UImanager->ApplyCommand("/gps/pos/centre 0 0 10 cm");
+    UImanager->ApplyCommand("/gps/pos/centre 0 0 50 cm");
     //UImanager->ApplyCommand("/gps/ang/type beam1d");
     // UImanager->ApplyCommand("/gps/ang/type direction");
     UImanager->ApplyCommand("/gps/direction 0 0 1");

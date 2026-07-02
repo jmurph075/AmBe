@@ -1,3 +1,0 @@
-/home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/build/CMakeFiles/AmBeStack.dir
-/home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/build/CMakeFiles/edit_cache.dir
-/home/jxm1605/Documents/AmBe_stack/AmBe_double_tof/build/CMakeFiles/rebuild_cache.dir

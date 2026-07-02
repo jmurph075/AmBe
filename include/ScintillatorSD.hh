@@ -61,6 +61,10 @@ namespace AmBeStack
             // pointer for storing this events hit array
             // links to DetectorHit.hh header file
             DetectorHitsCollection* fHitsCollection;
+
+            // also include the incident neutron energy as a member variable
+            // for this class only (don't want it being accessible elsewhere)
+            std::map<G4int, G4double> fIncomingNeutronEnergyMap;
     
     };
 }

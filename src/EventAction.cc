@@ -36,8 +36,10 @@ namespace AmBeStack
 
         // wipe the maps containing the information about the event
         fTrackNameMap.clear(); // new recoil name
+        fTrackProcessMap.clear(); // new process name
         fTrackEdepMap.clear(); // new energy deposited by this recoil from event
-        fDetTimeSummaryMap.clear(); // new time when hit occurs in detector 
+        fDetTimeSummaryMap.clear(); // new time when hit occurs in detectors 
+        fIncidentEnergyMap.clear(); // new incident neutron energies in detectors
     }
     // second member function
     // actually define EndOfEventAction function
@@ -106,7 +108,8 @@ namespace AmBeStack
                 G4int copyNo = hit->GetCopyNo();
                 G4int trackID = hit->GetTrackID();
                 G4String particleName = hit->GetParticleName();
-                G4bool isRecoil = hit->GetIsRecoil();
+                G4String processName = hit->GetProcessName();
+                G4double incidentEnergy = hit->GetIncidentEnergy();
                 
                 // add the edep in this hit to the total event edep
                 totalEdep += edep;
@@ -133,6 +136,12 @@ namespace AmBeStack
                 {
                     // so we assign it for the first time
                     fTrackNameMap[trackID] = particleName;
+                }
+
+                // make entry for process map analogous to name map
+                if (fTrackProcessMap.find(trackID) == fTrackProcessMap.end())
+                {
+                    fTrackProcessMap[trackID] = processName;
                 }
 
                 // need to record the time associated with
@@ -166,6 +175,19 @@ namespace AmBeStack
                     // if yes, redefine
                     fDetTimeSummaryMap[copyNo].second = std::max(fDetTimeSummaryMap[copyNo].second, time);
                 }
+
+                // analogous to above 
+                // initialise then keep updating the incident energy value 
+                // to get the maximum for a given copyNo for the event
+                if (fIncidentEnergyMap.find(copyNo) == fIncidentEnergyMap.end())
+                {
+                    // haven't filled anything yet for this event
+                    fIncidentEnergyMap[copyNo] = incidentEnergy;
+                }
+                else
+                {
+                    fIncidentEnergyMap[copyNo] = std::max(fIncidentEnergyMap[copyNo], incidentEnergy);
+                }
                 
 
             }
@@ -181,20 +203,25 @@ namespace AmBeStack
         // set some default values for false cases
         std::pair<G4double, G4double> timeDet0 = std::make_pair(-1.0, -1.0);
         std::pair<G4double, G4double> timeDet1 = std::make_pair(-1.0, -1.0);
-        G4double tof = 0.0;
+        G4double tof = -1.0;
+        G4double incidentDet0Energy = -1.0;
+        G4double incidentDet1Energy = -1.0;
 
         // check for 1st detector
         // if copy no. 0 IS found in the map for this event
         if (fDetTimeSummaryMap.find(0) != fDetTimeSummaryMap.end())
         {
             timeDet0 = fDetTimeSummaryMap[0];
+            // do the same with the incident energy in this detector
+            incidentDet0Energy = fIncidentEnergyMap[0];
         }
         // analogous for copy no. 1
         if (fDetTimeSummaryMap.find(1) != fDetTimeSummaryMap.end())
         {
             timeDet1 = fDetTimeSummaryMap[1];
-        }
+            incidentDet1Energy = fIncidentEnergyMap[1];
 
+        }
         // can now calculate the time difference between each
         if (timeDet0.first >= 0.0 && timeDet1.first >= 0.0)
         {
@@ -213,18 +240,23 @@ namespace AmBeStack
             // add total energy for each detector (will just be 0)
             analysisManager->FillNtupleDColumn(2, totalDet0Edep);
             analysisManager->FillNtupleDColumn(3, totalDet1Edep);
-            // specify no recoil for recoil type
-            analysisManager->FillNtupleSColumn(4, "No_recoil");
+            // specify no secondary 
+            analysisManager->FillNtupleSColumn(4, "No_secondary");
+            // specify no process occurred
+            analysisManager->FillNtupleSColumn(5, "No_process");
             // specify no recoil energy for both detectors
-            analysisManager->FillNtupleDColumn(5, 0.0);
             analysisManager->FillNtupleDColumn(6, 0.0);
+            analysisManager->FillNtupleDColumn(7, 0.0);
             // specify the time into each detector and TOF
             // will be the default values set above in this case
-            analysisManager->FillNtupleDColumn(7, timeDet0.first);
-            analysisManager->FillNtupleDColumn(8, timeDet0.second);
-            analysisManager->FillNtupleDColumn(9, timeDet1.first);
-            analysisManager->FillNtupleDColumn(10, timeDet1.second);
-            analysisManager->FillNtupleDColumn(11, tof);
+            analysisManager->FillNtupleDColumn(8, timeDet0.first);
+            analysisManager->FillNtupleDColumn(9, timeDet0.second);
+            analysisManager->FillNtupleDColumn(10, timeDet1.first);
+            analysisManager->FillNtupleDColumn(11, timeDet1.second);
+            analysisManager->FillNtupleDColumn(12, tof);
+            analysisManager->FillNtupleDColumn(13, incidentDet0Energy);
+            analysisManager->FillNtupleDColumn(14, incidentDet1Energy);
+
             // add new row now that event info been written
             analysisManager->AddNtupleRow();
         }
@@ -236,8 +268,10 @@ namespace AmBeStack
             // loop over each track within the event
             for (auto const& [trackID, recoilEdep] : fTrackEdepMap)
             {
-                // get associated recoilname
-                G4String recoilName = fTrackNameMap[trackID];
+                // get associated particle name
+                G4String particleName = fTrackNameMap[trackID];
+                // get associated process name
+                G4String processName = fTrackProcessMap[trackID];
                 // first add eventID
                 analysisManager->FillNtupleIColumn(0, eventID);
                 // then add the total energy for the event
@@ -245,17 +279,21 @@ namespace AmBeStack
                 // add total energies in each detector
                 analysisManager->FillNtupleDColumn(2, totalDet0Edep);
                 analysisManager->FillNtupleDColumn(3, totalDet1Edep);
-                // specify recoil type
-                analysisManager->FillNtupleSColumn(4, recoilName);
-                // specify no recoil energy for both detectors
-                analysisManager->FillNtupleDColumn(5, recoilEdep.first);
-                analysisManager->FillNtupleDColumn(6, recoilEdep.second);
+                // specify particle name
+                analysisManager->FillNtupleSColumn(4, particleName);
+                // specify process name
+                analysisManager->FillNtupleSColumn(5, processName);
+                // specify recoil energy for both detectors
+                analysisManager->FillNtupleDColumn(6, recoilEdep.first);
+                analysisManager->FillNtupleDColumn(7, recoilEdep.second);
                 // specify the time into each detector and TOF
-                analysisManager->FillNtupleDColumn(7, timeDet0.first);
-                analysisManager->FillNtupleDColumn(8, timeDet0.second);
-                analysisManager->FillNtupleDColumn(9, timeDet1.first);
-                analysisManager->FillNtupleDColumn(10, timeDet1.second);
-                analysisManager->FillNtupleDColumn(11, tof);
+                analysisManager->FillNtupleDColumn(8, timeDet0.first);
+                analysisManager->FillNtupleDColumn(9, timeDet0.second);
+                analysisManager->FillNtupleDColumn(10, timeDet1.first);
+                analysisManager->FillNtupleDColumn(11, timeDet1.second);
+                analysisManager->FillNtupleDColumn(12, tof);
+                analysisManager->FillNtupleDColumn(13, incidentDet0Energy);
+                analysisManager->FillNtupleDColumn(14, incidentDet1Energy);                
                 // add new row now that event info been written
                 analysisManager->AddNtupleRow();
             }

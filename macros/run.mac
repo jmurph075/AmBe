@@ -14,7 +14,7 @@
 #/gun/energy 10 MeV
 
 # switch on event tracking
-/run/printProgress 10000
+/run/printProgress 100000
 
 # Fire specified number of neutrons from particleGun
-/run/beamOn 100000
+/run/beamOn 10000000

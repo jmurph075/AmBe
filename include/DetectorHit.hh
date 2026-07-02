@@ -46,8 +46,10 @@ namespace AmBeStack
             void SetTrackID(G4int trackID) {fTrackID = trackID;}
             // 5. particleName
             void SetParticleName(G4String particleName) {fParticleName = particleName;}
-            // 6. isRecoil
-            void SetIsRecoil(G4bool isRecoil) {fIsRecoil = isRecoil;}
+            // 6. processName
+            void SetProcessName(G4String processName) {fProcessName = processName;}
+            // 7. incidentEnergy
+            void SetIncidentEnergy(G4double incidentEnergy) {fIncidentEnergy = incidentEnergy;}
 
             // GETTERS (used by EventAction to read data to Ntuple)
             // 1. edepStep
@@ -60,8 +62,10 @@ namespace AmBeStack
             G4int GetTrackID() const {return fTrackID;}
             // 5. particleName
             G4String GetParticleName() const {return fParticleName;}
-            // 6. isRecoil
-            G4bool GetIsRecoil() const {return fIsRecoil;}
+            // 6. processName
+            G4String GetProcessName() const {return fProcessName;}
+            // 7. incidentEnergy
+            G4double GetIncidentEnergy() const {return fIncidentEnergy;}
 
             // define each of these f (member) variables in private
             private:
@@ -70,7 +74,8 @@ namespace AmBeStack
                 G4int fCopyNo;
                 G4int fTrackID;
                 G4String fParticleName;
-                G4bool fIsRecoil;
+                G4String fProcessName;
+                G4double fIncidentEnergy;
 
     };
 
