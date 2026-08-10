@@ -10,6 +10,7 @@
 
 // need access to builtin geant materials and detector construction classes
 #include "G4VUserDetectorConstruction.hh"
+#include "G4ThreeVector.hh"
 
 // initialise default geant geometry construction classes
 // known as 'forward declarations' - just tells compiler these classes exist
@@ -58,11 +59,23 @@ namespace AmBeStack // keeps things in AmBeStack namespace to avoid conflicts wi
             // for assigning the sensitive detector
             void ConstructSDandField() override;
 
+            // include member functions to get the exact positions
+            // of detectors for output and post-processing
+            G4ThreeVector GetDet0Pos() const {return fDet0Pos;}
+            G4ThreeVector GetDet1Pos() const {return fDet1Pos;}
+
         protected:
             // ensure this can only be accessed by this class and not from outside
             // don't want scoring volume itself to be altered from outside 
             G4LogicalVolume* fScoringVolume = nullptr; 
             // pointer to logical volume being used for scoring
+
+        private:
+            // definition of the detector position member variables
+            // keep in private so no other classes can alter them externally
+            G4ThreeVector fDet0Pos;
+            G4ThreeVector fDet1Pos;
+
     };
 
 }

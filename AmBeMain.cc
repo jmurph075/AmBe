@@ -20,6 +20,7 @@
 
 #include <iostream>
 #include <sstream>
+#include <iomanip>
 
 // declare namespace being used
 using namespace AmBeStack;
@@ -247,6 +248,45 @@ int main(int argc, char** argv)
 
     // initialise runManager now that things are registered
     runManager->Initialize();
+
+    // after this, can output a summary of the geometric setup
+    // get a pointer to the detector construction
+    auto* detConstruction = static_cast<const AmBeStack::DetectorConstruction*>(
+        runManager->GetUserDetectorConstruction());
+
+    // if this has been obtained, can get the positions
+    // of detectors
+    if (detConstruction) // not nullptr
+    {
+        G4ThreeVector det0Pos = detConstruction->GetDet0Pos();
+        G4ThreeVector det1Pos = detConstruction->GetDet1Pos();
+
+        // find distance and angle between positions
+        G4double detDist = (det0Pos - det1Pos).mag(); // cm
+        G4ThreeVector detDisp = det1Pos - det0Pos; // cm
+
+        // angle 
+        G4double detAngleRad = std::atan(detDisp[1]/detDisp[2]) *radian;
+
+        // output this information
+        // can use setw from iomanip to format columns
+        // setw is to set the width of a box to a set no. of characters
+        // for the proceeding object in the std
+        // left and right say where the text sits inside the box
+        std::cout << std::left << std::setw(20) << "Detector 0 Position: "
+        << std::right << std::setw(15) << det0Pos / cm << " cm" << std::endl;
+        std::cout << "-------------------------------------" << std::endl;
+        std::cout << std::left << std::setw(20) << "Detector 1 Position: "
+        << std::right << std::setw(15) << det1Pos / cm << " cm" << std::endl;
+        std::cout << "-------------------------------------" << std::endl;
+        std::cout << std::left << std::setw(20) << "Distance between centres: "
+        << std::right << std::setw(15) << detDist / cm << " cm" << std::endl;
+        std::cout << "-------------------------------------" << std::endl;
+        std::cout << std::left << std::setw(20) << "Angle from z-axis: "
+        << std::right << std::setw(15) << detAngleRad << " radians" << std::endl;
+        std::cout << "-------------------------------------" << std::endl;                            
+
+    }
 
     // use CheckHadronicData function to verify data
     // we've registered

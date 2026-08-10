@@ -346,7 +346,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
           G4ThreeVector det_face_pos_1 = G4ThreeVector(0, 0, 75 *cm);
 
           // second detector will be outside stack and to the side
-          G4ThreeVector det_face_pos_2 = G4ThreeVector(0, 50 *cm, 100 *cm); 
+          G4ThreeVector det_face_pos_2 = G4ThreeVector(0, 100 *cm, 100 *cm); 
 
           // get a vector for displacement between detectors
           G4ThreeVector det_displacement = det_face_pos_2 - det_face_pos_1;
@@ -381,12 +381,14 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
           );
 
           // physical
+          // explicitly make a centre position threevector
+          G4ThreeVector physDet1ActivePos = det_face_pos_1 + G4ThreeVector(0, 0, (0.5 *det_active_length) + det_case_thickness);
           auto physDetActive_1= new G4PVPlacement(
                nullptr, // no rotation applied
                // position is center of volume, so offset by half the active length in z
                // to get the face of detector at position defined above
                // add thickness as det_face_pos is position of face (including casing)
-               det_face_pos_1 + G4ThreeVector(0, 0, (0.5 *det_active_length) + det_case_thickness),
+               physDet1ActivePos,
                logicDetActive, // associated logical volume
                "Det_Active_phys_1", // name
                logicRoom, // mother logical volume 
@@ -394,6 +396,9 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
                0, // copy number
                true // check overlaps
           );
+          // assign the position of the centre of the active volume
+          // to the member variable to be outputted later
+          fDet0Pos = physDet1ActivePos;
 
           // create detector casing
           // will need to do subtraction with active volume above
@@ -491,11 +496,13 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
           // but need new copy of physical vol at new position
           
           // physical
+          // explicitly make a centre position threevector
+          G4ThreeVector physDet2ActivePos = det_face_pos_2 + G4ThreeVector(0, 0, (0.5 *det_active_length) + det_case_thickness);          
           auto physDetActive_2 = new G4PVPlacement(
                // include rotation defined above for second detector
                rotation,
                // position is center of volume, need to offset by half active length
-               det_face_pos_2 + G4ThreeVector(0, 0, (0.5 *det_active_length) + det_case_thickness),
+               physDet2ActivePos,
                logicDetActive, // associated logical volume
                "Det_Active_phys_2", // name
                logicRoom, // mother logical volume
@@ -503,6 +510,9 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
                1, // copy number (set to 1 to differentiate from first detector)
                true // check overlaps
           );
+          // assign the position of the centre of the active volume
+          // to the member variable to be outputted later
+          fDet1Pos = physDet2ActivePos;          
 
           // physical detector casing volume now in same way
           auto physDetCase_2 = new G4PVPlacement(
