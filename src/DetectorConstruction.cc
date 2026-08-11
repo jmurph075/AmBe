@@ -346,7 +346,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
           G4ThreeVector det_face_pos_1 = G4ThreeVector(0, 0, 75 *cm);
 
           // second detector will be outside stack and to the side
-          G4ThreeVector det_face_pos_2 = G4ThreeVector(0, 100 *cm, 100 *cm); 
+          G4ThreeVector det_face_pos_2 = G4ThreeVector(0, 25 *cm, 125 *cm); 
 
           // get a vector for displacement between detectors
           G4ThreeVector det_displacement = det_face_pos_2 - det_face_pos_1;

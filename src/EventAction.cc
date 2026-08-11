@@ -16,12 +16,11 @@ namespace AmBeStack
 {
     // like in SteppingAction.cc, start with the constructor
     // this works to link EventAction to RunAction
-    EventAction::EventAction(RunAction* runAction)
+    EventAction::EventAction()
         // : starts "member intialiser list"
         // zone which runs before the code inside {} 
-        : G4UserEventAction(), // - parent setup (from geant class)
+        : G4UserEventAction() // - parent setup (from geant class)
         // assign member variables (defined in .hh file)
-        fRunAction(runAction) // - for current run action 
         {}
 
     // first member function
@@ -34,12 +33,9 @@ namespace AmBeStack
                 // !!!!!!!!!!!!! for debugging !!!!!!!!!!
         //G4cout << "Coming from BeginOfEventAction" << G4endl;
 
-        // wipe the maps containing the information about the event
-        fTrackNameMap.clear(); // new recoil name
-        fTrackProcessMap.clear(); // new process name
-        fTrackEdepMap.clear(); // new energy deposited by this recoil from event
-        fDetTimeSummaryMap.clear(); // new time when hit occurs in detectors 
-        fIncidentEnergyMap.clear(); // new incident neutron energies in detectors
+        // since writing directly from hits to ntuples,
+        // no need to reset maps at start of event 
+        // (we don't have any)
     }
     // second member function
     // actually define EndOfEventAction function
@@ -81,11 +77,17 @@ namespace AmBeStack
         // get the eventID aswell for referencing later
         G4int eventID = event->GetEventID();
 
-        // make a varible to hold the total energy deposited 
-        // across the event
-        G4double totalEdep = 0.0;
-        G4double totalDet0Edep = 0.0;
-        G4double totalDet1Edep = 0.0;
+        // need to grab the primary energy from within this class now
+        // rather than from primarygeneratoraction,
+        // since each row is a hit, not an event, 
+        G4double primaryEnergy = 0.0;
+        // get primary vertex for the event
+        // will update this later to include simulataneous primary gammas
+        // first 0 is for the first vertex (only going to be one in this sim)
+        // second 0 is for the first kind of primary particle
+        // this will be only a neutron for now,
+        // but will update to include gammas 
+        primaryEnergy = event->GetPrimaryVertex(0)->GetPrimary(0)->GetKineticEnergy();
 
         // can then loop through the number of hits in collection
         // (as long as it exists)
@@ -109,195 +111,35 @@ namespace AmBeStack
                 G4int trackID = hit->GetTrackID();
                 G4String particleName = hit->GetParticleName();
                 G4String processName = hit->GetProcessName();
-                G4double incidentEnergy = hit->GetIncidentEnergy();
+                G4double incidentNeutronEnergy = hit->GetIncidentEnergy();
                 
-                // add the edep in this hit to the total event edep
-                totalEdep += edep;
-                if (copyNo == 0)
-                {
-                    totalDet0Edep += edep;
-                    // do the same for the energy deposited by the track
-                    // for each detector based on the copyNo
-                    fTrackEdepMap[trackID].first += edep;
-                }
-                else if (copyNo == 1)
-                {
-                    totalDet1Edep += edep;
-                    fTrackEdepMap[trackID].second += edep;
-                }
+                // write these quantities to ntuple
+                // column 0 is eventID
+                analysisManager->FillNtupleIColumn(0, eventID);
+                // column 1 is primary particle energy
+                analysisManager->FillNtupleDColumn(1, primaryEnergy); // ensure in MeV
+                // column 2 is copyNo
+                analysisManager->FillNtupleIColumn(2, copyNo);
+                // column 3 is time of hit
+                analysisManager->FillNtupleDColumn(3, time);
+                // column 4 is energy deposition of hit
+                analysisManager->FillNtupleDColumn(4, edep);
+                // column 5 is particle name
+                analysisManager->FillNtupleSColumn(5, particleName);
+                // column 6 is process name
+                analysisManager->FillNtupleSColumn(6, processName);
+                // column 7 is trackID
+                analysisManager->FillNtupleIColumn(7, trackID);
+                // column 8 is incident neutron energy
+                analysisManager->FillNtupleDColumn(8, incidentNeutronEnergy);
 
-                // now we look at the type of interaction
-
-                // make a new entry in the name map and edep map
-                // if not made already (still cleared from beginofeventaction)
-                // .find grabs the value associated with the track ID
-                // if returns end, means this trackID is new to the map
-                if (fTrackNameMap.find(trackID) == fTrackNameMap.end())
-                {
-                    // so we assign it for the first time
-                    fTrackNameMap[trackID] = particleName;
-                }
-
-                // make entry for process map analogous to name map
-                if (fTrackProcessMap.find(trackID) == fTrackProcessMap.end())
-                {
-                    fTrackProcessMap[trackID] = processName;
-                }
-
-                // need to record the time associated with
-                // the copy number
-                // fill map for this aswell
-                
-                // !!!!! FOR NOW JUST RECORD FIRST TIME HIT
-                // IN THIS DETECTOR RECORDED !!!!!
-                // !!!!! SHOULD REALLY REFINE SO HAS TIME 
-                // OF FIRST AND LAST HIT IN DETECTOR TO BE CORRECT !!!
-                if (fDetTimeSummaryMap.find(copyNo) == fDetTimeSummaryMap.end())
-                {   
-                    fDetTimeSummaryMap[copyNo] = std::make_pair(time, time);
-                }
-
-                // can include else statement that
-                // updates the pair
-                // till it contains the first and last time in the event
-                // since we know we already have an entry for this copy no.
-                // apparently geant doesn't go through these hits monotonically
-                // in time, so need to just call min/max when looping
-                // over them
-                else
-                {
-                    // is the new time smaller than the current 
-                    // first entry in the map for this copy no.?
-                    // if yes, redefine
-                    fDetTimeSummaryMap[copyNo].first = std::min(fDetTimeSummaryMap[copyNo].first, time);
-                    // is the new time larger than the current 
-                    // second entry in the map for this copy no.?
-                    // if yes, redefine
-                    fDetTimeSummaryMap[copyNo].second = std::max(fDetTimeSummaryMap[copyNo].second, time);
-                }
-
-                // analogous to above 
-                // initialise then keep updating the incident energy value 
-                // to get the maximum for a given copyNo for the event
-                if (fIncidentEnergyMap.find(copyNo) == fIncidentEnergyMap.end())
-                {
-                    // haven't filled anything yet for this event
-                    fIncidentEnergyMap[copyNo] = incidentEnergy;
-                }
-                else
-                {
-                    fIncidentEnergyMap[copyNo] = std::max(fIncidentEnergyMap[copyNo], incidentEnergy);
-                }
-                
+                // after each hit, start new row
+                analysisManager->AddNtupleRow();
 
             }
             
         }
 
-        // have collected all quantities across all hits collections
-        // associated with the event
-        // now need to write this to the ntuple
-        // defined in runaction 
-
-        // determine if both detectors were involved in event
-        // set some default values for false cases
-        std::pair<G4double, G4double> timeDet0 = std::make_pair(-1.0, -1.0);
-        std::pair<G4double, G4double> timeDet1 = std::make_pair(-1.0, -1.0);
-        G4double tof = -1.0;
-        G4double incidentDet0Energy = -1.0;
-        G4double incidentDet1Energy = -1.0;
-
-        // check for 1st detector
-        // if copy no. 0 IS found in the map for this event
-        if (fDetTimeSummaryMap.find(0) != fDetTimeSummaryMap.end())
-        {
-            timeDet0 = fDetTimeSummaryMap[0];
-            // do the same with the incident energy in this detector
-            incidentDet0Energy = fIncidentEnergyMap[0];
-        }
-        // analogous for copy no. 1
-        if (fDetTimeSummaryMap.find(1) != fDetTimeSummaryMap.end())
-        {
-            timeDet1 = fDetTimeSummaryMap[1];
-            incidentDet1Energy = fIncidentEnergyMap[1];
-
-        }
-        // can now calculate the time difference between each
-        if (timeDet0.first >= 0.0 && timeDet1.first >= 0.0)
-        {
-            tof = timeDet1.first - timeDet0.first;
-        }
-
-        // deal with case where no energy was deposited 
-        // in either detector
-        if (fTrackEdepMap.empty())
-        {
-            // fill the ntuple with default values
-            // first add eventID
-            analysisManager->FillNtupleIColumn(0, eventID);
-            // then add the total energy for the event
-            analysisManager->FillNtupleDColumn(1, totalEdep);
-            // add total energy for each detector (will just be 0)
-            analysisManager->FillNtupleDColumn(2, totalDet0Edep);
-            analysisManager->FillNtupleDColumn(3, totalDet1Edep);
-            // specify no secondary 
-            analysisManager->FillNtupleSColumn(4, "No_secondary");
-            // specify no process occurred
-            analysisManager->FillNtupleSColumn(5, "No_process");
-            // specify no recoil energy for both detectors
-            analysisManager->FillNtupleDColumn(6, 0.0);
-            analysisManager->FillNtupleDColumn(7, 0.0);
-            // specify the time into each detector and TOF
-            // will be the default values set above in this case
-            analysisManager->FillNtupleDColumn(8, timeDet0.first);
-            analysisManager->FillNtupleDColumn(9, timeDet0.second);
-            analysisManager->FillNtupleDColumn(10, timeDet1.first);
-            analysisManager->FillNtupleDColumn(11, timeDet1.second);
-            analysisManager->FillNtupleDColumn(12, tof);
-            analysisManager->FillNtupleDColumn(13, incidentDet0Energy);
-            analysisManager->FillNtupleDColumn(14, incidentDet1Energy);
-
-            // add new row now that event info been written
-            analysisManager->AddNtupleRow();
-        }
-
-        // otherwise, have some energy deposition
-        // the positive case!
-        else
-        {
-            // loop over each track within the event
-            for (auto const& [trackID, recoilEdep] : fTrackEdepMap)
-            {
-                // get associated particle name
-                G4String particleName = fTrackNameMap[trackID];
-                // get associated process name
-                G4String processName = fTrackProcessMap[trackID];
-                // first add eventID
-                analysisManager->FillNtupleIColumn(0, eventID);
-                // then add the total energy for the event
-                analysisManager->FillNtupleDColumn(1, totalEdep);
-                // add total energies in each detector
-                analysisManager->FillNtupleDColumn(2, totalDet0Edep);
-                analysisManager->FillNtupleDColumn(3, totalDet1Edep);
-                // specify particle name
-                analysisManager->FillNtupleSColumn(4, particleName);
-                // specify process name
-                analysisManager->FillNtupleSColumn(5, processName);
-                // specify recoil energy for both detectors
-                analysisManager->FillNtupleDColumn(6, recoilEdep.first);
-                analysisManager->FillNtupleDColumn(7, recoilEdep.second);
-                // specify the time into each detector and TOF
-                analysisManager->FillNtupleDColumn(8, timeDet0.first);
-                analysisManager->FillNtupleDColumn(9, timeDet0.second);
-                analysisManager->FillNtupleDColumn(10, timeDet1.first);
-                analysisManager->FillNtupleDColumn(11, timeDet1.second);
-                analysisManager->FillNtupleDColumn(12, tof);
-                analysisManager->FillNtupleDColumn(13, incidentDet0Energy);
-                analysisManager->FillNtupleDColumn(14, incidentDet1Energy);                
-                // add new row now that event info been written
-                analysisManager->AddNtupleRow();
-            }
-        }
 
     }
 }

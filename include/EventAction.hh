@@ -7,7 +7,7 @@
 #include "G4UserEventAction.hh"
 #include "globals.hh"
 #include <map> // !! NEED FOR MAPS !!
-
+#include <vector>
 namespace AmBeStack
 {
     // need to include RunAction class within EventAction header
@@ -23,7 +23,7 @@ namespace AmBeStack
             // G4UserEventAction class
             // the details of which will be in the
             // associated .cc file
-            EventAction(RunAction* runAction);
+            EventAction();
             ~EventAction() override = default;
 
             // first member function
@@ -31,18 +31,6 @@ namespace AmBeStack
 
             // second member function
             void EndOfEventAction(const G4Event* event) override;
-
-        private:
-            // define member variables
-            // this is immediately overwritten anyway
-            // once the member initialisation occurs
-            RunAction* fRunAction = nullptr;
-            // in this case the maps to structure the ntuples
-            std::map<G4int, G4String> fTrackNameMap;
-            std::map<G4int, G4String> fTrackProcessMap;
-            std::map<G4int, std::pair<G4double, G4double>> fTrackEdepMap;
-            std::map<G4int, std::pair<G4double, G4double>> fDetTimeSummaryMap;
-            std::map<G4int, G4double> fIncidentEnergyMap;
 
     };
 }

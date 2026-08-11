@@ -7,6 +7,7 @@
 #include "G4UserRunAction.hh"
 #include "globals.hh"
 #include "G4Run.hh"
+#include "EventAction.hh"
 
 namespace AmBeStack
 {

@@ -63,16 +63,6 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* event)
     // based on the details supplied by the macro
     fGPS->GeneratePrimaryVertex(event);
 
-    // want to extract the primary particle energy 
-    // and pass to the analysis manager
-    // for storage in ntuple
-    G4double primaryEnergy = fGPS->GetParticleEnergy();
-    
-    G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
-    // built as column 15 within our ntuple
-    // so column index is 15 (ensure in MeV)
-    analysisManager->FillNtupleDColumn(15, primaryEnergy / MeV);
-
 }
 
 }

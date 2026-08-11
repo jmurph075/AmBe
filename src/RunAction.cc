@@ -37,26 +37,24 @@ namespace AmBeStack
 
             // make the Ntuple with the structure we need
             analysisManager->CreateNtuple("AmBeStackData", "Energy deposition data");
+            // each row corresponds to a hit
+            // each column corresponds to quantity
             // define the columns for the Ntuple
+            // columnn containing the event ID for sorting in post
             analysisManager->CreateNtupleIColumn("EventID");
-            analysisManager->CreateNtupleDColumn("TotalEdep");
-            analysisManager->CreateNtupleDColumn("TotalDet0Edep");
-            analysisManager->CreateNtupleDColumn("TotalDet1Edep");
-            analysisManager->CreateNtupleSColumn("ParticleName");
-            analysisManager->CreateNtupleSColumn("ProcessName");
-            analysisManager->CreateNtupleDColumn("RecoilDet0Edep");
-            analysisManager->CreateNtupleDColumn("RecoilDet1Edep");
-            analysisManager->CreateNtupleDColumn("TimeDet0First");
-            analysisManager->CreateNtupleDColumn("TimeDet0Last");
-            analysisManager->CreateNtupleDColumn("TimeDet1First");
-            analysisManager->CreateNtupleDColumn("TimeDet1Last");
-            analysisManager->CreateNtupleDColumn("TOF");
-            analysisManager->CreateNtupleDColumn("IncidentDet0Energy");
-            analysisManager->CreateNtupleDColumn("IncidentDet1Energy");
-
             // create a column for the primary particle energy
             // to ensure the spectrum is as intended
             analysisManager->CreateNtupleDColumn("PrimaryEnergy");
+            // column for the copyNo of detector hit
+            analysisManager->CreateNtupleIColumn("CopyNo");
+            // next few columns contain hit information for detector
+            // time of hit, edep, particle name, process, trackID
+            analysisManager->CreateNtupleDColumn("DetHitTime");
+            analysisManager->CreateNtupleDColumn("DetHitEdep");
+            analysisManager->CreateNtupleSColumn("DetHitParticleName");
+            analysisManager->CreateNtupleSColumn("DetHitProcessName");
+            analysisManager->CreateNtupleIColumn("DetHitTrackID");
+            analysisManager->CreateNtupleDColumn("DetHitIncidentNeutonEnergy");
 
             analysisManager->FinishNtuple(); // finish ntuple
 

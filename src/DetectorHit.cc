@@ -12,7 +12,7 @@ namespace AmBeStack
         // assign member variables (defined in .hh file)
         fEdep(0.), fTime(0.), fCopyNo(-1), 
         fTrackID(-1), fParticleName(""), fProcessName(""),
-        fIncidentEnergy(-1.0)
+        fIncidentEnergy(-1.)
         {}
 
     // don't need to define destrcutor again here

@@ -43,17 +43,14 @@ namespace AmBeStack
 
         // register primary generator action (for the neutron gun physics) 
         SetUserAction(new PrimaryGeneratorAction);
-
+        
         // register run action (for total accumulated stats start to finish)
-        auto runAction = new RunAction;
+        auto runAction = new RunAction();
         SetUserAction(runAction);
 
         // register event action (for access to each event (particle history))
-        auto eventAction = new EventAction(runAction);
+        auto eventAction = new EventAction();
         SetUserAction(eventAction);
-
-        // register sensitive detector class now 
-        // instead of stepping action like before
         
     }
 }
