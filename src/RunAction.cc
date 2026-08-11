@@ -54,7 +54,7 @@ namespace AmBeStack
             analysisManager->CreateNtupleSColumn("DetHitParticleName");
             analysisManager->CreateNtupleSColumn("DetHitProcessName");
             analysisManager->CreateNtupleIColumn("DetHitTrackID");
-            analysisManager->CreateNtupleDColumn("DetHitIncidentNeutonEnergy");
+            analysisManager->CreateNtupleDColumn("DetHitIncidentNeutronEnergy");
 
             analysisManager->FinishNtuple(); // finish ntuple
 
