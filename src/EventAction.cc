@@ -77,18 +77,13 @@ namespace AmBeStack
         // get the eventID aswell for referencing later
         G4int eventID = event->GetEventID();
 
-        // need to grab the primary energy from within this class now
-        // rather than from primarygeneratoraction,
-        // since each row is a hit, not an event, 
-        G4double primaryEnergy = 0.0;
-        // get primary vertex for the event
-        // will update this later to include simulataneous primary gammas
-        // first 0 is for the first vertex (only going to be one in this sim)
-        // second 0 is for the first kind of primary particle
-        // this will be only a neutron for now,
-        // but will update to include gammas 
-        primaryEnergy = event->GetPrimaryVertex(0)->GetPrimary(0)->GetKineticEnergy();
-
+        // want to grab info about the primary particle
+        // grab the primary vertex
+        G4PrimaryVertex* primaryVertex = event->GetPrimaryVertex(0);
+        // then get the particle name and kinetic energy
+        G4String primaryParticleName = primaryVertex->GetPrimary(0)->GetParticleDefinition()->GetParticleName();
+        // pass 0 as arg to both since we only generate one primary per event
+        G4double primaryEnergy = primaryVertex->GetPrimary(0)->GetKineticEnergy();
         // can then loop through the number of hits in collection
         // (as long as it exists)
         if (hitsCollection)
@@ -111,27 +106,29 @@ namespace AmBeStack
                 G4int trackID = hit->GetTrackID();
                 G4String particleName = hit->GetParticleName();
                 G4String processName = hit->GetProcessName();
-                G4double incidentNeutronEnergy = hit->GetIncidentEnergy();
+                G4double incidentPrimaryEnergy = hit->GetIncidentEnergy();
                 
                 // write these quantities to ntuple
                 // column 0 is eventID
                 analysisManager->FillNtupleIColumn(0, eventID);
-                // column 1 is primary particle energy
-                analysisManager->FillNtupleDColumn(1, primaryEnergy); // ensure in MeV
-                // column 2 is copyNo
-                analysisManager->FillNtupleIColumn(2, copyNo);
-                // column 3 is time of hit
-                analysisManager->FillNtupleDColumn(3, time);
-                // column 4 is energy deposition of hit
-                analysisManager->FillNtupleDColumn(4, edep);
-                // column 5 is particle name
-                analysisManager->FillNtupleSColumn(5, particleName);
-                // column 6 is process name
-                analysisManager->FillNtupleSColumn(6, processName);
-                // column 7 is trackID
-                analysisManager->FillNtupleIColumn(7, trackID);
-                // column 8 is incident neutron energy
-                analysisManager->FillNtupleDColumn(8, incidentNeutronEnergy);
+                // column 1 is primary particle name
+                analysisManager->FillNtupleSColumn(1, primaryParticleName);
+                // column 2 is primary particle energy
+                analysisManager->FillNtupleDColumn(2, primaryEnergy); // ensure in MeV
+                // column 3 is copyNo
+                analysisManager->FillNtupleIColumn(3, copyNo);
+                // column 4 is time of hit
+                analysisManager->FillNtupleDColumn(4, time);
+                // column 5 is energy deposition of hit
+                analysisManager->FillNtupleDColumn(5, edep);
+                // column 6 is particle name
+                analysisManager->FillNtupleSColumn(6, particleName);
+                // column 7 is process name
+                analysisManager->FillNtupleSColumn(7, processName);
+                // column 8 is trackID
+                analysisManager->FillNtupleIColumn(8, trackID);
+                // column 9 is incident energy of primary
+                analysisManager->FillNtupleDColumn(9, incidentPrimaryEnergy);
 
                 // after each hit, start new row
                 analysisManager->AddNtupleRow();

@@ -297,12 +297,13 @@ int main(int argc, char** argv)
     auto UImanager = G4UImanager::GetUIpointer();
 
     // need to configure the general particle source settings
+
+    // first add the neutron source
+    UImanager->ApplyCommand("/gps/source/add 1.0");
     UImanager->ApplyCommand("/gps/particle neutron");
     UImanager->ApplyCommand("/gps/pos/type Point");
-    UImanager->ApplyCommand("/gps/pos/centre 0 0 50 cm");
-    //UImanager->ApplyCommand("/gps/ang/type beam1d");
-    // UImanager->ApplyCommand("/gps/ang/type direction");
-    UImanager->ApplyCommand("/gps/direction 0 0 1");
+    UImanager->ApplyCommand("/gps/pos/centre 0 0 0 cm");
+    UImanager->ApplyCommand("/gps/ang/type iso"); // isotropic
     // now specify that the energy spectra data type is user defined
     UImanager->ApplyCommand("/gps/ene/type User");
     // specify the type of user defined histogram
@@ -324,9 +325,20 @@ int main(int argc, char** argv)
         G4String command = "/control/execute ";
         G4String fileName = argv[1]; // our macro
         // temp. monoenergetic source option
-        UImanager->ApplyCommand("/gps/ene/type Mono");
-        UImanager->ApplyCommand("/gps/ene/mono 10 MeV");
+        //UImanager->ApplyCommand("/gps/direction 0 0 1");
+        //UImanager->ApplyCommand("/gps/ene/type Mono");
+        //UImanager->ApplyCommand("/gps/ene/mono 10 MeV");
         //UImanager->ApplyCommand("/gps/energy 10");
+
+        // add in the gamma source
+        UImanager->ApplyCommand("/gps/source/add 0.57"); // 0.57 gammas for each neutron
+        UImanager->ApplyCommand("/gps/particle gamma"); 
+        UImanager->ApplyCommand("/gps/pos/type Point"); // point source
+        UImanager->ApplyCommand("/gps/pos/centre 0 0 0 cm"); // start a little away from AmBe for now
+        //UImanager->ApplyCommand("/gps/direction 0 0 1");
+        UImanager->ApplyCommand("/gps/ang/type iso");
+        UImanager->ApplyCommand("/gps/ene/type Mono"); // monoenergetic
+        UImanager->ApplyCommand("/gps/ene/mono 4.438 MeV");
         // apply the command
         UImanager->ApplyCommand(command + fileName);
     }
@@ -334,6 +346,18 @@ int main(int argc, char** argv)
     // otherwise we are in interactive mode so start a UI session
     else
     {
+        // temp. monoenergetic source option
+        //UImanager->ApplyCommand("/gps/ene/type Mono");
+        //UImanager->ApplyCommand("/gps/ene/mono 10 MeV");
+        // add in the gamma source
+        UImanager->ApplyCommand("/gps/source/add 0.57"); // 0.57 gammas for each neutron
+        UImanager->ApplyCommand("/gps/particle gamma"); 
+        UImanager->ApplyCommand("/gps/pos/type Point"); // point source
+        UImanager->ApplyCommand("/gps/pos/centre 0 0 0 cm"); // start a little away from AmBe for now
+        //UImanager->ApplyCommand("gps/direction 0 0 1");
+        UImanager->ApplyCommand("/gps/ang/type iso");
+        UImanager->ApplyCommand("/gps/ene/type Mono"); // monoenergetic
+        UImanager->ApplyCommand("/gps/ene/mono 4.438 MeV");
         G4cout << "No macro file provided, attemptiong to start interactive session..." << G4endl;
         // start interactive session
         // initialise visualisation and UI executive

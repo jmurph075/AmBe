@@ -42,6 +42,9 @@ namespace AmBeStack
             // define the columns for the Ntuple
             // columnn containing the event ID for sorting in post
             analysisManager->CreateNtupleIColumn("EventID");
+            // create a column for the primary particle type
+            // neutrons vs gammas
+            analysisManager->CreateNtupleSColumn("PrimaryParticleName");
             // create a column for the primary particle energy
             // to ensure the spectrum is as intended
             analysisManager->CreateNtupleDColumn("PrimaryEnergy");
@@ -54,7 +57,8 @@ namespace AmBeStack
             analysisManager->CreateNtupleSColumn("DetHitParticleName");
             analysisManager->CreateNtupleSColumn("DetHitProcessName");
             analysisManager->CreateNtupleIColumn("DetHitTrackID");
-            analysisManager->CreateNtupleDColumn("DetHitIncidentNeutronEnergy");
+            // column for the incident energy of the primary in the detector
+            analysisManager->CreateNtupleDColumn("DetHitIncidentEnergy");
 
             analysisManager->FinishNtuple(); // finish ntuple
 

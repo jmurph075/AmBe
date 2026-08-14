@@ -23,7 +23,7 @@ namespace AmBeStack
         // in this case just the name of the specific sensitive detector
         // assign member variables (defined in .hh file)
         fHitsCollection(nullptr), // assign as nullptr initially
-        fIncomingNeutronEnergyMap() // initialise the map
+        fIncidentPrimaryEnergyMap() // initialise the map
         // at start of simulation
         // will reset at start of each event in Initialize too
 
@@ -59,10 +59,10 @@ namespace AmBeStack
         // mapped to the SD/scintillatorHits
         fHitsCollection = new DetectorHitsCollection(SensitiveDetectorName, collectionName[0]);
 
-        // also reset the fIncomingNeutronEnergy variable to unphysical value
+        // also reset the fIncidentEnergy variable to unphysical value
         // that only becomes physical when correct physics (defined in ProcessHits) occurs
-        fIncomingNeutronEnergyMap[0] = -1.0;
-        fIncomingNeutronEnergyMap[1] = -1.0;
+        fIncidentPrimaryEnergyMap[0] = -1.0;
+        fIncidentPrimaryEnergyMap[1] = -1.0;
         // next step is to get the collectionID from the SDManager
         // first create a static variable (exists in memory across function calls)
         static G4int hcID = -1;
@@ -96,13 +96,13 @@ namespace AmBeStack
         // this deals with the setters and getter variables and functions
         
 
-        // going to add in the incident energy of the neutron to the hitscollection
+        // going to add in the incident energy of the primary to the hitscollection
         // for a given event,
         // for verification of the tof logic
         // already know the particle is in the scoring volume
-        // so just need to verify this is a neutron
+        // so just need to verify this is a primary
         // and that it is the first step within the volume
-        // if so, add the energy the neutron has (not that it deposits)
+        // if so, add the energy the primary has (not that it deposits)
         // to the hitscollection for this event
         
         // get particle defintiion
@@ -118,15 +118,22 @@ namespace AmBeStack
         // the exiting case will also be a geomboundary but only at the 
         // poststeppoint, so we don't include this
         G4bool isEntering = step->GetPreStepPoint()->GetStepStatus() == fGeomBoundary;
-        // also ensure the trackID is 1 so we know its a primary neutron
+        // also ensure the trackID is 1 so we know its a primary 
         G4int trackID = step->GetTrack()->GetTrackID();
 
         // get copyNo for map to each detector incident energy
         G4int copyNo = step->GetPreStepPoint()->GetTouchableHandle()->GetCopyNumber();
-        if (particleName == "neutron" && isEntering && trackID == 1)
+        
+        // now we condition on:
+        // 1. if the particle is a primary (trackID == 1)
+        // 2. particle is entering the SD geometry (isEntering)
+        // 3. we don't already have an incident energy for this detector 
+        // for this hitscollection (this event)
+        // i.e. the map value is still non-physical
+        if (trackID == 1 && isEntering && (fIncidentPrimaryEnergyMap[copyNo] < 0.0))
         {
             // add the incident energy of the neutron to the hits collection
-            fIncomingNeutronEnergyMap[copyNo] = step->GetPreStepPoint()->GetKineticEnergy();
+            fIncidentPrimaryEnergyMap[copyNo] = step->GetPreStepPoint()->GetKineticEnergy();
             
         }
 
@@ -176,7 +183,7 @@ namespace AmBeStack
         newHit->SetTrackID(trackID);
         newHit->SetParticleName(particleName);
         newHit->SetProcessName(processName);
-        newHit->SetIncidentEnergy(fIncomingNeutronEnergyMap[copyNo]); 
+        newHit->SetIncidentEnergy(fIncidentPrimaryEnergyMap[copyNo]); 
         // do not need to guard against different interactions types here
         // no if statements apart form to get bool for IsRecoil
         // simply write everthing as it is
